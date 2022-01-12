@@ -1,0 +1,15 @@
+/node_modules
+dist
+
+.temp
+.cache
+.DS_Store
+.eslintcache
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.history
+*.log
+
+.idea
