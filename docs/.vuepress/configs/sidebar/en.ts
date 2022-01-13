@@ -23,5 +23,13 @@ export const en: SidebarConfig = {
         '/blocks/execute-workflow.md',
       ],
     }
-  ]
+  ],
+  '/api-reference': [
+    {
+      text: 'API Reference',
+      children: [
+        '/api-reference/data-columns.md',
+      ],
+    },
+  ],
 }

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "module": "ES2020",
-    "types": ["vite/client", "@types/jest"],
+    "types": ["vite/client"],
     "composite": true,
     "declaration": true,
     "declarationMap": false,
