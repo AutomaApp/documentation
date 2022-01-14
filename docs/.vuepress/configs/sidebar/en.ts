@@ -28,6 +28,7 @@ export const en: SidebarConfig = {
     {
       text: 'API Reference',
       children: [
+        '/api-reference/reference-data.md',
         '/api-reference/data-columns.md',
       ],
     },
