@@ -13,6 +13,7 @@ export const en: SidebarConfig = {
       children: [
         '/blocks/README.md',
         '/blocks/execute-workflow.md',
+        '/blocks/delay.md',
       ],
     },
     {
@@ -31,6 +32,7 @@ export const en: SidebarConfig = {
       children: [
         '/blocks/README.md',
         '/blocks/execute-workflow.md',
+        '/blocks/delay.md',
       ],
     }
   ],
