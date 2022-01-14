@@ -9,7 +9,11 @@ export const en: SidebarConfig = {
     },
     {
       text: 'Blocks',
-      link: '/blocks',
+      collapsible: true,
+      children: [
+        '/blocks/README.md',
+        '/blocks/execute-workflow.md',
+      ],
     },
     {
       text: 'API Reference',
