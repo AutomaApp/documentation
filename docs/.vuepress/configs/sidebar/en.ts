@@ -4,6 +4,7 @@ export const en: SidebarConfig = {
   '/': [
     {
       text: 'Getting started',
+      collapsible: true,
       link: '/',
     },
     {
@@ -12,7 +13,12 @@ export const en: SidebarConfig = {
     },
     {
       text: 'API Reference',
-      link: '/api-reference/'
+      collapsible: true,
+      children: [
+        '/api-reference/data-columns.md',
+        '/api-reference/reference-data.md',
+        '/api-reference/global-data.md',
+      ],
     },
   ],
   '/blocks': [
@@ -23,14 +29,5 @@ export const en: SidebarConfig = {
         '/blocks/execute-workflow.md',
       ],
     }
-  ],
-  '/api-reference': [
-    {
-      text: 'API Reference',
-      children: [
-        '/api-reference/reference-data.md',
-        '/api-reference/data-columns.md',
-      ],
-    },
   ],
 }

@@ -11,6 +11,11 @@ export const en: NavbarConfig = [
   },
   {
     text: 'API Reference',
-    children: [],
+    link: '/api-reference',
+    children: [
+      '/api-reference/data-columns',
+      '/api-reference/reference-data',
+      '/api-reference/global-data.md',
+    ],
   }
 ];

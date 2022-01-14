@@ -30,3 +30,7 @@ If a block has a "Data columns" selection when you edit it, it means it can inse
 And if you don't want the data to be inserted into the data columns, you can uncheck the "Save data" checkbox.
 
 ![Select column](https://res.cloudinary.com/chat-story/image/upload/v1637668494/automa/data-columns-save-data_skd3yk.png)
+
+## Accessing data
+
+To access the data of data columns from an input of a block, you can use a mustache tag like <code v-pre>{{ dataColumns }}</code>, learn more on [reference data](/api-reference/reference-data).
