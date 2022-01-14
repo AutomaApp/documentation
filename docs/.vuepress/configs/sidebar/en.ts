@@ -14,6 +14,7 @@ export const en: SidebarConfig = {
         '/blocks/README.md',
         '/blocks/execute-workflow.md',
         '/blocks/delay.md',
+        '/blocks/export-data.md',
       ],
     },
     {
@@ -33,6 +34,7 @@ export const en: SidebarConfig = {
         '/blocks/README.md',
         '/blocks/execute-workflow.md',
         '/blocks/delay.md',
+        '/blocks/export-data.md',
       ],
     }
   ],
