@@ -15,6 +15,7 @@ export const en: SidebarConfig = {
         '/blocks/execute-workflow.md',
         '/blocks/delay.md',
         '/blocks/export-data.md',
+        '/blocks/repeat-task.md',
       ],
     },
     {
@@ -35,6 +36,7 @@ export const en: SidebarConfig = {
         '/blocks/execute-workflow.md',
         '/blocks/delay.md',
         '/blocks/export-data.md',
+        '/blocks/repeat-task.md',
       ],
     }
   ],
