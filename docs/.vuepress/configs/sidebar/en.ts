@@ -16,6 +16,7 @@ export const en: SidebarConfig = {
         '/blocks/delay.md',
         '/blocks/export-data.md',
         '/blocks/repeat-task.md',
+        '/blocks/webhook.md',
       ],
     },
     {
@@ -37,6 +38,7 @@ export const en: SidebarConfig = {
         '/blocks/delay.md',
         '/blocks/export-data.md',
         '/blocks/repeat-task.md',
+        '/blocks/webhook.md',
       ],
     }
   ],

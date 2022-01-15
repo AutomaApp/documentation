@@ -1,7 +1,7 @@
 ---
-title: Delay block
+title: Delay Block
 ---
 
-# Delay block
+# Delay Block
 
 Add a delay (in millisecond) before executing the next block.
