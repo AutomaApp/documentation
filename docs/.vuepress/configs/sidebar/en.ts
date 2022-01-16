@@ -23,6 +23,7 @@ export const en: SidebarConfig = {
         '/blocks/active-tab.md',
         '/blocks/new-tab.md',
         '/blocks/new-window.md',
+        '/blocks/proxy.md',
       ],
     },
     {
@@ -56,6 +57,7 @@ export const en: SidebarConfig = {
         '/blocks/active-tab.md',
         '/blocks/new-tab.md',
         '/blocks/new-window.md',
+        '/blocks/proxy.md',
       ],
     },
   ],
