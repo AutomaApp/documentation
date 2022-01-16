@@ -1,8 +1,8 @@
 ---
-title: Proxy
+title: Proxy Block
 ---
 
-# Proxy
+# Proxy Block
 
 Set the proxy settings of the browser.
 

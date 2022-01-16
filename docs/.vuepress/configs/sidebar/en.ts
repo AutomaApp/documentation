@@ -27,6 +27,7 @@ export const en: SidebarConfig = {
         '/blocks/go-back.md',
         '/blocks/go-forward.md',
         '/blocks/close-tab.md',
+        '/blocks/take-screenshot.md',
       ],
     },
     {
@@ -64,6 +65,7 @@ export const en: SidebarConfig = {
         '/blocks/go-back.md',
         '/blocks/go-forward.md',
         '/blocks/close-tab.md',
+        '/blocks/take-screenshot.md',
       ],
     },
   ],
