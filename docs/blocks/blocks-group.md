@@ -1,8 +1,8 @@
 ---
-title: Group Block
+title: Blocks group
 ---
 
-# Group Block
+# Blocks group
 
 Groups other blocks together inside one container, this way you can make the workflow looks more organized.
 

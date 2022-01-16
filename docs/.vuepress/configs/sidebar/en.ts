@@ -19,7 +19,8 @@ export const en: SidebarConfig = {
         '/blocks/webhook.md',
         '/blocks/loop-data.md',
         '/blocks/loop-breakpoint.md',
-        '/blocks/group-block.md',
+        '/blocks/blocks-group.md',
+        '/blocks/active-tab.md',
       ],
     },
     {
@@ -44,8 +45,14 @@ export const en: SidebarConfig = {
         '/blocks/webhook.md',
         '/blocks/loop-data.md',
         '/blocks/loop-breakpoint.md',
-        '/blocks/group-block.md',
+        '/blocks/blocks-group.md',
       ],
-    }
+    },
+    {
+      text: 'Browser',
+      children: [
+        '/blocks/active-tab.md',
+      ],
+    },
   ],
 }
