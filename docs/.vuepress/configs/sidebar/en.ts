@@ -22,6 +22,7 @@ export const en: SidebarConfig = {
         '/blocks/blocks-group.md',
         '/blocks/active-tab.md',
         '/blocks/new-tab.md',
+        '/blocks/new-window.md',
       ],
     },
     {
@@ -54,6 +55,7 @@ export const en: SidebarConfig = {
       children: [
         '/blocks/active-tab.md',
         '/blocks/new-tab.md',
+        '/blocks/new-window.md',
       ],
     },
   ],
