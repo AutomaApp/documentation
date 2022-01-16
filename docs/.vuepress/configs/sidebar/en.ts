@@ -21,6 +21,7 @@ export const en: SidebarConfig = {
         '/blocks/loop-breakpoint.md',
         '/blocks/blocks-group.md',
         '/blocks/active-tab.md',
+        '/blocks/new-tab.md',
       ],
     },
     {
@@ -52,6 +53,7 @@ export const en: SidebarConfig = {
       text: 'Browser',
       children: [
         '/blocks/active-tab.md',
+        '/blocks/new-tab.md',
       ],
     },
   ],
