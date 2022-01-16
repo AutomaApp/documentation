@@ -1,8 +1,8 @@
 ---
-title: Export data block
+title: Export Data Block
 ---
 
-# Export data block
+# Export Data Block
 
 Export [data columns](/api-reference/data-columns) or [google sheets](/blocks/google-sheets) data as JSON, CSV, or plain text file.
 

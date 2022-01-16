@@ -12,6 +12,9 @@ export default defineUserConfig<DefaultThemeOptions>({
     },
   },
   themeConfig: {
+    themePlugins: {
+      mediumZoom: true,
+    },
     lastUpdated: true,
     editLink: true,
     contributors: true,

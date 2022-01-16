@@ -1,8 +1,8 @@
 ---
-title: Execute workflow block
+title: Execute Workflow Block
 ---
 
-# Execute workflow block
+# Execute Workflow Block
 
 Execute another workflow.
 

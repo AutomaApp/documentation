@@ -1,8 +1,8 @@
 ---
-title: Repeat task block
+title: Repeat Task Block
 ---
 
-# Repeat task block
+# Repeat Task Block
 
 Repeat execute a block or multiple blocks.
 

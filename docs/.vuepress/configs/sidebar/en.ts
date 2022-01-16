@@ -17,6 +17,7 @@ export const en: SidebarConfig = {
         '/blocks/export-data.md',
         '/blocks/repeat-task.md',
         '/blocks/webhook.md',
+        '/blocks/loop-data.md',
       ],
     },
     {
@@ -39,6 +40,7 @@ export const en: SidebarConfig = {
         '/blocks/export-data.md',
         '/blocks/repeat-task.md',
         '/blocks/webhook.md',
+        '/blocks/loop-data.md',
       ],
     }
   ],
