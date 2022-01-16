@@ -26,6 +26,7 @@ export const en: SidebarConfig = {
         '/blocks/proxy.md',
         '/blocks/go-back.md',
         '/blocks/go-forward.md',
+        '/blocks/close-tab.md',
       ],
     },
     {
@@ -62,6 +63,7 @@ export const en: SidebarConfig = {
         '/blocks/proxy.md',
         '/blocks/go-back.md',
         '/blocks/go-forward.md',
+        '/blocks/close-tab.md',
       ],
     },
   ],
