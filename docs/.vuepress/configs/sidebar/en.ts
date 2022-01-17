@@ -32,6 +32,7 @@ export const en: SidebarConfig = {
         '/blocks/get-text.md',
         '/blocks/element-scroll.md',
         '/blocks/link.md',
+        '/blocks/attribute-value.md',
       ],
     },
     {
@@ -83,6 +84,7 @@ export const en: SidebarConfig = {
         '/blocks/get-text.md',
         '/blocks/element-scroll.md',
         '/blocks/link.md',
+        '/blocks/attribute-value.md',
       ],
     },
   ],
