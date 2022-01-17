@@ -31,6 +31,7 @@ export const en: SidebarConfig = {
         '/blocks/event-click.md',
         '/blocks/get-text.md',
         '/blocks/element-scroll.md',
+        '/blocks/link.md',
       ],
     },
     {
@@ -81,6 +82,7 @@ export const en: SidebarConfig = {
         '/blocks/event-click.md',
         '/blocks/get-text.md',
         '/blocks/element-scroll.md',
+        '/blocks/link.md',
       ],
     },
   ],
