@@ -29,6 +29,7 @@ export const en: SidebarConfig = {
         '/blocks/close-tab.md',
         '/blocks/take-screenshot.md',
         '/blocks/event-click.md',
+        '/blocks/get-text.md',
       ],
     },
     {
@@ -77,6 +78,7 @@ export const en: SidebarConfig = {
       collapsible: true,
       children: [
         '/blocks/event-click.md',
+        '/blocks/get-text.md',
       ],
     },
   ],

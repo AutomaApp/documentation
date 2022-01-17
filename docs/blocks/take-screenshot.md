@@ -16,4 +16,4 @@ Take screenshot of the active tab.
 	File type of the screenshot file, default to `PNG`.
 
 - **Save screenshot to column** <br>
-	Toggle whether the [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) of the screenshot is inserted into the [data columns](/api-reference/data-columns) or not.
+	Toggle whether the [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) of the screenshot is inserted into the [data columns](/api-reference/data-columns.md) or not.
