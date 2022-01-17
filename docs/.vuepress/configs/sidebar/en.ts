@@ -28,6 +28,7 @@ export const en: SidebarConfig = {
         '/blocks/go-forward.md',
         '/blocks/close-tab.md',
         '/blocks/take-screenshot.md',
+        '/blocks/event-click.md',
       ],
     },
     {
@@ -37,12 +38,14 @@ export const en: SidebarConfig = {
         '/api-reference/data-columns.md',
         '/api-reference/reference-data.md',
         '/api-reference/global-data.md',
+        '/api-reference/blocks.md',
       ],
     },
   ],
   '/blocks': [
     {
       text: 'General',
+      collapsible: true,
       children: [
         '/blocks/README.md',
         '/blocks/execute-workflow.md',
@@ -57,6 +60,7 @@ export const en: SidebarConfig = {
     },
     {
       text: 'Browser',
+      collapsible: true,
       children: [
         '/blocks/active-tab.md',
         '/blocks/new-tab.md',
@@ -66,6 +70,13 @@ export const en: SidebarConfig = {
         '/blocks/go-forward.md',
         '/blocks/close-tab.md',
         '/blocks/take-screenshot.md',
+      ],
+    },
+    {
+      text: 'Web Interaction',
+      collapsible: true,
+      children: [
+        '/blocks/event-click.md',
       ],
     },
   ],
