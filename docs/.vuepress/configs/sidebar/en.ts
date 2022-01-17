@@ -30,6 +30,7 @@ export const en: SidebarConfig = {
         '/blocks/take-screenshot.md',
         '/blocks/event-click.md',
         '/blocks/get-text.md',
+        '/blocks/element-scroll.md',
       ],
     },
     {
@@ -79,6 +80,7 @@ export const en: SidebarConfig = {
       children: [
         '/blocks/event-click.md',
         '/blocks/get-text.md',
+        '/blocks/element-scroll.md',
       ],
     },
   ],
