@@ -8,7 +8,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     '/': {
       lang: 'en-US',
       title: 'Automa Docs',
-      description: 'Vue-powered Static Site Generator',
+      description: 'Documentation for Automa Chrome Extension',
     },
   },
   themeConfig: {
