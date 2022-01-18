@@ -34,6 +34,7 @@ export const en: SidebarConfig = {
         '/blocks/link.md',
         '/blocks/attribute-value.md',
         '/blocks/forms.md',
+        '/blocks/javascript-code.md',
       ],
     },
     {
@@ -87,6 +88,7 @@ export const en: SidebarConfig = {
         '/blocks/link.md',
         '/blocks/attribute-value.md',
         '/blocks/forms.md',
+        '/blocks/javascript-code.md',
       ],
     },
   ],

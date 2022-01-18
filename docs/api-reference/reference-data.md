@@ -36,13 +36,20 @@ When it converts to JSON, it'll be an array of objects like these.
 ]
 ```
 - To get the first row or index of the data columns. <br>
-  <code v-pre>{{ dataColumns@0 }}</code> => `{ "name": "Car", "price": 4000, "url": "https://en.wikipedia.org/wiki/Car" }`
+  syntax: <code v-pre>{{ dataColumns@0 }}</code> <br>
+  output: `{ "name": "Car", "price": 4000, "url": "https://en.wikipedia.org/wiki/Car" }`
+
 - Get the second row of the data columns. <br>
-  <code v-pre>{{ dataColumns@1 }}</code> => `{ "name": "Motorcycle", "price": 2000, "url": "https://en.wikipedia.org/wiki/Motorcycle" }`
+  syntax: <code v-pre>{{ dataColumns@1 }}</code> <br>
+  output: `{ "name": "Motorcycle", "price": 2000, "url": "https://en.wikipedia.org/wiki/Motorcycle" }`
+
 - Get the `name` column from the first row. <br>
-  <code v-pre>{{ dataColumns@0.name }}</code> => `Car`
+  syntax: <code v-pre>{{ dataColumns@0.name }}</code> <br>
+  output: `Car`
+
 - Get the `price` column from the second row. <br>
-  <code v-pre>{{ dataColumns@1.price }}</code> => `2000`
+  syntax: <code v-pre>{{ dataColumns@1.price }}</code> <br>
+  output:  `2000`
 
 This syntax also can be applied to the other keyword like the `globalData` if the data type is array or object.
 
