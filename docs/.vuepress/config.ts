@@ -5,6 +5,10 @@ import { navbar, sidebar } from './configs';
 export default defineUserConfig<DefaultThemeOptions>({
   theme: '@vuepress/theme-default',
   dest: 'public',
+  head: [
+    ['link', { rel: 'icon', href: '/images/logo.png' }],
+    ['script', { async: true, defer: true, 'data-website-id': '2dc09142-98bd-4108-a8c4-99274563e6ef', src: 'https://analytics-three-steel.vercel.app/umami.js' }],
+  ],
   locales: {
     '/': {
       lang: 'en-US',
