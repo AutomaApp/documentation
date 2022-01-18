@@ -36,6 +36,7 @@ export const en: SidebarConfig = {
         '/blocks/forms.md',
         '/blocks/javascript-code.md',
         '/blocks/trigger-event.md',
+        '/blocks/switch-to.md',
       ],
     },
     {
@@ -91,6 +92,7 @@ export const en: SidebarConfig = {
         '/blocks/forms.md',
         '/blocks/javascript-code.md',
         '/blocks/trigger-event.md',
+        '/blocks/switch-to.md',
       ],
     },
   ],
