@@ -41,4 +41,4 @@ to access the value of it you can use <code v-pre>{{ loopData@loopId.path }}</co
 Read more: [reference data](/api-reference/reference-data.md)
 
 ## Breakpoint
-To make the loop data block work as intended, you need to add a breakpoint for the loop using the [loop breakpoint block](/blocks/loop-breakpoint.md). With this breakpoint, Automa can know where to start over the loop.
+To make the loop data block work as intended, you need to add a breakpoint for the loop using the [loop breakpoint block](/blocks/loop-breakpoint.md). With this breakpoint, the workflow can know where to start over the loop.
