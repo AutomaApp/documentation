@@ -4,6 +4,7 @@ import { navbar, sidebar } from './configs';
 
 export default defineUserConfig<DefaultThemeOptions>({
   theme: '@vuepress/theme-default',
+  dest: 'public',
   locales: {
     '/': {
       lang: 'en-US',
