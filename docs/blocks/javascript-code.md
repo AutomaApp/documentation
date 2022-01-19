@@ -6,10 +6,10 @@ title: Javascript Code Block
 Execute your javascript code on the website.
 
 ## Timeout
-Javascript code execution timeout, default to 20000ms (20 seconds). The next block will be executed when it reaches the timeout.
+Javascript code execution timeout, default to 20000ms (20 seconds). If it reaches the timeout, the workflow will continue to execute the next block.
 
 ## JavaScript Code
-Write your javascript code in the editor. There're several built-in functions that you can call within the code.
+There're several built-in functions that you can call within the code.
 
 ### `automaNextBlock(data)`
 To tell the workflow to continue to execute the next block.

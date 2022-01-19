@@ -17,6 +17,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     },
   },
   themeConfig: {
+    docsDir: 'docs',
     themePlugins: {
       mediumZoom: true,
     },

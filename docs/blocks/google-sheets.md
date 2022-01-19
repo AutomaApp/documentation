@@ -7,12 +7,12 @@ title: Google Sheets Block
 Read or write Google Sheets spreadsheet data.
 
 ## Access To Spreadsheet
-Before using this block, you need to give Automa access to the spreadsheet first. There're two ways that you can give Automa access to the spreadsheet
+Before using this block, you need to give Automa access to the spreadsheet first. There're two ways that you can do that:
 
 1. Share the spreadsheet with the public.
 2. Share the spreadsheet with the Automa service account.
 
-When you share the spreadsheet with the public, Automa only has read access to it. And if you have a plan to update the cell values of the spreadsheet, you need to share the spreadsheet with the Automa service account. To do that, open the spreadsheet you want to share, click the share button on the top right, and input `service@automa2.iam.gserviceaccount.com`.
+When you share the spreadsheet with the public, Automa only has read access to it. <br> And if you have a plan to update the cell values of the spreadsheet, you need to share the spreadsheet with the Automa service account. To do that, open the spreadsheet you want to share, click the share button on the top right, and input `service@automa2.iam.gserviceaccount.com`.
 
 ![Service account](https://res.cloudinary.com/chat-story/image/upload/v1642067522/automa/chrome_9iHTFjxWEn_lzavjy.png)
 

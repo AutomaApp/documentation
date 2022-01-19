@@ -7,7 +7,7 @@ export const en: NavbarConfig = [
   },
   {
     text: 'Blocks',
-    link: '/blocks/',
+    link: '/blocks/trigger.md',
   },
   {
     text: 'API Reference',
@@ -18,6 +18,10 @@ export const en: NavbarConfig = [
       '/api-reference/global-data.md',
       '/api-reference/blocks.md',
     ],
+  },
+  {
+    text: 'Home',
+    link: 'https://www.automa.site/',
   },
   {
     text: 'Marketplace',

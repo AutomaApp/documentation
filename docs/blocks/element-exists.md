@@ -6,7 +6,7 @@ title: Element Exists Block
 
 Check whether an [element](https://developer.mozilla.org/en-US/docs/Web/API/Element) exists in the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
 
-When the element exists, it will execute the block that connects with the first output. And if it's not, it will execute the `fallback` output.
+If the element exists, the workflow will execute the block that connects with the first output. And if it's not, it will execute the `fallback` output.
 
 - **Element selector** <br>
 	[Element selector](/api-reference/blocks.html#element-selector).

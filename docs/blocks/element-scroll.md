@@ -4,7 +4,7 @@ title: Scroll Element Block
 
 # Scroll Element Block
 
-Scrolls the element to a particular set of coordinates inside the matches element.
+Scrolls the element to a particular set of coordinates.
 
 - **Element selector** <br>
 	[Element selector](/api-reference/blocks.html#element-selector).

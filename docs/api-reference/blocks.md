@@ -9,19 +9,21 @@ Most of the blocks in the web interaction category required an element selector 
 Select element using [XPath expression](https://www.w3schools.com/xml/xpath_syntax.asp).
 
 ### CSS Selector
+You can use the [element selector](/getting-started/element-selector.md) feature to get the CSS Selector of an element. 
+
 There four most common CSS selectors are used:
 
 - **Type selector** <br>
-	Select an element by its node name. For example, `input` will match with the \<input> element
+	Select an element by its node name. E.g. `input` will match with the \<input> element
 
 - **Class selector** <br>
-	Select an element by its `class` attribute. For example, `.text` will match with any elements that has "text" class.
+	Select an element by its `class` attribute. E.g. `.text` will match with any elements that has "text" class.
 
 - **ID selector** <br>
-	Select an element based on the value of its `id` attribute. For example, `#title` will match with an element that has "title" ID.
+	Select an element based on the value of its `id` attribute. E.g. `#title` will match with an element that has "title" ID.
 
 - **Attribute selector** <br>
-	Selects all elements that have the given attribute. For example, `[value]` will match with any element that have the "value" attribute.
+	Selects all elements that have the given attribute. E.g. `[value]` will match with any element that have the "value" attribute.
 
 Read more about CSS Selector on the [MDN Page](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
 

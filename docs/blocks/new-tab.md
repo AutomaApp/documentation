@@ -10,7 +10,7 @@ Create a new tab.
 	URL of the new tab. The valid URL must include the `http://` or `https://` scheme.
 
 - **Update previously opened tab** <br>
-	Update the new tab previously created by the new tab block instead of creating a new one.
+	Update the tab that previously created by the new tab block instead of creating a new one.
 
 - **Set as active tab** <br>
 	Whether the tab should become the active tab in the window.

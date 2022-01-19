@@ -19,7 +19,7 @@ When this block is being executed, it will check the condition from the top and 
 | `()` | contains |
 
 
-For example, to check if the retrieved text from the get text block contains a certain word. In the first input, write <code v-pre>{{ prevBlockData }}</code> where the `prevBlockData` keyword will take the previous block data as its value, read more on the [reference data](/api-reference/reference-data.md) page.
+For example, to check if the retrieved text from the [get text block](/blocks/get-text.md) contains a certain word. In the first input, write <code v-pre>{{ prevBlockData }}</code> where the `prevBlockData` keyword will take the previous block data as its value, read more on the [reference data](/api-reference/reference-data.md) page. And in the second input, write the word you want to check.
 
 ![Conditional example](https://res.cloudinary.com/chat-story/image/upload/v1642560991/automa/chrome_68A2yb9gM9_mdzvg5.png)
 

@@ -3,8 +3,9 @@ title: Reference data
 ---
 
 # Reference data
-Add dynamic data inside an input of a block, like in the element selector or the form value. Automa uses the mustache templating (<code v-pre>{{ mustache }}</code>) syntax to know which input is dynamic or not.
+Add dynamic data inside an input of a block, like in the element selector or the form value input. 
 
+Automa uses the mustache tag (<code v-pre>{{ mustache }}</code>) syntax to know which input is dynamic or not.
 Inside the mustache tag, you can either write the keyword of data you want to get from or a function, for example <code v-pre>{{ globalData }}</code> to get the global data of the workflow.
 
 ## Accessing data

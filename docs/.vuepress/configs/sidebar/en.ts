@@ -3,9 +3,13 @@ import { SidebarConfig } from '@vuepress/theme-default';
 export const en: SidebarConfig = {
   '/': [
     {
-      text: 'Getting started',
+      text: 'Guide',
       collapsible: true,
-      link: '/',
+      children: [
+        '/README.md',
+        '/getting-started/adding-workflow.md',
+        '/getting-started/element-selector.md',
+      ],
     },
     {
       text: 'Blocks',
@@ -15,7 +19,7 @@ export const en: SidebarConfig = {
           text: 'General',
           collapsible: true,
           children: [
-            '/blocks/README.md',
+            '/blocks/trigger.md',
             '/blocks/execute-workflow.md',
             '/blocks/delay.md',
             '/blocks/export-data.md',

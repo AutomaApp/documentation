@@ -4,7 +4,7 @@ title: Attribute Value Block
 
 # Attribute Value Block
 
-Get the value of the specified attribute from the matches element.
+Get the value of the specified attribute from the element.
 
 - **Element selector** <br>
 	[Element selector](/api-reference/blocks.html#element-selector).
