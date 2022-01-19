@@ -61,7 +61,14 @@ export const en: SidebarConfig = {
           children: [
             '/blocks/google-sheets.md',
           ],
-        }
+        },
+        {
+          text: 'Conditions',
+          collapsible: true,
+          children: [
+            '/blocks/conditions.md',
+          ],
+        },
       ],
     },
     {

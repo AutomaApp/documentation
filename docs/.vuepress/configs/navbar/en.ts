@@ -16,6 +16,11 @@ export const en: NavbarConfig = [
       '/api-reference/data-columns',
       '/api-reference/reference-data',
       '/api-reference/global-data.md',
+      '/api-reference/blocks.md',
     ],
-  }
+  },
+  {
+    text: 'Marketplace',
+    link: 'https://www.automa.site/workflows',
+  },
 ];
