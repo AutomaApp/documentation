@@ -67,6 +67,7 @@ export const en: SidebarConfig = {
           collapsible: true,
           children: [
             '/blocks/conditions.md',
+            '/blocks/element-exists.md',
           ],
         },
       ],
