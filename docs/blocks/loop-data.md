@@ -16,7 +16,7 @@ When using the custom data option, make sure you write [array](https://developer
 ```
 
 ## Loop ID
-ID to identify the loop. Use this ID when [referencing data](/api-reference/reference-data) of the current iteration or using the [loop breakpoint](/blocks/loop-breakpoint) block.
+ID to identify the loop. Use this ID when [referencing data](#accessing-data) the loop data or when using the [loop breakpoint](/blocks/loop-breakpoint) block.
 
 ## Max data
 Set the limit of data to loop.
