@@ -42,6 +42,7 @@ export const en: SidebarConfig = {
             '/blocks/go-forward.md',
             '/blocks/close-tab.md',
             '/blocks/take-screenshot.md',
+            '/blocks/browser-event.md',
           ],
         },
         {
