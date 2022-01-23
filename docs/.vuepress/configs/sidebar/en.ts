@@ -57,6 +57,7 @@ export const en: SidebarConfig = {
             '/blocks/javascript-code.md',
             '/blocks/trigger-event.md',
             '/blocks/switch-to.md',
+            '/blocks/upload-file.md',
           ],
         },
         {
