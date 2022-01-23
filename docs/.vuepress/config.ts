@@ -9,6 +9,18 @@ export default defineUserConfig<DefaultThemeOptions>({
     ['link', { rel: 'icon', href: '/images/logo.png' }],
     ['script', { async: true, defer: true, 'data-website-id': '2dc09142-98bd-4108-a8c4-99274563e6ef', src: 'https://analytics-three-steel.vercel.app/umami.js' }],
   ],
+  plugins: [
+    [
+      '@vuepress/plugin-search',
+      {
+        locales: {
+          '/': {
+            placeholder: 'Search',
+          }
+        }
+      }
+    ]
+  ],
   locales: {
     '/': {
       lang: 'en-US',
