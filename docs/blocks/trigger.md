@@ -26,4 +26,6 @@ Execute the workflow using a keyboard shortcut. You can specify the keyboard sho
 
 And by default, the shortcut doesn't work when the cursor is on an input element, so to prevent this behavior you can checked the "Active while in input" checkbox.
 
-> Note: The keyboard shortcut only works when you're on a website. If the website URL starts with `chrome://` or `chrome-extension://` the keyboard shorcut won't work.
+::: tip Note
+The keyboard shortcut only works when you're on a website. If the website URL starts with `chrome://` or `chrome-extension://` the keyboard shorcut won't work.
+:::

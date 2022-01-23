@@ -22,15 +22,21 @@ There're several ways to connect a block to another block:
 
 - **Manually** <br>
 By dragging the block output into an input of a block.
+::: details Example
 ![connect block manually](https://res.cloudinary.com/chat-story/image/upload/v1642573241/automa/connect-block-manual_krat5z.gif)
+:::
 
 - **Drop to the output** <br>
 Drop the block to the output of a block.
+::: details Example
 ![drop to output example](https://res.cloudinary.com/chat-story/image/upload/v1642573402/automa/connect-block-ouput_nn5nx7.gif)
+:::
 
 - **Drop to the connection** <br>
 Drop the block to the connection of a block.
+::: details Example
 ![drop to connection example](https://res.cloudinary.com/chat-story/image/upload/v1642573908/automa/connect-block-connection_kbon3v.gif)
+:::
 
 ## Reroute Block Connection
 ![Reroute example](https://res.cloudinary.com/chat-story/image/upload/v1642575499/automa/chrome_00RH6LDAX0_kjenjv.png)
