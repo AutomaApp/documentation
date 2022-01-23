@@ -24,7 +24,7 @@ Wait for the selected event to be triggered before executing the next block.
 		- **Filter** <br>
 			Filter the URL of the newly created tab/window. If the URL matches the URL or Regex you inputted, the workflow will continue to execute the blocks.
 
-		- **Filter** <br>
+		- **Active tab** <br>
 			Set the created tab/window as the active tab.
 
 	- **Window closed** <br>
