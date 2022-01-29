@@ -31,3 +31,8 @@ Use this function to [reference data](/api-reference/reference-data.md).
 
 ### `automaResetTimeout()`
 Reset the execution timeout.
+
+## Preload Script
+Load a javascript file before executing the javascript code.
+- **URL** <br>
+	URL of the javascript file.
