@@ -16,6 +16,6 @@ Upload file into an `<input type="file">` element.
 
 ## Requirements
 In order for this block to work, you must allow Automa to access the files by enabling the "Allow access to file URLs" option.
-- Open `chrome://extension`
+- Open `chrome://extensions`
 - Find Automa and click the "Detail" button
 - Scroll down and enable "Allow access to file URLs"
