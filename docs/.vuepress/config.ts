@@ -1,3 +1,4 @@
+require('dotenv').config();
 import { defineUserConfig } from '@vuepress/cli';
 import type { DefaultThemeOptions } from '@vuepress/theme-default';
 import { navbar, sidebar } from './configs';
@@ -7,17 +8,24 @@ export default defineUserConfig<DefaultThemeOptions>({
   dest: 'public',
   head: [
     ['link', { rel: 'icon', href: '/images/logo.png' }],
-    ['script', { async: true, defer: true, 'data-website-id': '2dc09142-98bd-4108-a8c4-99274563e6ef', src: 'https://analytics-three-steel.vercel.app/umami.js' }],
   ],
   plugins: [
     [
-      '@vuepress/plugin-search',
+      '@vuepress/plugin-docsearch',
       {
+        apiKey: process.env.SEARCH_API_KEY,
+        indexName: process.env.SEARCH_INDEX_NAME,
+        appId: process.env.SEARCH_APP_ID,
         locales: {
           '/': {
-            placeholder: 'Search',
-          }
-        }
+            placeholder: 'Search docs',
+            translations: {
+              button: {
+                buttonText: 'Search docs',
+              },
+            },
+          },
+        },
       }
     ]
   ],

@@ -18,7 +18,8 @@ There're several sources of data that you can use:
 | `prevBlockData` | Get the data of the previous block |
 | `globalData` | Get the global data of the workflow |
 | `googleSheets` | Get the [google sheets](/blocks/google-sheets.md) data |
-| `activeTabUrl` | Get the currently active tab url |
+| `activeTabUrl` | Get the active tab url |
+| `workflow` | Get the data ([data columns](/api-reference/data-columns.md), [global data](/api-reference/global-data.md), and [google sheets](/blocks/google-sheets.md)) of the workflow that have been execute by the [execute workflow block](/blocks/execute-workflow.md) |
 
 When you write <code v-pre>{{ dataColumns }}</code> in an input of a block, the mustache tag will be replaced with all the data from the [data columns](./data-columns.md).
 
