@@ -1,5 +1,8 @@
 ---
 title: Data columns
+routeMeta: {
+  redirect: '/api-reference/table',
+}
 ---
 
 # Data Columns

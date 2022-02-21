@@ -1,5 +1,6 @@
 require('dotenv').config();
 import { defineUserConfig } from '@vuepress/cli';
+import { path } from '@vuepress/utils';
 import type { DefaultThemeOptions } from '@vuepress/theme-default';
 import { navbar, sidebar } from './configs';
 
@@ -9,6 +10,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   head: [
     ['link', { rel: 'icon', href: '/images/logo.png' }],
   ],
+  clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.ts'),
   plugins: [
     [
       '@vuepress/plugin-docsearch',

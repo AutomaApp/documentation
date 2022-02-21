@@ -7,8 +7,15 @@ export const en: SidebarConfig = {
       collapsible: true,
       children: [
         '/README.md',
-        '/getting-started/adding-workflow.md',
-        '/getting-started/element-selector.md',
+        {
+          text: 'Workflow',
+          collapsible: true,
+          children: [
+            '/guide/creating-workflow.md',
+            '/guide/host-workflow.md',
+          ]
+        },
+        '/guide/element-selector.md',
       ],
     },
     {
@@ -82,10 +89,22 @@ export const en: SidebarConfig = {
       text: 'API Reference',
       collapsible: true,
       children: [
-        '/api-reference/data-columns.md',
-        '/api-reference/reference-data.md',
-        '/api-reference/global-data.md',
-        '/api-reference/blocks.md',
+        {
+          text: 'Workflow',
+          children: [
+            '/api-reference/table.md',
+            '/api-reference/variables.md',
+            '/api-reference/table-or-variables.md',
+            '/api-reference/reference-data.md',
+            '/api-reference/global-data.md',
+          ]
+        },
+        {
+          text: 'Blocks',
+          children: [
+            '/api-reference/element-selector.md',
+          ],
+        }
       ],
     },
   ],

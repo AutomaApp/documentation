@@ -29,6 +29,21 @@ automaNextBlock([{ title: 'Foo', count: 300 }, { title: 'Bar', count: 200 }])
 ### `automaRefData(keyword, path)`
 Use this function to [reference data](/api-reference/reference-data.md).
 
+**Examples**
+```js
+// Get the first row of the data columns
+const firstRow = automaRefData('dataColumns', '0');
+
+// Get the "name" column on the first row of the data columns
+const firstRow = automaRefData('dataColumns', '0.name');
+
+// Get the global data of the workflow
+const globalData = automaRefData('globalData');
+
+// Get the iteration data of the loop data block
+const data = automaRefData('loopData', 'loopId');
+```
+
 ### `automaResetTimeout()`
 Reset the execution timeout.
 

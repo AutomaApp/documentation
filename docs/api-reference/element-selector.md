@@ -1,14 +1,18 @@
 ---
-title: Blocks
+title: Element Selector
 ---
 
-## Element Selector
-Most of the blocks in the web interaction category required an element selector to work. In Automa, you can select an element using the CSS Selector or XPath.
+# Element Selector
+Most of the blocks in the web interaction category required an element selector to work. The block uses the selector to identify the elements on the page when interacting or extracting data from the page. 
 
-### XPath
+For example, if you want the workflow to fill a specific form input on the page using the [forms block](/blocks/forms.md), it needs to know which input elements to fill up. With the `input.form-name` selector, it tells the workflow to fill an [`<input />`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) element with `form-name` [classes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class). 
+
+In Automa, you can select an element using the [CSS Selector](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors) or [XPath](https://www.w3schools.com/xml/xpath_syntax.asp).
+
+## XPath
 Select element using [XPath expression](https://www.w3schools.com/xml/xpath_syntax.asp).
 
-### CSS Selector
+## CSS Selector
 You can use the [element selector](/getting-started/element-selector.md) feature to get the CSS Selector of an element. 
 
 There four most common CSS selectors are used:
@@ -60,3 +64,6 @@ When the [Get text block](/blocks/get-text.md) is being executed, it gets the fi
 </div>
 ```
 When the Get text block is executed for the second time, It will do the same thing all over but instead of selecting the `<p class="text" id="1" block--block-id>Text</p>` it will select the `<p class="text" id="2">Text</p>` element because the first element has been marked.
+
+## Wait For Selector
+Wait for the `selector` to appear on the page.  If at the moment of checking the `selector` and the `selector` already exists, the block immediately gets executed.  If the `selector` doesn't appear after the `timeout` milliseconds of waiting, the workflow will throw an error.

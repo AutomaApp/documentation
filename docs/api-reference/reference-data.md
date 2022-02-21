@@ -1,62 +1,72 @@
 ---
-title: Reference data
+title: Reference Data
 ---
 
-# Reference data
+# Reference Data
 Add dynamic data inside an input of a block, like in the element selector or the form value input. 
 
+## Accessing Data
 Automa uses the mustache tag (<code v-pre>{{ mustache }}</code>) syntax to know which input is dynamic or not.
-Inside the mustache tag, you can either write the keyword of data you want to get from or a function, for example <code v-pre>{{ globalData }}</code> to get the global data of the workflow.
+Inside the mustache tag, you can either write the keyword of data you want to get from or a function, for example <code v-pre>{{ keyword }}</code>.
 
-## Accessing data
 There're several sources of data that you can use:
 
 | keyword | description |
 | --- | --- |
-| `dataColumns` | Get data from the [data columns](./data-columns.md) |
+| `table` | Get data from the [table](./table.md) |
+| `variables` | Get data from the [variables](./variables.md) |
 | `loopData` | Get the current iteration data from the [loop data](/blocks/loop-data.html#accessing-data) block |
 | `prevBlockData` | Get the data of the previous block |
 | `globalData` | Get the global data of the workflow |
 | `googleSheets` | Get the [google sheets](/blocks/google-sheets.md) data |
 | `activeTabUrl` | Get the active tab url |
-| `workflow` | Get the data ([data columns](/api-reference/data-columns.md), [global data](/api-reference/global-data.md), and [google sheets](/blocks/google-sheets.md)) of the workflow that have been execute by the [execute workflow block](/blocks/execute-workflow.md) |
+| `workflow` | Get the data ([table](/api-reference/table.md), [global data](/api-reference/global-data.md), and [google sheets](/blocks/google-sheets.md)) of the workflow that have been execute by the [execute workflow block](/blocks/execute-workflow.md) |
 
-When you write <code v-pre>{{ dataColumns }}</code> in an input of a block, the mustache tag will be replaced with all the data from the [data columns](./data-columns.md).
+You can replace the `keyword` with one of the above data sources, like <code v-pre>{{ globalData }}</code> or <code v-pre>{{ table }}</code>.
+The mustache tag will be replaced with the data from the keyword that you specify.
 
-To get specific row or column of the data columns, you can write a mustache tag with <code v-pre>{{ dataColumns@path }}</code> syntax, the `path` is where you write the dot notation of the data. For example, data columns have data like these:
-
-| `name` | `price` | `url` |
-| --- | --- | --- |
-| Car | 4000 | https://en.wikipedia.org/wiki/Car |
-| Motorcycle | 2000 | https://en.wikipedia.org/wiki/Motorcycle |
-
-When it converts to JSON, it'll be an array of objects like these.
+But, what if I have an object or array data type and want to get the specific property or index of the object or array? To do that, use the <code v-pre>{{ keyword@path }}</code> syntax and replace the `path` with the dot notation of the object or array. For example, when you input [global data](/api-reference/global-data.md) as an object:
 
 ```json
-[
-  { "name": "Car", "price": 4000, "url": "https://en.wikipedia.org/wiki/Car" },
-  { "name": "Motorcycle", "price": 2000, "url": "https://en.wikipedia.org/wiki/Motorcycle" }
-]
+{
+  "firstname": "Amina",
+  "lastname": "Ferry",
+  "phone": 2347613906692,
+  "gender": "female",
+  "hobbies": ["cooking", "hiking", "camping"],
+  "address": {
+    "street": "540 Harris Track Suite 904",
+    "streetName": "Edd Alley",
+    "buildingNumber": "1135",
+    "city": "North Kayleigh",
+    "zipcode": "75882-2791",
+    "country": "Guadeloupe"
+  }
+}
 ```
-- To get the first row or index of the data columns. <br>
-  syntax: <code v-pre>{{ dataColumns@0 }}</code> <br>
-  output: `{ "name": "Car", "price": 4000, "url": "https://en.wikipedia.org/wiki/Car" }`
+- Get value of the `firstName` property. <br>
+  syntax: <code v-pre>{{ globalData@firstName }}</code> <br>
+  output: `Amina`
 
-- Get the second row of the data columns. <br>
-  syntax: <code v-pre>{{ dataColumns@1 }}</code> <br>
-  output: `{ "name": "Motorcycle", "price": 2000, "url": "https://en.wikipedia.org/wiki/Motorcycle" }`
+- Get value of the `phone` property. <br>
+  syntax: <code v-pre>{{ globalData@phone }}</code> <br>
+  output: `2347613906692`
 
-- Get the `name` column from the first row. <br>
-  syntax: <code v-pre>{{ dataColumns@0.name }}</code> <br>
-  output: `Car`
+- Get the value of the `street` property of the `address` object.<br>
+  syntax: <code v-pre>{{ globalData@adress.street }}</code> <br>
+  output: `540 Harris Track Suite 904`
 
-- Get the `price` column from the second row. <br>
-  syntax: <code v-pre>{{ dataColumns@1.price }}</code> <br>
-  output:  `2000`
+- Get the `hobbies` values.<br>
+  syntax: <code v-pre>{{ globalData@hobbies }}</code> <br>
+  output: `["cooking", "hiking", "camping"]`
 
-This syntax also can be applied to the other keyword like the `globalData` if the data type is array or object.
+- Get the first index value of the `hobbies` array.<br>
+  syntax: <code v-pre>{{ globalData@hobbies.0 }}</code> <br>
+  output: `cooking`
 
-![Example](https://res.cloudinary.com/chat-story/image/upload/v1642296980/automa/chrome_oTSux12om5_mefqcs.png)
+- Get the second index value of the `hobbies` array.<br>
+  syntax: <code v-pre>{{ globalData@hobbies.1 }}</code> <br>
+  output: `hiking`
 
 ## Functions
 Inside the mustache tag, you also can call a built-in function that Automa has provided. Function name always starts with a dollar sign ($), for example <code v-pre>{{ $func() }}</code>. And here are some of the functions that available inside the mustache tag.
@@ -79,7 +89,7 @@ $date('1977-04-01T14:00:30', 'DD-MM-YYYY, hh:mm A')  // 01-04-1977, 02:00 PM
 $date('14 January 2021', 'relative') // A year ago
 ```
 
-### `$randint(min, max)`
+### `$randint(min?, max?)`
 
 Generate a random number. You can change the range of the random number by inputting the `min` and `max` parameters.
 
@@ -91,3 +101,6 @@ $randint() // 14
 $randint(0, 10) // 4
 $randint(0, 10) // 7
 ```
+
+## Referencing Data Inside Mustache Tag
+By using the square bracket(`[]`), you can reference other data inside a mustache tag. For example, to format date based on the [global data](/api-reference/global-data.md) value <code v-pre>{{ $date([globalData]) }}</code>. Or if you want to get the table row based on the index of a loop <code v-pre>{{ table@[loopData@loopId.$index].path }}</code>.
