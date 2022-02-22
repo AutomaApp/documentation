@@ -35,6 +35,8 @@ export const en: SidebarConfig = {
             '/blocks/loop-data.md',
             '/blocks/loop-breakpoint.md',
             '/blocks/blocks-group.md',
+            '/blocks/clipboard.md',
+            '/blocks/insert-data.md',
           ],
         },
         {

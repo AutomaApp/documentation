@@ -15,8 +15,7 @@ export const en: NavbarConfig = [
     children: [
       '/api-reference/table',
       '/api-reference/reference-data',
-      '/api-reference/global-data.md',
-      '/api-reference/blocks.md',
+      '/api-reference/global-data.md'
     ],
   },
   {
@@ -24,7 +23,7 @@ export const en: NavbarConfig = [
     link: 'https://www.automa.site/',
   },
   {
-    text: 'Marketplace',
-    link: 'https://www.automa.site/workflows',
+    text: 'v0.x docs',
+    link: 'https://docs-0x.automa.site/',
   },
 ];
