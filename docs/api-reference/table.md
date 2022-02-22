@@ -39,28 +39,9 @@ And if you don't want the data to be inserted into the table, you can uncheck th
 ![Select column](https://res.cloudinary.com/chat-story/image/upload/v1645414047/automa/chrome_SNejeJp6ml_xdlwro.png)
 
 ## Accessing Table Data
+To access the row of table from an input of a block, you can use a mustache tag like <code v-pre>{{ table }}</code>, and the mustache tag will be replaced with all the data from the [table](./table.md).
 
-Inside the workflow, the table is store as an array of object.
-
-```json
-[
-  { "name": "Car", "price": 4000, "url": "https://en.wikipedia.org/wiki/Car" },
-  { "name": "Motorcycle", "price": 2000, "url": "https://en.wikipedia.org/wiki/Motorcycle" }
-]
-```
-
-To access the row of table from an input of a block, you can use a mustache tag like <code v-pre>{{ table }}</code>, you can see more examples on [reference data](/api-reference/reference-data.md).
-
-When you write <code v-pre>{{ table }}</code> in an input of a block, the mustache tag will be replaced with all the data from the [table](./table.md).
-
-To get specific row or column of the table, you can write a mustache tag with <code v-pre>{{ table@path }}</code> syntax, the `path` is where you write the dot notation of the data. For example, table have data like these:
-
-| `name` | `price` | `url` |
-| --- | --- | --- |
-| Car | 4000 | https://en.wikipedia.org/wiki/Car |
-| Motorcycle | 2000 | https://en.wikipedia.org/wiki/Motorcycle |
-
-When it converts to JSON, it'll be an array of objects like these.
+To get specific row or column of the table, you can write a mustache tag with <code v-pre>{{ table@path }}</code> syntax, the `path` is where you write the dot notation of the data. For example, the table inside a workflow is stored as an array of objects like these:
 
 ```json
 [
@@ -84,7 +65,6 @@ When it converts to JSON, it'll be an array of objects like these.
   syntax: <code v-pre>{{ table@1.price }}</code> <br>
   output:  `2000`
 
-This syntax also can be applied to the other keyword like the `globalData` if the data type is array or object.
-
-![Example](https://res.cloudinary.com/chat-story/image/upload/v1642296980/automa/chrome_oTSux12om5_mefqcs.png)
+### Get Table Last Row
+To get the last row of the table, use the `$last` property inside the mustache tag. For example, <code v-pre>{{ table@$last.column }}</code> replace `column` with any column that you want.
 
