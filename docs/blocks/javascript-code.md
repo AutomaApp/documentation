@@ -11,12 +11,12 @@ Javascript code execution timeout, default to 20000ms (20 seconds). If it reache
 ## JavaScript Code
 There're several built-in functions that you can call within the code.
 
-### `automaNextBlock(data)`
+### `automaNextBlock(data, insert?)`
 To tell the workflow to continue to execute the next block.
 
-Use the `data` parameter to insert data into the data columns. This parameter can take an object or an array of objects data types. And the key of the object must be defined in the [data columns](/api-reference/data-columns.md).
+Use the `data` parameter to insert data into the table. This parameter can take an object or an array of objects data types. And the key of the object must be defined in the [table](/api-reference/table.md).
 
-**Example**
+**Examples**
 ```js
 automaNextBlock({ title: 'Something', count: 200 });
 
@@ -24,18 +24,35 @@ automaNextBlock({ title: 'Something', count: 200 });
 
 automaNextBlock([{ title: 'Foo', count: 300 }, { title: 'Bar', count: 200 }])
 ```
-![Data columns](https://res.cloudinary.com/chat-story/image/upload/v1642474574/automa/chrome_7ehs03LPjU_i0ivn2.png)
+![table](https://res.cloudinary.com/chat-story/image/upload/v1642474574/automa/chrome_7ehs03LPjU_i0ivn2.png)
+
+`insert` parameter is used to tell the workflow whether to insert the data in the `data` parameter into the table or not. Defaults to `true`.
+
+### `automaSetVariable(name, value)`
+Set the value of the workflow variables.
+
+**Examples**
+```js
+automaSetVariable('name', 'John Doe');
+
+automaSetVariable('prices', [200, 1000, 4000, 900, 200]);
+
+automaSetVariable('profile', { firstName: 'John', lastName: 'Doe' });
+```
 
 ### `automaRefData(keyword, path)`
 Use this function to [reference data](/api-reference/reference-data.md).
 
 **Examples**
 ```js
-// Get the first row of the data columns
-const firstRow = automaRefData('dataColumns', '0');
+// Get the first row of the table
+const firstRow = automaRefData('table', '0');
 
-// Get the "name" column on the first row of the data columns
-const firstRow = automaRefData('dataColumns', '0.name');
+// Get the last row of the table
+const firstRow = automaRefData('table', '$last');
+
+// Get the "name" column on the first row of the table
+const firstRow = automaRefData('table', '0.name');
 
 // Get the global data of the workflow
 const globalData = automaRefData('globalData');

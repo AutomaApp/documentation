@@ -13,7 +13,7 @@ export const en: NavbarConfig = [
     text: 'API Reference',
     link: '/api-reference',
     children: [
-      '/api-reference/data-columns',
+      '/api-reference/table',
       '/api-reference/reference-data',
       '/api-reference/global-data.md',
       '/api-reference/blocks.md',

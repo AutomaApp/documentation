@@ -15,5 +15,11 @@ Take screenshot of the active tab.
 - **File type** <br>
 	File type of the screenshot file, default to `PNG`.
 
-- **Save screenshot to column** <br>
-	Whether the [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) of the screenshot is inserted into the [data columns](/api-reference/data-columns.md) or not.
+- **Insert screenshot to table** <br>
+	Whether the [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) of the screenshot is inserted into the [table](/api-reference/table.md) or not.
+
+- **Assign to variable** <br>
+	Whether assign the data URL into a [variable](/api-reference/variables.md) or not.
+
+- **Variable name** <br>
+	Name of the variable to assign the data URL.

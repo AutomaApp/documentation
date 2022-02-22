@@ -6,7 +6,7 @@ title: Loop Data Block
 
 ![Loop example](https://res.cloudinary.com/chat-story/image/upload/v1642310619/automa/loop_bd2por.gif)
 
-You can use this block when you want to do looping through data. And for the source of the data, you can select between the [data columns](/api-reference/data-columns), numbers, [google sheets](/blocks/google-sheets), or custom.
+You can use this block when you want to do looping through data. And for the source of the data, you can select between the [table](/api-reference/table.md), numbers, [google sheets](/blocks/google-sheets.md), or custom.
 
 When using the custom data option, make sure you write [array](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays) data type with [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) syntax.
 

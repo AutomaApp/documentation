@@ -50,7 +50,7 @@ Get the cells values of the spreadsheet.
 [{ "name": "foo", "age": 22 }, { "name": "bar", "age": 23 }]
 ```
 
-### Accessing Data
+### Accessing Sheets Data
 To access the spreadsheet values from an input of a block, you can use the mustache tag with the <code v-pre>{{ googleSheets@referenceKey.path }}</code> syntax.
 
 Read more: [reference data](/api-reference/reference-data.md)
@@ -69,7 +69,7 @@ Update the cells values of the spreadsheet.
 	Read more on the [Google developer page](https://developers.google.com/sheets/api/reference/rest/v4/ValueInputOption)
 
 - **Data from** <br>
-	The source of the data for updating the spreadsheet, defaults to [data columns](/api-reference/data-columns.md).
+	The source of the data for updating the spreadsheet, defaults to [table](/api-reference/table.md).
 	When using the custom option, the inputted data must be an array of an arrays data type with valid JSON syntax.
 
 	**Example**

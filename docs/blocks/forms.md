@@ -12,11 +12,18 @@ Get or fill the value of a form element (input, select, checkbox, and radio).
 ## Get form value
 Get the value of the form element.
 
-- **Save data** <br>
-	Whether insert the value into the [data columns](/api-reference/data-columns.md) or not.
+- **Assign to variable** <br>
+	Whether assign the value into a [variable](/api-reference/variables.md) or not.
 
-- **Data columns** <br>
+- **Variable name** <br>
+	Name of the variable to assign the value.
+
+- **Insert to table** <br>
+	Whether insert the value into the [table](/api-reference/table.md) or not.
+
+- **Select column** <br>
 	The column where the value will be inserted.
+
 
 ## Form type
 
