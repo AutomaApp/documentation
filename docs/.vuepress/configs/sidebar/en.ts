@@ -53,6 +53,7 @@ export const en: SidebarConfig = {
             '/blocks/take-screenshot.md',
             '/blocks/browser-event.md',
             '/blocks/handle-dialog.md',
+            '/blocks/handle-download.md',
           ],
         },
         {
