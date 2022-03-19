@@ -59,6 +59,9 @@ const globalData = automaRefData('globalData');
 
 // Get the iteration data of the loop data block
 const data = automaRefData('loopData', 'loopId');
+
+// Get the value of the "text" variable
+const value = automaRefData('variables', 'text');
 ```
 
 ### `automaResetTimeout()`

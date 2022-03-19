@@ -79,7 +79,7 @@ If you want to format the current date, you can directly pass the `dateFormat` a
 And for the `date` parameter, see the valid date format on the [MDN page](https://developer.mozilla.org/en-US/docs/Web/HTML/Date_and_time_formats#examples).
 
 **Examples**
-```js:no-v-pre
+```js
 $date('DD MMMM YYYY') // 14 January 2022
 $date('DD-MM-YYYY, hh:mm A')  // 14-01-2022, 02:24 PM
 $date('relative') // A few seconds ago
@@ -102,5 +102,20 @@ $randint(0, 10) // 4
 $randint(0, 10) // 7
 ```
 
+### `$getLength(str)`
+
+Get the length of a string or array.
+
+**Examples**
+```js
+// Get the length of a string
+$getLength("testing") // 7
+
+// Get tabel length
+$getLength([table]) // 14
+
+// Get the length of the "text" column on the second row
+$getLength([table@1.text]) // 5
+```
 ## Referencing Data Inside Mustache Tag
 By using the square bracket(`[]`), you can reference other data inside a mustache tag. For example, to format date based on the [global data](/api-reference/global-data.md) value <code v-pre>{{ $date([globalData]) }}</code>. Or if you want to get the table row based on the index of a loop <code v-pre>{{ table@[loopData@loopId.$index].path }}</code>.
