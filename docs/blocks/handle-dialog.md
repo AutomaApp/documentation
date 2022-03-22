@@ -1,8 +1,8 @@
 ---
-title: Handle Dialog
+title: Handle Dialog Block
 ---
 
-# Handle Dialog
+# Handle Dialog Block
 
 Accepts or dismisses a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload).
 
