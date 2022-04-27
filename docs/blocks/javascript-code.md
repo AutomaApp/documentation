@@ -8,6 +8,11 @@ Execute your javascript code on the website.
 ## Timeout
 Javascript code execution timeout, default to 20000ms (20 seconds). If it reaches the timeout, the workflow will continue to execute the next block.
 
+## Execute Every New Tab
+This will execute the javascript code every time Automa creates a new tab or switches a tab. When this option is enabled, the javascript code block no longer requires an active tab to work. For example
+
+![execute every new tab](https://res.cloudinary.com/chat-story/image/upload/v1651031286/automa/chrome_b0wdnqRYv1_vknvhm.png)
+
 ## JavaScript Code
 There're several built-in functions that you can call within the code.
 

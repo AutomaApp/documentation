@@ -10,7 +10,7 @@ Handle downloaded file.
 	Set how long is the workflow waiting for the downloaded file to complete, defaults to 20000ms (20 seconds). Once it reaches the timeout, the workflow will continue to execute the block.
 
 - **File name** <br>
-	The filename of the downloaded file. If you don't want to rename the downloaded file leave the input blank..
+	The filename of the downloaded file. If you don't want to rename the downloaded file leave the input blank.
 
 - **On conflict** <br>
 	Specifies what to do if the name of a downloaded file conflict with an existing file.
