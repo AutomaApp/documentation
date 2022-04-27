@@ -38,6 +38,7 @@ export const en: SidebarConfig = {
             '/blocks/clipboard.md',
             '/blocks/insert-data.md',
             '/blocks/delete-data.md',
+            '/blocks/wait-connections.md',
           ],
         },
         {

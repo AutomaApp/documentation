@@ -6,6 +6,12 @@ title: Take Screenshot Block
 
 Take screenshot of the active tab.
 
+- **Take a screenshot of** <br>
+	Select whether you want to take a screenshot of the page, full page, or an element.
+
+- **CSS Selector** <br>
+	The CSS Selector of the element to take a screenshot of.
+
 - **Save screenshot to computer** <br>
 	Whether the screenshot result is saved to the computer or not.
 
