@@ -70,6 +70,7 @@ export const en: SidebarConfig = {
             '/blocks/trigger-event.md',
             '/blocks/switch-to.md',
             '/blocks/upload-file.md',
+            '/blocks/hover-element.md',
             '/blocks/save-assets.md',
           ],
         },
