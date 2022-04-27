@@ -4,6 +4,7 @@ import { path } from '@vuepress/utils';
 import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { navbar, sidebar } from './configs';
 import { defaultTheme } from '@vuepress/theme-default';
+import { sitemap } from 'vuepress-plugin-sitemap2';
 
 declare global {
   namespace NodeJS {
@@ -39,23 +40,25 @@ export default defineUserConfig({
   ],
   clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.ts'),
   plugins: [
-    [
-      docsearchPlugin({
-        apiKey: process.env.SEARCH_API_KEY,
-        appId: process.env.SEARCH_APP_ID,
-        indexName: process.env.SEARCH_INDEX_NAME,
-        locales: {
-          '/': {
-            placeholder: 'Search docs',
-            translations: {
-              button: {
-                buttonText: 'Search docs',
-              },
+    docsearchPlugin({
+      apiKey: process.env.SEARCH_API_KEY,
+      appId: process.env.SEARCH_APP_ID,
+      indexName: process.env.SEARCH_INDEX_NAME,
+      locales: {
+        '/': {
+          placeholder: 'Search docs',
+          translations: {
+            button: {
+              buttonText: 'Search docs',
             },
           },
         },
-      })
-    ]
+      },
+    }),
+    sitemap({
+      hostname: 'https://docs.automa.site/',
+      changefreq: 'weekly',
+    }),
   ],
   locales: {
     '/': {
