@@ -37,6 +37,7 @@ export const en: SidebarConfig = {
             '/blocks/blocks-group.md',
             '/blocks/clipboard.md',
             '/blocks/insert-data.md',
+            '/blocks/delete-data.md',
           ],
         },
         {
@@ -54,6 +55,7 @@ export const en: SidebarConfig = {
             '/blocks/browser-event.md',
             '/blocks/handle-dialog.md',
             '/blocks/handle-download.md',
+            '/blocks/reload-tab.md',
           ],
         },
         {
