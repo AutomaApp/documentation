@@ -108,6 +108,7 @@ export const en: SidebarConfig = {
         {
           text: 'Blocks',
           children: [
+            '/api-reference/condition-builder.md',
             '/api-reference/element-selector.md',
           ],
         }
