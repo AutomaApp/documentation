@@ -435,7 +435,7 @@
     markdown-it "^13.0.0"
     markdown-it-container "^3.0.0"
 
-"@vuepress/plugin-docsearch@^2.0.0-beta.35":
+"@vuepress/plugin-docsearch@^2.0.0-beta.41":
   version "2.0.0-beta.41"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-docsearch/-/plugin-docsearch-2.0.0-beta.41.tgz#8c981053b7aa16e0b36cc31996c72e05e97d3d86"
   integrity sha512-xOouTU7SEsnjKyHWRqa1RDIbk72TWWu3U4g8wJUYVBDJGv280QntDZZug2L62gzVzSlwPnLZSVrZGfaq7UBzCg==
@@ -472,7 +472,7 @@
     "@vuepress/core" "2.0.0-beta.41"
     execa "^5.1.1"
 
-"@vuepress/plugin-medium-zoom@2.0.0-beta.41", "@vuepress/plugin-medium-zoom@^2.0.0-beta.33":
+"@vuepress/plugin-medium-zoom@2.0.0-beta.41", "@vuepress/plugin-medium-zoom@^2.0.0-beta.41":
   version "2.0.0-beta.41"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-2.0.0-beta.41.tgz#c223ea2de67aa854c47aaa1503b3a5364c4a4311"
   integrity sha512-RWjclUzOWSl1SGPORzJVbiwdZnljq2hEqUveGm3vXiD0gbwAgWJXGoH/JF1DJi/FSo1OyKm3qy36CLBvcBJqDQ==
@@ -483,7 +483,7 @@
     medium-zoom "^1.0.6"
     vue "^3.2.33"
 
-"@vuepress/plugin-nprogress@2.0.0-beta.41", "@vuepress/plugin-nprogress@^2.0.0-beta.32":
+"@vuepress/plugin-nprogress@2.0.0-beta.41", "@vuepress/plugin-nprogress@^2.0.0-beta.41":
   version "2.0.0-beta.41"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-nprogress/-/plugin-nprogress-2.0.0-beta.41.tgz#709b85857341b32adf743c365dff20f3dfc5b1d4"
   integrity sha512-4woo9LJV9shLBTeDfRcgZ0nm176U/FJYhZ1ZIqnTFZe2DotAXN483BOVX3rcy3UFC7WQlXL2/nRGIzEzMEOaeQ==
@@ -503,7 +503,7 @@
     "@vuepress/utils" "2.0.0-beta.41"
     chokidar "^3.5.3"
 
-"@vuepress/plugin-prismjs@2.0.0-beta.41", "@vuepress/plugin-prismjs@^2.0.0-beta.32":
+"@vuepress/plugin-prismjs@2.0.0-beta.41", "@vuepress/plugin-prismjs@^2.0.0-beta.41":
   version "2.0.0-beta.41"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-prismjs/-/plugin-prismjs-2.0.0-beta.41.tgz#992819dc2181dc13568b28c85e2ec6d31a91555a"
   integrity sha512-y7JpYsygyXKl317CESkfsDeSQ6vGB8sKkKFCrs4Q57AmfeJtdggflBzwjBheNtjJeGiQ4eFit2CJjENaCddbcA==
@@ -511,7 +511,7 @@
     "@vuepress/core" "2.0.0-beta.41"
     prismjs "^1.27.0"
 
-"@vuepress/plugin-search@^2.0.0-beta.35":
+"@vuepress/plugin-search@^2.0.0-beta.41":
   version "2.0.0-beta.41"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.41.tgz#9f4b5decea206ccc89ecbe6efa88ef9f8476cb1b"
   integrity sha512-jI5jKIgo6LzNlzjb6NNXcXoJVg3B+Lgc05gNQtcG/l7RaJgpijNJ+MrF07ZJRdqhmVEMUMXRTsUQhhT3OqxOXQ==
@@ -543,7 +543,7 @@
   dependencies:
     "@vue/shared" "^3.2.33"
 
-"@vuepress/theme-default@2.0.0-beta.41":
+"@vuepress/theme-default@2.0.0-beta.41", "@vuepress/theme-default@^2.0.0-beta.41":
   version "2.0.0-beta.41"
   resolved "https://registry.yarnpkg.com/@vuepress/theme-default/-/theme-default-2.0.0-beta.41.tgz#41ad6b1221fe74c5af09b74404da7870fc6f5624"
   integrity sha512-9qjtDOy0hwKzqdpnMDm5HXvPQI1m1AR35f30P2muduCg6RBEg7RalIevVtNAMNZfs1s1Z8spX51WDIqEbmAyoQ==
@@ -1644,7 +1644,7 @@ vuepress-vite@2.0.0-beta.41:
     "@vuepress/core" "2.0.0-beta.41"
     "@vuepress/theme-default" "2.0.0-beta.41"
 
-vuepress@^2.0.0-beta.32:
+vuepress@^2.0.0-beta.41:
   version "2.0.0-beta.41"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-2.0.0-beta.41.tgz#af7c0a7ebfccfe3a6dcdbf55257e966ef278fd00"
   integrity sha512-VkXYYVH0CkngpDHje8HESpCxeTz9xJ0KKJeDk7J4EKJ2PyPerfeHN7Bxo/RUm40Nq++S2WPnWCyWOZNbrDSbQA==
