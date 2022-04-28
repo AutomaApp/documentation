@@ -83,10 +83,12 @@ And for the `date` parameter, see the valid date format on the [MDN page](https:
 $date('DD MMMM YYYY') // 14 January 2022
 $date('DD-MM-YYYY, hh:mm A')  // 14-01-2022, 02:24 PM
 $date('relative') // A few seconds ago
+$date('timestamp') // 1651118110948
 
 $date('2005-06-07', 'DD MMMM YYYY') // 07 June 2005
 $date('1977-04-01T14:00:30', 'DD-MM-YYYY, hh:mm A')  // 01-04-1977, 02:00 PM
 $date('14 January 2021', 'relative') // A year ago
+$date('14 January 2021', 'timestamp') // 1610553600000
 ```
 
 ### `$randint(min?, max?)`
