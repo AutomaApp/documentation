@@ -7,7 +7,7 @@ title: Table or Variables
 Table and variables have the same functionality are to store information or value from the page. But these two have some differences.
 
 ## Data Type
-Every column of the table is a strict type of data. For example, when you retrieve a text and want to insert it to the `price` column which has the number data type, that text will be converted to a number first before being inserted. In variables, it doesn't associate with any data types, meaning that you can store text, number, object, or array in it.
+Every column of the table is a strict type of data. For example, when you retrieve a text and want to insert it to the `price` column which has the `number` data type, that text will be converted to a number before being inserted. In variables, it doesn't associate with any data types, meaning that you can store `text`, `number`, `object`, or `array` in it.
 
 ## Inserting Value
 Whenever inserting a value to the table, the value will get pushed to the end row of the selected column. For example, before inserting value:
