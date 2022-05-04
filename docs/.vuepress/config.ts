@@ -4,7 +4,7 @@ import { path } from '@vuepress/utils';
 import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { navbar, sidebar } from './configs';
 import { defaultTheme } from '@vuepress/theme-default';
-import { sitemap } from 'vuepress-plugin-sitemap2';
+import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
 
 declare global {
   namespace NodeJS {
@@ -55,7 +55,7 @@ export default defineUserConfig({
         },
       },
     }),
-    sitemap({
+    sitemapPlugin({
       hostname: 'https://docs.automa.site/',
       changefreq: 'weekly',
     }),
