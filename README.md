@@ -5,7 +5,7 @@
 Install git if you don't already have it, and check out the documentation repo as follows,
 
 ```bash
-$ git clone https://github.com/raspberrypi/documentation.git
+$ git clone https://github.com/AutomaApp/documentation.git
 $ cd documentation
 ```
 ### Developing
