@@ -12,4 +12,4 @@ For example, when you have multiple new tab blocks wherein the URL input has the
 
 And inside the global editor, you can write plain text or JSON.
 
-See more: [reference data](/api-reference/reference-data).
+See more: [reference data](/api-reference/reference-data.html).
