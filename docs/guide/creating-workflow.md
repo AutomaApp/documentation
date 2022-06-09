@@ -24,7 +24,7 @@ And to stop the recording, open the popup again, and click the stop button ‚èπÔ∏
 
 ## Manually
 <br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PmejVpMZxVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NmRCgLtsPnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 For creating a workflow manually,
 
