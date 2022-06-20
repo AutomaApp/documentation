@@ -20,6 +20,14 @@ Execute the workflow on a specific day and time.
 ## On browser startup
 Execute the workflow when a profile that has this extension installed first starts up.
 
+## Context menu
+Execute a workflow via the context menu (right-clicking). When a workflow is executed via the context menu, there are several variables will be injected to it:
+
+- `$ctxElSelector`: The selector of the element where you right click
+- `$ctxTextSelection`: The selected text
+
+But to use this trigger, you must grant Automa to use the `contextMenu` permission.
+
 ## When visiting a website
 Execute workflow when you're visiting a website that matches the URL or the [ReGex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) that you inputted.
 And when you check the `Use regex` checkbox, the value you inputted will be treated as a [ReGex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
