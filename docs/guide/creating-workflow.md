@@ -12,7 +12,7 @@ There are two ways to create a workflow:
 
 ## Recording a Workflow
 <br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mubwJBVOTa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NmRCgLtsPnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The fastest and easiest way to create a workflow is by recording it. Automa will record your actions like clicking, inputting, and navigating the tab. And build a workflow based on that.
 
