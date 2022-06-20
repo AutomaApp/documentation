@@ -26,7 +26,11 @@ Execute a workflow via the context menu (right-clicking). When a workflow is exe
 - `$ctxElSelector`: The selector of the element where you right click
 - `$ctxTextSelection`: The selected text
 
-But to use this trigger, you must grant Automa to use the `contextMenu` permission.
+But to use this trigger, you must grant Automa to use the `contextMenu` permission. This trigger has two options
+
+- The workflow name in the context menu
+- `Will appear in` which you can use to set when the workflow appears in the context menu. If none of these options is selected, it will appear every time the 
+context menu is displayed.
 
 ## When visiting a website
 Execute workflow when you're visiting a website that matches the URL or the [ReGex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) that you inputted.
