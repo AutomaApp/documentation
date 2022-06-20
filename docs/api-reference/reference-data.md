@@ -119,5 +119,29 @@ $getLength([table]) // 14
 // Get the length of the "text" column on the second row
 $getLength([table@1.text]) // 5
 ```
+
+### `$randData(expression)`
+A function to generate random data, you only need to pass an expression to its parameter. For example, `$randData("?l")` will generate a random lowercase letter like `a`. Supported expression:
+
+- `?l`: lowercase
+- `?u`: uppercase
+- `?d`: digit
+- `?f`: uppercase + lowercase
+- `?s`: symbol
+- `?m`: uppercase + digit
+- `?n`: lowercase + digit
+- `?a`: any
+
+You can also combine these expressions like `$randData("?u?l?l?l?l?d?d@gmail.com")` which will generate `Apond89@gmail.com`.
+
+**Examples**
+```js
+$randData("?d?d") // 89
+
+$randData("?l?l?l?d?d@gmail.com") // wal29@gmail.com
+
+$randData("?d?u?s?l?l?s?a?m") // 4C%ee^MF9
+```
+
 ## Referencing Data Inside Mustache Tag
 By using the square bracket(`[]`), you can reference other data inside a mustache tag. For example, to format date based on the [global data](/api-reference/global-data.md) value <code v-pre>{{ $date([globalData]) }}</code>. Or if you want to get the table row based on the index of a loop <code v-pre>{{ table@[loopData@loopId.$index].path }}</code>.
