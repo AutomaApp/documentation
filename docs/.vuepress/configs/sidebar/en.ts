@@ -37,8 +37,6 @@ export const en: SidebarConfig = {
             '/blocks/loop-breakpoint.md',
             '/blocks/blocks-group.md',
             '/blocks/clipboard.md',
-            '/blocks/insert-data.md',
-            '/blocks/delete-data.md',
             '/blocks/wait-connections.md',
           ],
         },
@@ -58,6 +56,7 @@ export const en: SidebarConfig = {
             '/blocks/handle-dialog.md',
             '/blocks/handle-download.md',
             '/blocks/reload-tab.md',
+            '/blocks/tab-url.md',
           ],
         },
         {
@@ -94,6 +93,14 @@ export const en: SidebarConfig = {
             '/blocks/element-exists.md',
           ],
         },
+        {
+          text: 'Data',
+          collapsible: true,
+          children: [
+            '/blocks/insert-data.md',
+            '/blocks/delete-data.md',
+          ]
+        }
       ],
     },
     {
