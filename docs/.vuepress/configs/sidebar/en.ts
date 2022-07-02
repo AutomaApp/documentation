@@ -76,6 +76,7 @@ export const en: SidebarConfig = {
             '/blocks/upload-file.md',
             '/blocks/hover-element.md',
             '/blocks/save-assets.md',
+            '/blocks/press-key.md',
           ],
         },
         {
