@@ -35,10 +35,12 @@ For creating a workflow manually,
 
 To add a block to the workflow, drag a block on the left side and drop it to the editor.
 
+![drag & drop block](https://res.cloudinary.com/chat-story/image/upload/v1656731575/automa/editor-2_knsjec.gif)
+
 Click the play button if you want to start executing the workflow. You can set how and when the workflow executes on the [trigger block](/blocks/trigger.md).
 
 ### Connecting Block
-There're several ways to connect a block to another block:
+After adding a block, there are several ways to connect a block to another block. 
 
 - **Manually** <br>
 By dragging the block output into an input of a block.
@@ -46,8 +48,8 @@ By dragging the block output into an input of a block.
 ![connect block manually](https://res.cloudinary.com/chat-story/image/upload/v1642573241/automa/connect-block-manual_krat5z.gif)
 :::
 
-- **Drop to the output** <br>
-Drop the block to the output of a block.
+- **Drop a block into a block output** <br>
+Drop the block to the output of a block. 
 ::: details Example
 ![drop to output example](https://res.cloudinary.com/chat-story/image/upload/v1642573402/automa/connect-block-ouput_nn5nx7.gif)
 :::
@@ -58,7 +60,7 @@ Drop the block to the connection of a block.
 ![drop to connection example](https://res.cloudinary.com/chat-story/image/upload/v1642573908/automa/connect-block-connection_kbon3v.gif)
 :::
 
-### Reroute Block Connection
-![Reroute example](https://res.cloudinary.com/chat-story/image/upload/v1642575499/automa/chrome_00RH6LDAX0_kjenjv.png)
-
-Reroute the connection of a block by double-clicking at its connection. And double-click at the point to remove the reroute.
+- **Drop a block into another block** <br>
+::: details Example
+![drop to another block example](https://res.cloudinary.com/chat-story/image/upload/v1656734189/automa/drop_in_a_block_zzrtaw.gif)
+:::

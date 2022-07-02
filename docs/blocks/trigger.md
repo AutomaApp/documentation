@@ -25,6 +25,8 @@ Execute a workflow via the context menu (right-clicking). When a workflow is exe
 
 - `$ctxElSelector`: The selector of the element where you right click
 - `$ctxTextSelection`: The selected text
+- `$ctxMediaUrl`: The source URL of a media element (image, video, or audio)
+- `$ctxLink`: The URL if you right-click on a link
 
 But to use this trigger, you must grant Automa to use the `contextMenu` permission. This trigger has two options
 

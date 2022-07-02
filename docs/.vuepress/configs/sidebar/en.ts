@@ -12,9 +12,10 @@ export const en: SidebarConfig = {
           collapsible: true,
           children: [
             '/guide/creating-workflow.md',
-            '/guide/host-workflow.md',
+            '/guide/host-workflow.md'
           ]
         },
+        '/guide/storage.md',
         '/guide/element-selector.md',
       ],
     },
