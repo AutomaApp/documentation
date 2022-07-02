@@ -97,6 +97,7 @@ export const en: SidebarConfig = {
           text: 'Data',
           collapsible: true,
           children: [
+            '/blocks/log-data.md',
             '/blocks/insert-data.md',
             '/blocks/delete-data.md',
           ]
