@@ -31,7 +31,7 @@ Handle the response of the request.
 	Type of the response, defaults to `JSON`.
 
 - **Data path** <br>
-	Path to the data of the response, for example, when the response is returning these data:
+	The dot notation to the data of the response. For example, when the response is returning these data:
 	```json
 	{
 		"status": 200,
@@ -44,7 +44,7 @@ Handle the response of the request.
 		}
 	}
 	```
-	To get the `values` array, write `data.values` as the path.
+	To get the `values` array, write `data.values` as the path. And to get the first value of the `values` array, write `data.values.0`.
 
 - **Assign to variable** <br>
 	Whether assign the value into a [variable](/api-reference/variables.md) or not.
