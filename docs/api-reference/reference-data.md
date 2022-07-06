@@ -143,5 +143,46 @@ $randData("?l?l?l?d?d@gmail.com") // wal29@gmail.com
 $randData("?d?u?s?l?l?s?a?m") // 4C%ee^MF9
 ```
 
+### `$multiply(value, multiplyBy)`
+Is used to multiply a value.
+
+**Examples**
+```js
+$multiply(5, 2) // 10
+
+// Multiply a variable
+$multiply([variables@variableName], 0.3) //20.7
+```
+
+### `$increment(value, incrementBy)`
+Is used to increment a value.
+
+**Examples**
+```js
+$increment(10, 2) // 12
+
+$increment(72, 2) // 74
+```
+
+### `$divide(value, incrementBy)`
+Is used to divide a value.
+
+**Examples**
+```js
+$divide(22, 7) // 3.142857142857143
+
+$divide(10, 2) // 5
+```
+
+### `$subtract(value, incrementBy)`
+Is used to subtract a value.
+
+**Examples**
+```js
+$subtract(80, 7) // 82
+
+$subtract(11, 2) // 9
+```
+
 ## Referencing Data Inside Mustache Tag
 By using the square bracket(`[]`), you can reference other data inside a mustache tag. For example, to format date based on the [global data](/api-reference/global-data.md) value <code v-pre>{{ $date([globalData]) }}</code>. Or if you want to get the table row based on the index of a loop <code v-pre>{{ table@[loopData@loopId.$index].path }}</code>.
