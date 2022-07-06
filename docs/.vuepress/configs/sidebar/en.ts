@@ -102,6 +102,7 @@ export const en: SidebarConfig = {
             '/blocks/delete-data.md',
             '/blocks/slice-variable.md',
             '/blocks/increase-variable.md',
+            '/blocks/regex-variable.md',
           ]
         }
       ],
