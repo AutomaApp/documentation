@@ -104,6 +104,7 @@ export const en: SidebarConfig = {
             '/blocks/increase-variable.md',
             '/blocks/regex-variable.md',
             '/blocks/data-mapping.md',
+            '/blocks/sort-data.md',
           ]
         }
       ],
