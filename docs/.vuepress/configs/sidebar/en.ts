@@ -100,6 +100,7 @@ export const en: SidebarConfig = {
             '/blocks/log-data.md',
             '/blocks/insert-data.md',
             '/blocks/delete-data.md',
+            '/blocks/slice-variable.md',
           ]
         }
       ],
