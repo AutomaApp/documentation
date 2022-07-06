@@ -103,6 +103,7 @@ export const en: SidebarConfig = {
             '/blocks/slice-variable.md',
             '/blocks/increase-variable.md',
             '/blocks/regex-variable.md',
+            '/blocks/data-mapping.md',
           ]
         }
       ],
