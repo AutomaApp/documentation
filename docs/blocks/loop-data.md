@@ -20,7 +20,7 @@ When using the custom data option, make sure you write [array](https://developer
 
 And when you select the `elements` options, Automa will return an array of selectors of the elements that match the `selector` you inputted. And you can use the loop data block like below.
 
-![Loop elements](https://res.cloudinary.com/chat-story/image/upload/v1645503764/automa/Loop_elements_1_cn74zc.png)
+![Loop elements](https://res.cloudinary.com/chat-story/image/upload/v1657078995/automa/Loop_elements_a4btqz.png)
 
 ## Loop ID
 ID to identify the loop. Use this ID when [referencing data](#accessing-data) of the loop or when using the [loop breakpoint](/blocks/loop-breakpoint) block.
