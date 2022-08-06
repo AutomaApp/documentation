@@ -57,6 +57,7 @@ export const en: SidebarConfig = {
             '/blocks/handle-download.md',
             '/blocks/reload-tab.md',
             '/blocks/tab-url.md',
+            '/blocks/cookie.md',
           ],
         },
         {
