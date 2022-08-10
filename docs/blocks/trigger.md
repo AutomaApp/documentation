@@ -48,6 +48,39 @@ And by default, the shortcut doesn't work when the cursor is on an input element
 The keyboard shortcut only works when you're on a website. If the website URL starts with `chrome://` or `chrome-extension://` the keyboard shorcut won't work.
 :::
 
+## Trigger Using JS CustomEvent
+You can programmatically trigger workflow using JavaScript [CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent) which you can embed in your website. For example,
+```js
+// Using workflow Id
+window.dispatchEvent(new CustomEvent('automa:execute-workflow', {
+	detail: { id: 'workflow-id' }
+}));
+
+// Using workflow publicId
+window.dispatchEvent(new CustomEvent('automa:execute-workflow', {
+	detail: { publicId: 'public-id' }
+}));
+```
+In the `detail` property, you must define the `id` or the `publicId` of the workflow you want to execute. You can define the `publicId` of the worklfow in the workflow settings. 
+
+![Workflow public ID](https://res.cloudinary.com/chat-story/image/upload/v1660102318/automa/NVIDIA_Share_rWFjFA6ooQ_h3rtoq.png)
+
+And to add variables to that workflow, add `data` property inside the [CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent) property. 
+```js
+// Using workflow Id
+window.dispatchEvent(new CustomEvent('automa:execute-workflow', {
+	detail: { 
+		id: 'workflow-id',
+		data: {
+			variables: {
+				name: 'John Doe',
+				search: 'Hello world'
+			}
+		} 
+	}
+}));
+```
+
 ## Parameters
 The parameters of the workflow. These parameters will be inserted as variables when the workflow starts executing. For example, you have three parameters `URL`, `query`, and `id`. 
 
