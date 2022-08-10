@@ -49,4 +49,8 @@ The keyboard shortcut only works when you're on a website. If the website URL st
 :::
 
 ## Parameters
-The parameters of the workflow. These parameters will be inserted as variables when the workflow starts executing.
+The parameters of the workflow. These parameters will be inserted as variables when the workflow starts executing. For example, you have three parameters `URL`, `query`, and `id`. 
+
+<img src="https://res.cloudinary.com/chat-story/image/upload/v1660101358/automa/NVIDIA_Share_VegY3DQG3E_un2glj.png" alt="Parameters" />
+
+You can access those parameters using the mustache tag with `variables` as the keyword like <code v-pre>{{variables@URL}}</code> or <code v-pre>{{variables@id}}</code>

@@ -32,6 +32,6 @@ Learn more about Variable on the [Variable page](/api-reference/variables.md)
 :::
 
 ## Credentials
-Is used to store credentials, credential that are stored in here will be encrypted. And you can't vew or edit the after you add credentials.
+Is used to store credentials. Credentials that are stored here will be encrypted. And you can't view or edit them after you add credentials.
 
 To access these credentials in a workflow, use the `secrets` keyword inside the mustache tag. For example, <code v-pre>{{ secrets@credentialName }}</code>
