@@ -179,7 +179,7 @@ Is used to subtract a value.
 
 **Examples**
 ```js
-$subtract(80, 7) // 82
+$subtract(80, 7) // 73
 
 $subtract(11, 2) // 9
 ```
