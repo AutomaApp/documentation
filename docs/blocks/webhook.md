@@ -57,3 +57,42 @@ Handle the response of the request.
 
 - **Select column** <br>
 	The column where the value will be inserted.
+
+## Form Data
+When using the `multipart/form-data` as the header, the request body will be sent as [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData). And because of that, you must follow the below format when writing the body
+
+```json
+[
+	["name", "value"],
+	["name 2", "value 2"]
+]
+```
+
+## Referencing Data Inside Body
+When referencing data like variables, table, etc, inside the body is a bit tricky because the result of it must be a valid JSON. And to prevent the "Content body is not valid JSON" error, follow these rules:
+
+-String value
+If the value of the data you reference is a string, you must wrap the mustache tag inside a double-quote ("). For example,
+```json
+{
+	"name": "{{variables@name}}",
+	"email": "{{variables@email}}"
+}
+```
+
+-Multiline string value
+If the value of the data you reference is a string and has a new line init, you must add an exclamation mark(!) before writing the keyword of the data. For example,
+```json
+{
+	"longText": {{!variables@article}}
+}
+```
+
+-Other
+If the value of the data you reference is object, array, etc, you can directly write the mustache tag inside the body. For example,
+```json
+{
+	"profile": {{variables@userProfile}}, // { name: 'John Doe', email: 'john@example.com' }
+	"stats": {{variables@stats}} // [10, 200, 87, 21]
+}
+```
