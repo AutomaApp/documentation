@@ -184,5 +184,35 @@ $subtract(80, 7) // 73
 $subtract(11, 2) // 9
 ```
 
+### `$replace(value, search, replace)`
+Is used to replace a string search from value to be replace string.
+
+**Examples**
+```js
+$replace("hello world!", "world", "everyone") // hello everyone!
+
+$replace("hello world!", "hello", "hi") // hi world!
+```
+
+### `$toLowerCase(value)`
+Is used to lowercase a value.
+
+**Examples**
+```js
+$toLowerCase("HELLO WORLD!") // hello world!
+
+$toLowerCase("hELLO wORLD!") // hello world!
+```
+
+### `$toUpperCase(value)`
+Is used to uppercase a value.
+
+**Examples**
+```js
+$toUpperCase("hello world!") // HELLO WORLD!
+
+$toUpperCase("hELLO wORLD!") // HELLO WORLD!
+```
+
 ## Referencing Data Inside Mustache Tag
 By using the square bracket(`[]`), you can reference other data inside a mustache tag. For example, to format date based on the [global data](/api-reference/global-data.md) value <code v-pre>{{ $date([globalData]) }}</code>. Or if you want to get the table row based on the index of a loop <code v-pre>{{ table@[loopData@loopId.$index].path }}</code>.
