@@ -214,5 +214,19 @@ $toUpperCase("hello world!") // HELLO WORLD!
 $toUpperCase("hELLO wORLD!") // HELLO WORLD!
 ```
 
+### `$modulo(num, divisor)`
+Returns the remainder or signed remainder of a division.
+
+**Examples**
+```js
+$modulo(13, 5) // 3
+
+$modulo(-13, 5) // -3
+
+$modulo(4, 2) // 0
+
+$modulo(-4, 2) // -0
+```
+
 ## Referencing Data Inside Mustache Tag
 By using the square bracket(`[]`), you can reference other data inside a mustache tag. For example, to format date based on the [global data](/api-reference/global-data.md) value <code v-pre>{{ $date([globalData]) }}</code>. Or if you want to get the table row based on the index of a loop <code v-pre>{{ table@[loopData@loopId.$index].path }}</code>.
