@@ -15,6 +15,7 @@ export const en: SidebarConfig = {
             '/guide/host-workflow.md'
           ]
         },
+        '/guide/packages.md',
         '/guide/storage.md',
         '/guide/element-selector.md',
       ],
