@@ -3,7 +3,7 @@ title: Reference Data
 ---
 
 # Reference Data
-Add dynamic data inside an input of a block, like in the element selector or the form value input. 
+Add dynamic data inside an input of a block, like in the element selector or the form value input.
 
 ## Accessing Data
 Automa uses the mustache tag (<code v-pre>{{ mustache }}</code>) syntax to know which input is dynamic or not.
@@ -72,7 +72,7 @@ But, what if I have an object or array data type and want to get the specific pr
 Inside the mustache tag, you also can call a built-in function that Automa has provided. Function name always starts with a dollar sign ($), for example <code v-pre>{{ $func() }}</code>. And here are some of the functions that available inside the mustache tag.
 
 ### `$date(date, dateFormat?)`
-Get or format a date. This function takes two parameters, which the second parameter is optional. 
+Get or format a date. This function takes two parameters, which the second parameter is optional.
 
 If you want to format the current date, you can directly pass the `dateFormat` as the first parameter, like <code v-pre>{{ $date('DD-MMMM-YYYY') }}</code>, and the output would be `14-January-2022`. See all the available date formats on the [day.js page](https://day.js.org/docs/en/display/format#list-of-all-available-formats).
 
@@ -80,15 +80,15 @@ And for the `date` parameter, see the valid date format on the [MDN page](https:
 
 **Examples**
 ```js
-$date('DD MMMM YYYY') // 14 January 2022
-$date('DD-MM-YYYY, hh:mm A')  // 14-01-2022, 02:24 PM
-$date('relative') // A few seconds ago
-$date('timestamp') // 1651118110948
+$date("DD MMMM YYYY") // 14 January 2022
+$date("DD-MM-YYYY, hh:mm A")  // 14-01-2022, 02:24 PM
+$date("relative") // A few seconds ago
+$date("timestamp") // 1651118110948
 
-$date('2005-06-07', 'DD MMMM YYYY') // 07 June 2005
-$date('1977-04-01T14:00:30', 'DD-MM-YYYY, hh:mm A')  // 01-04-1977, 02:00 PM
-$date('14 January 2021', 'relative') // A year ago
-$date('14 January 2021', 'timestamp') // 1610553600000
+$date("2005-06-07", "DD MMMM YYYY") // 07 June 2005
+$date("1977-04-01T14:00:30", "DD-MM-YYYY, hh:mm A")  // 01-04-1977, 02:00 PM
+$date("14 January 2021", "relative") // A year ago
+$date("14 January 2021", "timestamp") // 1610553600000
 ```
 
 ### `$randint(min?, max?)`
@@ -182,6 +182,36 @@ Is used to subtract a value.
 $subtract(80, 7) // 73
 
 $subtract(11, 2) // 9
+```
+
+### `$replace(value, search, replace)`
+Is used to replace a string search from value to be replace string.
+
+**Examples**
+```js
+$replace("hello world!", "world", "everyone") // hello everyone!
+
+$replace("hello world!", "hello", "hi") // hi world!
+```
+
+### `$toLowerCase(value)`
+Is used to lowercase a value.
+
+**Examples**
+```js
+$toLowerCase("HELLO WORLD!") // hello world!
+
+$toLowerCase("hELLO wORLD!") // hello world!
+```
+
+### `$toUpperCase(value)`
+Is used to uppercase a value.
+
+**Examples**
+```js
+$toUpperCase("hello world!") // HELLO WORLD!
+
+$toUpperCase("hELLO wORLD!") // HELLO WORLD!
 ```
 
 ## Referencing Data Inside Mustache Tag
