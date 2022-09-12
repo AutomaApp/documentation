@@ -45,7 +45,7 @@ After adding a block, there are several ways to connect a block to another block
 - **Manually** <br>
 By dragging the block output into an input of a block.
 ::: details Example
-![connect block manually](https://res.cloudinary.com/chat-story/image/upload/v1642573241/automa/connect-block-manual_krat5z.gif)
+![connect block manually](https://res.cloudinary.com/chat-story/image/upload/v1662968420/automa/connect-block_advdve.gif)
 :::
 
 - **Drop a block into a block output** <br>
@@ -54,10 +54,9 @@ Drop the block to the output of a block.
 ![drop to output example](https://res.cloudinary.com/chat-story/image/upload/v1642573402/automa/connect-block-ouput_nn5nx7.gif)
 :::
 
-- **Drop to the connection** <br>
-Drop the block to the connection of a block.
+- **Clicking the block output and input** <br>
 ::: details Example
-![drop to connection example](https://res.cloudinary.com/chat-story/image/upload/v1642573908/automa/connect-block-connection_kbon3v.gif)
+![Clicking the block output and input example](https://res.cloudinary.com/chat-story/image/upload/v1662968420/automa/connect-block2_slxrpv.gif)
 :::
 
 - **Drop a block into another block** <br>
