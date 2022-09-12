@@ -39,6 +39,8 @@ export const en: SidebarConfig = {
             '/blocks/blocks-group.md',
             '/blocks/clipboard.md',
             '/blocks/wait-connections.md',
+            '/blocks/notification.md',
+            '/blocks/workflow-state.md',
           ],
         },
         {
