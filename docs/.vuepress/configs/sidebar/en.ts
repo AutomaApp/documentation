@@ -38,6 +38,7 @@ export const en: SidebarConfig = {
             '/blocks/wait-connections.md',
             '/blocks/notification.md',
             '/blocks/workflow-state.md',
+            '/blocks/parameter-prompt.md',
           ],
         },
         {

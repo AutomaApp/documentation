@@ -21,3 +21,5 @@ Set the limit of elements to loop.
 	- **Click an element to load more**
 	- **Click a link to load more**
 	- **Scroll down to load more**
+
+[**Workflow Example**](https://automa.site/workflow/sIGixG_Cpb5wOaw05_2tZ)
