@@ -32,10 +32,7 @@ export const en: SidebarConfig = {
             '/blocks/execute-workflow.md',
             '/blocks/delay.md',
             '/blocks/export-data.md',
-            '/blocks/repeat-task.md',
             '/blocks/webhook.md',
-            '/blocks/loop-data.md',
-            '/blocks/loop-breakpoint.md',
             '/blocks/blocks-group.md',
             '/blocks/clipboard.md',
             '/blocks/wait-connections.md',
@@ -84,18 +81,23 @@ export const en: SidebarConfig = {
           ],
         },
         {
+          text: 'Control Flow',
+          collapsible: true,
+          children: [
+            '/blocks/repeat-task.md',
+            '/blocks/conditions.md',
+            '/blocks/element-exists.md',
+            '/blocks/while-loop.md',
+            '/blocks/loop-data.md',
+            '/blocks/loop-elements.md',
+            '/blocks/loop-breakpoint.md',
+          ],
+        },
+        {
           text: 'Online Services',
           collapsible: true,
           children: [
             '/blocks/google-sheets.md',
-          ],
-        },
-        {
-          text: 'Conditions',
-          collapsible: true,
-          children: [
-            '/blocks/conditions.md',
-            '/blocks/element-exists.md',
           ],
         },
         {
