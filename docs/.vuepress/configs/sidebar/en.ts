@@ -12,7 +12,8 @@ export const en: SidebarConfig = {
           collapsible: true,
           children: [
             '/guide/creating-workflow.md',
-            '/guide/host-workflow.md'
+            '/guide/host-workflow.md',
+            '/guide/workflow-errors.md'
           ]
         },
         '/guide/packages.md',

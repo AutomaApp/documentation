@@ -1,10 +1,13 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
 import { defineUserConfig } from '@vuepress/cli';
 import { path } from '@vuepress/utils';
 import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { navbar, sidebar } from './configs';
 import { defaultTheme } from '@vuepress/theme-default';
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2';
+import { mdEnhancePlugin } from 'vuepress-plugin-md-enhance';
+
+dotenv.config();
 
 declare global {
   namespace NodeJS {
@@ -40,6 +43,9 @@ export default defineUserConfig({
   ],
   clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.ts'),
   plugins: [
+    mdEnhancePlugin({
+      attrs: true,
+    }),
     docsearchPlugin({
       apiKey: process.env.SEARCH_API_KEY,
       appId: process.env.SEARCH_APP_ID,

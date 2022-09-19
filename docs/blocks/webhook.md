@@ -71,7 +71,7 @@ When using the `multipart/form-data` as the header, the request body will be sen
 ## Referencing Data Inside Body
 When referencing data like variables, table, etc, inside the body is a bit tricky because the result of it must be a valid JSON. And to prevent the "Content body is not valid JSON" error, follow these rules:
 
--String value
+- **String value** <br />
 If the value of the data you reference is a string, you must wrap the mustache tag inside a double-quote ("). For example,
 ```json
 {
@@ -80,15 +80,15 @@ If the value of the data you reference is a string, you must wrap the mustache t
 }
 ```
 
--Multiline string value
-If the value of the data you reference is a string and has a new line init, you must add an exclamation mark(!) before writing the keyword of the data. For example,
+- **Multiline string value** <br />
+If the value of the data you reference is a string and has a new line in it, you must add an exclamation mark(!) before writing the keyword of the data. For example,
 ```json
 {
 	"longText": {{!variables@article}}
 }
 ```
 
--Other
+- **Other** <br />
 If the value of the data you reference is object, array, etc, you can directly write the mustache tag inside the body. For example,
 ```json
 {
