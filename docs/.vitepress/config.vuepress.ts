@@ -41,7 +41,6 @@ export default defineUserConfig({
   head: [
     ['link', { rel: 'icon', href: '/images/logo.png' }],
   ],
-  clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.ts'),
   plugins: [
     mdEnhancePlugin({
       attrs: true,
