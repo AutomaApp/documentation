@@ -15,7 +15,7 @@ The workflow settings have three sections.
 It contains the following settings:
 - **On workflow error**: Select what to do when an error occurs on the workflow.
 - **Workflow notification**: Toggle whether to show a notification when the workflow execution end.
-- **Debug mode**: Execute the workflow using the Chrome DevTools Protocol
+- [**Debug mode**](./debug-mode.md): Execute the workflow using the Chrome DevTools Protocol
 - **Autocomplete**: Enable autocomplete in the input of a block
 - **Reuse the last workflow state**: Use the state data (table, variables, and global data) from the last execution.
 - **Save workflow log**: Save the logs of the workflow.
