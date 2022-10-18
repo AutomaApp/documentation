@@ -4,9 +4,13 @@ const config = defineConfig({
   lang: 'en-US',
   title: 'Automa Docs',
   description: 'Documentation for Automa Browser Extension',
+  head: [
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/images/logo.png' }]
+  ],
   themeConfig: {
     nav: [
-      { text: 'Halo', link: '/' }
+      { text: 'Guide', link: '/' },
+      { text: 'Blocks', link: '/block/trigger' },
     ],
     sidebar: [
       {
@@ -21,16 +25,34 @@ const config = defineConfig({
         collapsible: true,
         items: [
           { text: 'Introduction', link: '/workflow/introduction' },
-          { text: 'Sharing a workflow', link: '/workflow/sharing-workflow' },
-          { text: 'Host a workflow', link: '/workflow/host-workflow' },
-          { text: 'Workflow table', link: '/workflow/workflow-table' },
-          { text: 'Workflow parameters', link: '/workflow/workflow-parameters' },
-          { text: 'Workflow settings', link: '/workflow/workflow-settings' },
+          { text: 'Sharing a Workflow', link: '/workflow/sharing-workflow' },
+          { text: 'Workflow Table', link: '/workflow/table' },
+          { text: 'Workflow Parameters', link: '/workflow/parameters' },
+          { text: 'Workflow Settings', link: '/workflow/settings' },
           { text: 'Editor UI', link: '/workflow/editor-ui' },
-          { text: 'Debug mode', link: '/workflow/debug-mode' },
-          { text: 'Element selector', link: '/workflow/element-selector' },
+          { text: 'Debug Mode', link: '/workflow/debug-mode' },
+          { text: 'Element Selector', link: '/workflow/element-selector' },
         ]
-      }
+      },
+      {
+        text: 'Blocks',
+        collapsible: true,
+        items: [
+          { 
+            text: 'General', 
+            items: [
+              { text: 'Trigger Block', link: '/block/trigger' }
+            ] 
+          }
+        ],
+      },
+      {
+        text: 'References',
+        collapsible: true,
+        items: [
+          { text: 'Storage', link: '/reference/storage' }
+        ],
+      },
     ],
     editLink: {
       pattern: 'https://github.com/automaapp/documentation/edit/main/:path',
