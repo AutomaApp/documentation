@@ -27,6 +27,7 @@ const config = defineConfig({
           { text: 'Introduction', link: '/workflow/introduction' },
           { text: 'Sharing a Workflow', link: '/workflow/sharing-workflow' },
           { text: 'Workflow Table', link: '/workflow/table' },
+          { text: 'Workflow Variables', link: '/workflow/variables' },
           { text: 'Workflow Parameters', link: '/workflow/parameters' },
           { text: 'Workflow Settings', link: '/workflow/settings' },
           { text: 'Editor UI', link: '/workflow/editor-ui' },
