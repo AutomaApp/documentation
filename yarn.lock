@@ -3386,6 +3386,11 @@ util-deprecate@^1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
+v-remixicon@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/v-remixicon/-/v-remixicon-0.1.4.tgz#98b1de6bc71e17b5b6b64f59abd9330de3b953dc"
+  integrity sha512-b3rurcVCoXJmcJXtTZrlTiom0iGKanenQVnr4q87Vbw7oaG6vUkfnNCkM6wiZRVt6vM3ebra2/ZBeKgBV14hsA==
+
 valid-data-url@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/valid-data-url/-/valid-data-url-3.0.1.tgz#826c1744e71b5632e847dd15dbd45b9fb38aa34f"

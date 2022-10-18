@@ -13,7 +13,22 @@ const config = defineConfig({
         text: 'Getting Started',
         items: [
           { text: 'Introduction', link: '/' },
-          { text: 'Building a Workflow', link: '/guide/building-workflow' }
+          { text: 'Quick Start', link: '/guide/quick-start' }
+        ]
+      },
+      {
+        text: 'Workflow',
+        collapsible: true,
+        items: [
+          { text: 'Introduction', link: '/workflow/introduction' },
+          { text: 'Sharing a workflow', link: '/workflow/sharing-workflow' },
+          { text: 'Host a workflow', link: '/workflow/host-workflow' },
+          { text: 'Workflow table', link: '/workflow/workflow-table' },
+          { text: 'Workflow parameters', link: '/workflow/workflow-parameters' },
+          { text: 'Workflow settings', link: '/workflow/workflow-settings' },
+          { text: 'Editor UI', link: '/workflow/editor-ui' },
+          { text: 'Debug mode', link: '/workflow/debug-mode' },
+          { text: 'Element selector', link: '/workflow/element-selector' },
         ]
       }
     ],

@@ -19,5 +19,7 @@
     "vuepress-plugin-md-enhance": "^2.0.0-beta.103",
     "vuepress-plugin-sitemap2": "^2.0.0-beta.99"
   },
-  "dependencies": {}
+  "dependencies": {
+    "v-remixicon": "^0.1.4"
+  }
 }
