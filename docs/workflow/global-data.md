@@ -12,6 +12,6 @@ For example, you have multiple new tab blocks wherein the URL input has the same
   "url": "https://dribbble.com"
 }
 ```
-And access the global data inside the URL text field of the New Tab block using an expression. For example, <code v-pre>{{globalData@url}}`</code>
+And access the global data inside the URL text field of the New Tab block using an expression. For example, <code v-pre>{{globalData@url}}</code>
 
 ![URL Input](https://res.cloudinary.com/chat-story/image/upload/v1642160825/automa/chrome_d3PsYXgOKK_weyqwy.png)

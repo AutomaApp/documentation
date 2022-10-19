@@ -25,8 +25,8 @@ const config = defineConfig({
         collapsible: true,
         items: [
           { text: 'Overview', link: '/workflow/overview' },
+          { text: 'Blocks', link: '/workflow/blocks' },
           { text: 'Sharing a Workflow', link: '/workflow/sharing-workflow' },
-          { text: 'Editor UI', link: '/workflow/editor-ui' },
           { text: 'Global Data', link: '/workflow/global-data' },
           { text: 'Table', link: '/workflow/table' },
           { text: 'Variables', link: '/workflow/variables' },
