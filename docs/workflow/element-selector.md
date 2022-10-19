@@ -60,3 +60,7 @@ In the Automa Dashboard, click the <v-remixicon name="riFocus3Line" /> button on
 And you'll find the "Select an element" button when editing a block. When you click it, it will inject the element picker to the current page, select an element, and click the "Select element" button in the element picker.
 
 ![Select an element button](https://res.cloudinary.com/chat-story/image/upload/v1666151714/automa/chrome_xQ16a4tU8v_etyuxh.png)
+
+## Custom Selector Syntax
+Besides supporting the standard [CSS Selector](https://www.w3.org/TR/selectors-4/) and XPath expression, Automa supports a non-standard syntax:
+- `iframe-selector |> element-selector`: allows to select an element inside an [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element. For example, `iframe.result |> button.primary-btn`

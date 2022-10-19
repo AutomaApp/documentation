@@ -36,3 +36,5 @@ And to add the hosted workflow:
 After being added, this workflow can only be run and can't edit or modify the content of the workflow by the user.
 
 ![add hosted workflow](https://res.cloudinary.com/chat-story/image/upload/v1666067782/automa/TV_-_1_bjh9j7.png)
+
+And every time you edit the hosted workflow, the update will be applied to every user who adds it.
