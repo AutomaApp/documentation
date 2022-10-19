@@ -26,12 +26,13 @@ const config = defineConfig({
         items: [
           { text: 'Overview', link: '/workflow/overview' },
           { text: 'Sharing a Workflow', link: '/workflow/sharing-workflow' },
-          { text: 'Workflow Table', link: '/workflow/table' },
-          { text: 'Workflow Variables', link: '/workflow/variables' },
-          { text: 'Table or Variable', link: '/workflow/table-or-variable' },
-          { text: 'Workflow Parameters', link: '/workflow/parameters' },
-          { text: 'Workflow Settings', link: '/workflow/settings' },
           { text: 'Editor UI', link: '/workflow/editor-ui' },
+          { text: 'Global Data', link: '/workflow/global-data' },
+          { text: 'Table', link: '/workflow/table' },
+          { text: 'Variables', link: '/workflow/variables' },
+          { text: 'Table or Variable', link: '/workflow/table-or-variable' },
+          { text: 'Parameters', link: '/workflow/parameters' },
+          { text: 'Settings', link: '/workflow/settings' },
           { text: 'Debug Mode', link: '/workflow/debug-mode' },
           { text: 'Element Selector', link: '/workflow/element-selector' },
         ]

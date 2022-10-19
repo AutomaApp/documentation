@@ -7,7 +7,11 @@ When the debug mode is enabled, Automa will use Chrome Devtools Protocol API (or
 So the debug mode is only available in the chromium version of Automa.
 
 ## Activate Debug Mode
-There are two ways to activate the debug mode, the first is by going to the workflow settings, and the second is by going to the block settings. When you enable the debug mode in the workflow settings, Automa will use CDP API on the whole block. And if you only want to use the debug mode in a specific block, you can enable it in the block settings.
+There are two ways to activate the debug mode, the first is by going to the workflow settings, and the second is by going to the block settings. When you enable the debug mode in the workflow settings, Automa will use CDP API on the whole block. 
+
+![workflow settings](https://res.cloudinary.com/chat-story/image/upload/v1666082112/automa/chrome_K7BmBkZ2gZ_o7k6fi.png)
+
+And if you only want to use the debug mode in a specific block, you can enable it in the block settings.
 
 ## When to Use It
 You can use the debug mode when you want to type text on a website, but the text field uses a WYSIWYG editor, for example, typing a tweet in the editor or writing a message in Discord using the [Forms block](../blocks/forms.md).
