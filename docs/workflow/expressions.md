@@ -271,3 +271,29 @@ The variables is stored as an object with the variable name as the object key.
 - Get the first number of the `numbers` variable. <br>
   expression: <code v-pre>{{ variables.numbers.0 }}</code> <br>
   output: `100`
+
+## JavaScript Expressions
+
+Automa also supports javascript within the expression, but to write a javascript, you must add `!!` characters as the first value on a text field of a block. For example, from <code v-pre>The number is: {{variables.number}}</code> to <code v-pre>!!The number is: {{variables.number}}</code>.
+
+![JS Expression](https://res.cloudinary.com/chat-story/image/upload/v1666237164/automa/TV_-_2_2_r3emea.png)
+
+And you can use the built-in function the same as the javascript function.
+
+**Examples**
+
+- Using the built-in function
+```js
+{{$getLength(table)}} //10
+
+{{$randData("?d?d")}} // 89
+```
+- Get the last table row
+```js
+{{table[table.length - 1].columnName}}
+```
+
+- Get current timestamp
+```js
+{{Date.now()}} //1666237704022
+```

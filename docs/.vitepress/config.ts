@@ -51,10 +51,11 @@ const config = defineConfig({
         ],
       },
       {
-        text: 'References',
+        text: 'Reference',
         collapsible: true,
         items: [
-          { text: 'Storage', link: '/reference/storage' }
+          { text: 'Storage', link: '/reference/storage' },
+          { text: 'Packages', link: '/reference/packages' }
         ],
       },
     ],
