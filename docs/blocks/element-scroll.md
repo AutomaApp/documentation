@@ -7,13 +7,16 @@ title: Scroll Element Block
 Scrolls the element to a particular set of coordinates.
 
 - **Element selector** <br>
-	[Element selector](/api-reference/blocks.html#element-selector).
+	[Element selector](../workflow/element-selector.md).
 
 - **Scroll horizontal** <br>
 	X coordinate of the element that you want to be displayed.
 
 - **Scroll vertical** <br>
 	Y coordinate of the element that you want to be displayed.
+
+- **Scroll into view** <br>
+	Scroll until the matches element is visible on the browser window.
 
 - **Scroll into view** <br>
 	Scroll the parent of the matches element until the matches element is visible to the user.

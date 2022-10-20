@@ -7,7 +7,7 @@ title: Forms Block
 Get or fill the value of a form element (input, select, checkbox, and radio).
 
 - **Element selector** <br>
-	[Element selector](/api-reference/blocks.html#element-selector).
+	[Element selector](../workflow/element-selector.md).
 
 ## Get form value
 Get the value of the form element.
@@ -49,3 +49,5 @@ Get the value of the form element.
 
 - **Selected** <br>
 	Whether the checkbox or radio element is selected or not.
+
+<!--@include: ../parts/blocks-interaction-note.md-->

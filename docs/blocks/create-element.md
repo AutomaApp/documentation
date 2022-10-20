@@ -7,7 +7,7 @@ title: Create Element Block
 Create an element and insert it into the page.
 
 - **Element selector** <br>
-	The [element selector](/api-reference/blocks.html#element-selector) of the targeted element.
+	The [element selector](../workflow/element-selector.md) of the targeted element.
 	
 - **Insert element**<br>
 	Representing the position relative to the targeted element.

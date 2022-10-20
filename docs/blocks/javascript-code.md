@@ -13,6 +13,9 @@ This will execute the javascript code every time Automa creates a new tab or swi
 
 ![execute every new tab](https://res.cloudinary.com/chat-story/image/upload/v1651031286/automa/chrome_b0wdnqRYv1_vknvhm.png)
 
+## Execution Context
+Refer to: [Javascript Execution Context](../reference/javascript-execution-context.md)
+
 ## JavaScript Code
 There're several built-in functions that you can call within the code.
 

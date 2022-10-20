@@ -12,7 +12,7 @@ Save assets (image, video, audio, or file) from an element or URL.
 	URL of the assets. for example, `https://example.com/image.png`
 
 - **Element selector** <br>
-	[Element selector](/api-reference/blocks.html#element-selector).
+	[Element selector](../workflow/element-selector.md).
 
 - **File name** <br>
 	The filename of the assets. If you don't want to rename the assets leave the input blank.

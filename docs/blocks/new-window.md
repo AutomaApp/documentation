@@ -22,6 +22,8 @@ Create a new window.
 
 ## Incognito Window
 
-Set the new window as an incognito window. To use this option, you must enable the "Allow in Incognito" for the Automa extension.
+Set the new window as an incognito window. To use this option, you must enable the "Allow in Incognito" for the Automa extension. 
+
+You can find this option by going to `chrome://extensions` => find Automa => scroll down
 
 ![Allow in incognito](https://res.cloudinary.com/chat-story/image/upload/v1642331154/automa/chrome_OXTZ3YmUTg_x8cq9g.png)

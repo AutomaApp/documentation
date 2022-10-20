@@ -13,7 +13,7 @@ This feature allows you to set a dynamic value for a block based on data from:
 | `globalData` | Get the global data of the workflow |
 | `googleSheets` | Get the [Google Sheets](/blocks/google-sheets.md) data |
 | `activeTabUrl` | Get the active tab url |
-| `workflow` | Get the data ([Table](./table.md), [Global Data](./global-data.md), and [Google Sheets](/blocks/google-sheets.md)) of the workflow that have been execute by the [Execute Workflow block](/blocks/execute-workflow.md) |
+| `workflow` | Get the data ([Table](./table.md) and [Variables](./variables.md)) of the workflow that have been execute by the [Execute Workflow block](/blocks/execute-workflow.md) |
 
 Automa uses mustache templating and extends it with data from above and functions.
 

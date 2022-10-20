@@ -9,13 +9,13 @@ Check whether an [element](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 If the element exists, the workflow will execute the block that connects with the first output. And if it's not, it will execute the `fallback` output.
 
 - **Element selector** <br>
-	[Element selector](/api-reference/blocks.html#element-selector).
+	[Element selector](../workflow/element-selector.md).
 
 - **Try for** <br>
 	Define how many times to check the element based on the selector.
 
 - **Timeout** <br>
-	Timeout for each of the try, defaults to 500ms.
+	Delay each of the try, defaults to 500ms.
 
 - **Fallback** <br>
 	A fallback when the element doesn't exist.

@@ -7,7 +7,7 @@ title: Upload File Block
 Upload file into an `<input type="file">` element.
 
 - **Element selector** <br>
-	[Selector](/api-reference/blocks.html#element-selector) for the `<input type="file">` element.
+	[Selector](../workflow/element-selector.md) for the `<input type="file">` element.
 
 - **File path** <br>
 	The absolute path, the URL, or the base64 of the file to upload.<br>
