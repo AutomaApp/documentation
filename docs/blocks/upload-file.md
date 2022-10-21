@@ -28,3 +28,11 @@ In order for this block to work, you must allow Automa to access the files by en
 - Open `chrome://extensions`
 - Find Automa and click the "Detail" button
 - Scroll down and enable "Allow access to file URLs"
+
+## Find the Upload File Selector
+
+In most cases, the element for uploading the file is hidden means you can use the Element Picker to select the element. In most cases, the element for uploading the file is hidden means you can use the Element Picker to select the element. And because of that, you can use the Recording feature to find the upload file element.
+
+1. [Start the recording](../guide/quick-start.md#recording-actions)
+2. Upload a file and stop the recording
+3. Clean up the other blocks like the click element block because it doesn't need when using the upload file block.

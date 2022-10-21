@@ -22,6 +22,11 @@ To stop the recording, open the Automa popup and click the ⏹️ button. To lea
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/NmRCgLtsPnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### Start Recording From a Specific Block in Workflow
+If you already create a workflow and want to start recording from a specific block inside a workflow, you can right-click on an output of the block and click the "Record from here" menu.
+
+![Record](https://res.cloudinary.com/chat-story/image/upload/v1666315751/automa/start-recording_hpfg9u.gif) 
+
 ## Manually
 
 To create a workflow manually:
