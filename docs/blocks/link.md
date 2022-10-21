@@ -12,3 +12,5 @@ So to fix this, you need to use the Link block. It will grab the URL from the an
 
 - **Element selector** <br>
 	[Element selector](../workflow/element-selector.md).
+
+<!--@include: ../parts/blocks-interaction-note.md-->

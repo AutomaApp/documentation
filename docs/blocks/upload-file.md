@@ -35,4 +35,6 @@ In most cases, the element for uploading the file is hidden means you can use th
 
 1. [Start the recording](../guide/quick-start.md#recording-actions)
 2. Upload a file and stop the recording
-3. Clean up the other blocks like the click element block because it doesn't need when using the upload file block.
+3. Clean up the other blocks like the click element block that makes the website open a file picker window. Because it is not required when using the upload file block.
+
+<!--@include: ../parts/blocks-interaction-note.md-->

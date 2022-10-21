@@ -77,13 +77,13 @@ Map data of a variable or table.
 	```
 
 - **Assign to variable** <br>
-	Whether assign the mapped data into a [variable](/api-reference/variables.md) or not.
+	Whether assign the mapped data into a [variable](../workflow/variables.md) or not.
 
 - **Variable name** <br>
 	Name of the variable to assign the mapped data.
 
 - **Insert to table** <br>
-	Whether insert the mapped data into the [table](/api-reference/table.md) or not.
+	Whether insert the mapped data into the [table](../workflow/table.md) or not.
 
 - **Select column** <br>
 	The column where the mapped data will be inserted.

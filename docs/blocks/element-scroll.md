@@ -26,3 +26,5 @@ Scrolls the element to a particular set of coordinates.
 
 - **Increment vertical scroll** <br>
 	Add the Y scroll coordinate of the matches element with the scroll vertical you inputted.
+
+<!--@include: ../parts/blocks-interaction-note.md-->

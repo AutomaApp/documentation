@@ -22,7 +22,7 @@ There're several built-in functions that you can call within the code.
 ### `automaNextBlock(data, insert?)`
 To tell the workflow to continue to execute the next block.
 
-Use the `data` parameter to insert data into the table. This parameter can take an object or an array of objects data types. And the key of the object must be defined in the [table](/api-reference/table.md).
+Use the `data` parameter to insert data into the table. This parameter can take an object or an array of objects data types. And the key of the object must be defined in the [table](../workflow/table.md).
 
 **Examples**
 ```js

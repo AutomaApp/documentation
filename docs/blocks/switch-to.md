@@ -10,3 +10,5 @@ Use this block when you want to execute the blocks in the web interaction catego
 
 - **Iframe selector** <br>
 	CSS Selector of the [Iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element.
+
+<!--@include: ../parts/blocks-interaction-note.md-->

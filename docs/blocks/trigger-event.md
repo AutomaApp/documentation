@@ -14,3 +14,5 @@ Trigger the event of an element.
 
 - **Options** <br>
 	The options for the event.
+
+<!--@include: ../parts/blocks-interaction-note.md-->

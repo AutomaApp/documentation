@@ -125,8 +125,8 @@ export const en: SidebarConfig = {
         {
           text: 'Workflow',
           children: [
-            '/api-reference/table.md',
-            '/api-reference/variables.md',
+            '../workflow/table.md',
+            '../workflow/variables.md',
             '/api-reference/table-or-variables.md',
             '/api-reference/reference-data.md',
             '/api-reference/global-data.md',

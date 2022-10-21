@@ -27,3 +27,5 @@ Save assets (image, video, audio, or file) from an element or URL.
 	
 	- `"prompt"` <br>
 		The browser will prompt the user, asking them to choose whether to uniquify or overwrite.
+
+<!--@include: ../parts/blocks-interaction-note.md-->

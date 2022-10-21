@@ -63,3 +63,5 @@ Create an element and insert it into the page.
 		```
 - **Preload script**<br>
 	Load scripts or styles before injecting the element.
+
+<!--@include: ../parts/blocks-interaction-note.md-->

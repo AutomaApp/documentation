@@ -69,7 +69,7 @@ Update the cells values of the spreadsheet.
 	Read more on the [Google developer page](https://developers.google.com/sheets/api/reference/rest/v4/ValueInputOption)
 
 - **Data from** <br>
-	The source of the data for updating the spreadsheet, defaults to [table](/api-reference/table.md).
+	The source of the data for updating the spreadsheet, defaults to [table](../workflow/table.md).
 	When using the custom option, the inputted data must be an array of an arrays data type with valid JSON syntax.
 
 	**Example**
