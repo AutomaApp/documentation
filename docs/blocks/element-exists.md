@@ -19,3 +19,6 @@ If the element exists, the workflow will execute the block that connects with th
 
 - **Fallback** <br>
 	A fallback when the element doesn't exist.
+
+- **Throw an error if doesn't exist** <br />
+	Throw an error instead of executing the fallback

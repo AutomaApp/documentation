@@ -33,6 +33,7 @@ const config = defineConfig({
           { text: 'Debug Mode', link: '/workflow/debug-mode' },
           { text: 'Element Selector', link: '/workflow/element-selector' },
           { text: 'Expressions', link: '/workflow/expressions' },
+          { text: 'Looping', link: '/workflow/looping' },
         ]
       },
       {

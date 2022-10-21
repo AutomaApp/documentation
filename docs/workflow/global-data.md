@@ -1,8 +1,8 @@
 ---
-title: Global data
+title: Global Data
 ---
 
-# Global data
+# Global Data
 
 Use global data to define a global variable within your workflow.
 For example, you have multiple new tab blocks wherein the URL input has the same domain e.g. "http://dribbble.com". Instead of editing the block one by one to change the URL domain, you can define the URL domain in the global data like:
@@ -12,6 +12,6 @@ For example, you have multiple new tab blocks wherein the URL input has the same
   "url": "https://dribbble.com"
 }
 ```
-And access the global data inside the URL text field of the New Tab block using an expression. For example, <code v-pre>{{globalData@url}}</code>
+And access the global data inside the URL text field of the New Tab block using an [expression](./expressions.md). For example, <code v-pre>{{globalData@url}}</code>
 
 ![URL Input](https://res.cloudinary.com/chat-story/image/upload/v1642160825/automa/chrome_d3PsYXgOKK_weyqwy.png)

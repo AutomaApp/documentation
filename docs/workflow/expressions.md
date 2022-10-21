@@ -4,16 +4,16 @@ title: Expressions
 
 # Expressions
 This feature allows you to set a dynamic value for a block based on data from:
-| name | description |
-| --- | --- |
-| `table` | Get data from the [Table](./table.md) |
-| `variables` | Get data from the [Variables](./variables.md) |
-| `loopData` | Get the current iteration data of the [Loop Data](/blocks/loop-data.html#accessing-data) block |
-| `prevBlockData` | Get the data of the previous block |
-| `globalData` | Get the global data of the workflow |
-| `googleSheets` | Get the [Google Sheets](/blocks/google-sheets.md) data |
-| `activeTabUrl` | Get the active tab url |
-| `workflow` | Get the data ([Table](./table.md) and [Variables](./variables.md)) of the workflow that have been execute by the [Execute Workflow block](/blocks/execute-workflow.md) |
+| Name | Description | Access item |
+| --- | --- | --- |
+| `table` | Get data from the [Table](./table.md) | `table` |
+| `variables` | Get data from the [Variables](./variables.md) | `variables.<variableName>` |
+| `loopData` | Get the current iteration data of the [Loop Data](/blocks/loop-data.html#accessing-data) block | `loopData.<loopId>` |
+| `prevBlockData` | Get the data of the previous block | `prevBlockData` |
+| `globalData` | Get the global data of the workflow | `globalData` |
+| `googleSheets` | Get the [Google Sheets](/blocks/google-sheets.md) data | `googleSheets.<referenceKey>` |
+| `activeTabUrl` | Get the active tab url | `activeTabUrl` |
+| `workflow` | Get the data ([Table](./table.md) and [Variables](./variables.md)) of the workflow that have been execute by the [Execute Workflow block](/blocks/execute-workflow.md) | `workflow.<executeId>` |
 
 Automa uses mustache templating and extends it with data from above and functions.
 
@@ -49,9 +49,9 @@ But what if you want to use the `url` property on the first element of the array
 
 To access other data inside the expression, you must wrap the expression for accessing the data with a bracket (`[]`). For example, when you want to increment a variable using the [`$increment`](#incrementvalue-incrementby) function or get the table row based on the current index of the loop. You can write the expressions like:
 ```
-{{$increment([variables@variableName]}}
+{{$increment([variables.variableName]}}
 
-{{table.[loopData@loopId.$index].columnName}}
+{{table.[loopData.loopId.$index].columnName}}
 ```
 
 ## Functions
@@ -105,7 +105,7 @@ $getLength("testing") // 7
 $getLength([table]) // 14
 
 // Get the length of the "text" column on the second row
-$getLength([table@1.text]) // 5
+$getLength([table.1.text]) // 5
 ```
 
 ### `$randData(expression)`
@@ -139,7 +139,7 @@ Is used to multiply a value.
 $multiply(5, 2) // 10
 
 // Multiply a variable
-$multiply([variables@variableName], 0.3) //20.7
+$multiply([variables.variableName], 0.3) //20.7
 ```
 
 ### `$increment(value, incrementBy)`

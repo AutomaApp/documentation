@@ -23,3 +23,6 @@ Set the limit of elements to loop.
 	- **Scroll down to load more**
 
 [**Workflow Example**](https://automa.site/workflow/sIGixG_Cpb5wOaw05_2tZ)
+
+
+Also see: [Looping](../workflow/Looping.md#using-the-loop-data-or-loop-elements-block)
