@@ -1,4 +1,17 @@
 import { defineConfig } from 'vitepress';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+declare global {
+  namespace NodeJS {
+    interface ProcessEnv {
+      SEARCH_API_KEY: string;
+      SEARCH_APP_ID: string;
+      SEARCH_INDEX_NAME: string;
+    }
+  }
+}
 
 const config = defineConfig({
   lang: 'en-US',
@@ -8,6 +21,12 @@ const config = defineConfig({
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/images/logo.png' }]
   ],
   themeConfig: {
+    algolia: {
+      apiKey: process.env.SEARCH_API_KEY,
+      appId: process.env.SEARCH_APP_ID,
+      indexName: process.env.SEARCH_INDEX_NAME,
+      buttonText: 'Search docs',
+    },
     sidebar: [
       {
         text: 'Getting Started',

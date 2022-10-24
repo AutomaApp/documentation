@@ -41,7 +41,7 @@ Get the value of the form element.
 ### Select
 
 - **Value** <br>
-	The value for the \<select> element. To select a specific option for the select element, you can input it with the value of the option you want to select. You can find the option value by using the [Automa Element Selector](/getting-started/element-selector.md) or [Chrome DevTools](https://developer.chrome.com/docs/devtools/).
+	The value for the \<select> element. To select a specific option for the select element, you can input it with the value of the option you want to select. You can find the option value by using the [Automa Element Selector](../workflow/element-selector.md) or [Chrome DevTools](https://developer.chrome.com/docs/devtools/).
 
 	![Chrome DevTools](https://res.cloudinary.com/chat-story/image/upload/v1642419001/automa/chrome_JQ9AV5L07X_fmvf5u.png)
 
