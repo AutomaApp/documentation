@@ -74,6 +74,28 @@ const data = automaRefData('loopData', 'loopId');
 const value = automaRefData('variables', 'text');
 ```
 
+### `automaFetch(type, resource)`
+
+Make an HTTP Request in the extension background, using it to avoid CORS.
+
+- `type`: Response type of the request. Possible values `text` & `json`;
+- `resource`: The resource that you wish to fetch
+
+**Examples**
+```js
+automaFetch('json', { url: 'https://api.example.com'}).then((result) => {
+	console.log(result);
+})
+
+automaFetch('json', {
+	url: 'https://api.example.com',
+	method: 'POST',
+	body: JSON.stringify({
+		title: 'Hello world',
+	}),
+})
+```
+
 ### `automaResetTimeout()`
 Reset the execution timeout.
 
