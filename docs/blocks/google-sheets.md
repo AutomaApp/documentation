@@ -51,9 +51,9 @@ Get the cells values of the spreadsheet.
 ```
 
 ### Accessing Sheets Data
-To access the spreadsheet values from an input of a block, you can use the mustache tag with the <code v-pre>{{ googleSheets@referenceKey.path }}</code> syntax.
+To access the spreadsheet values from an input of a block, you can use expressions like <code v-pre>{{ googleSheets.referenceKey.path }}</code> syntax.
 
-Read more: [reference data](/api-reference/reference-data.md)
+Read more: [Expressions](../workflow/expressions.md)
 
 ## Update Spreadsheet Values
 Update the cells values of the spreadsheet.

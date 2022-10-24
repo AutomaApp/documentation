@@ -27,7 +27,7 @@ And when you're not defining the loop scope using the Loop Breakpoint block, the
 The above will execute the Forms and the Get Text block once and then continue to the Export Data block.
 
 ### Access Loop Item
-You can use [expressions](./expressions.md) to access data from the current loop iteration inside the loop scope. For example, <code v-pre>{{loopData@loopId}}</code>; replace the `loopId` with the Loop id you inputted inside the Loop Data or Loop Element block.
+You can use [expressions](./expressions.md) to access data from the current loop iteration inside the loop scope. For example, <code v-pre>{{loopData.loopId}}</code>; replace the `loopId` with the Loop id you inputted inside the Loop Data or Loop Element block.
 
 ![Access loop item](https://res.cloudinary.com/chat-story/image/upload/v1666321501/automa/chrome_Z1IwOcaATY_gxfn6k.png)
 

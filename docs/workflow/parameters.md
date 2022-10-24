@@ -23,4 +23,4 @@ When you run the workflow, there will be a popup where you input the value for t
 
 ![Input parameter](https://res.cloudinary.com/chat-story/image/upload/v1666080277/automa/chrome_7p2d3nvu9w_funwit.png)
 
-These parameters will be inserted as [variables](./variables.md) in the workflow, and the variable name the same as the parameter name. For example, you can access the value of the `keyword` parameter like <code v-pre>{{ variables@keyword }}</code>
+These parameters will be inserted as [variables](./variables.md) in the workflow, and the variable name the same as the parameter name. For example, you can access the value of the `keyword` parameter like <code v-pre>{{ variables.keyword }}</code>

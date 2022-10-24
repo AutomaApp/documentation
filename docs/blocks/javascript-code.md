@@ -49,7 +49,9 @@ automaSetVariable('profile', { firstName: 'John', lastName: 'Doe' });
 ```
 
 ### `automaRefData(keyword, path)`
-Use this function to [reference data](/api-reference/reference-data.md).
+Use this function to access workflow data like the table, variables, etc.
+
+Read more: [Expressions](../workflow/expressions.md)
 
 **Examples**
 ```js
