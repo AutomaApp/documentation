@@ -39,7 +39,7 @@ const config = defineConfig({
       {
         text: 'Blocks',
         collapsible: true,
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             text: "General",
@@ -303,6 +303,7 @@ const config = defineConfig({
         items: [
           { text: 'Storage', link: '/reference/storage' },
           { text: 'Packages', link: '/reference/packages' },
+          { text: 'Workflow Common Errors', link: '/reference/workflow-common-errors' },
           { text: 'JavaScript Execution Context', link: '/reference/javascript-execution-context' }
         ],
       },
