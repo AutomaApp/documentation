@@ -30,4 +30,4 @@ Set the limit of data to loop.
 
 <hr />
 
-Also see: [Looping](../workflow/Looping.md#using-the-loop-data-or-loop-elements-block)
+Also see: [Looping](../workflow/looping.md#using-the-loop-data-or-loop-elements-block)
