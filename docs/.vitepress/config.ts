@@ -40,6 +40,9 @@ const config = defineConfig({
     sitemap.end()
   },
   themeConfig: {
+    nav: [
+      { text: 'Docs for v1.21.x or below', link: 'https://automa-docs-old.vercel.app/' }
+    ],
     algolia: {
       apiKey: process.env.SEARCH_API_KEY,
       appId: process.env.SEARCH_APP_ID,
