@@ -1,7 +1,12 @@
 import { defineConfig } from 'vitepress';
+import { createWriteStream } from 'node:fs';
+import { resolve } from 'node:path';
+import { SitemapStream } from 'sitemap';
 import dotenv from 'dotenv';
 
 dotenv.config();
+
+const links: { url: string; lastmod: number | undefined }[] = [];
 
 declare global {
   namespace NodeJS {
@@ -20,6 +25,20 @@ const config = defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/images/logo.png' }]
   ],
+  transformHtml: (_, id, { pageData }) => {
+    if (!/[\\/]404\.html$/.test(id))
+      links.push({
+        url: pageData.relativePath.replace(/\.md$/, '.html'),
+        lastmod: pageData.lastUpdated
+      })
+  },  
+  buildEnd: ({ outDir }) => {
+    const sitemap = new SitemapStream({ hostname: 'https://docs.automa.site/' })
+    const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
+    sitemap.pipe(writeStream)
+    links.forEach((link) => sitemap.write(link))
+    sitemap.end()
+  },
   themeConfig: {
     algolia: {
       apiKey: process.env.SEARCH_API_KEY,
