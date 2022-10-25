@@ -296,4 +296,13 @@ And you can use the built-in function the same as the javascript function.
 - Get current timestamp
 ```js
 {{Date.now()}} //1666237704022
+
+```
+- Access loop data and index
+```js
+// Loop data
+{{loopData.loopId.data}}
+
+// Loop index
+{{loopData.loopId.$index}}
 ```
