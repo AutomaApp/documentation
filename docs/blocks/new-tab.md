@@ -17,3 +17,6 @@ Create a new tab.
 
 - **Add tab to group** <br>
 	Add the new tab to the tabs group.
+
+- **Use custom User-Agent** <br>
+	Use custom user agent for the new tab.

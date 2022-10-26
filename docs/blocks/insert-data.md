@@ -4,7 +4,7 @@ title: Insert Data Block
 
 # Insert Data Block
 
-Insert additional data into the [table](/api-reference/table.md) or [variables](/api-reference/variables.md)
+Insert additional data into the [table](../workflow/table.md) or [variables](../workflow/variables.md)
 
 ## Import file
 Insert the file content into a variable or the column of the table. To use this feature, you must allow Automa to access the file URLs, to do it

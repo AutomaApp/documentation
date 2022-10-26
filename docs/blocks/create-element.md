@@ -7,7 +7,7 @@ title: Create Element Block
 Create an element and insert it into the page.
 
 - **Element selector** <br>
-	The [element selector](/api-reference/blocks.html#element-selector) of the targeted element.
+	The [element selector](../workflow/element-selector.md) of the targeted element.
 	
 - **Insert element**<br>
 	Representing the position relative to the targeted element.
@@ -35,7 +35,7 @@ Create an element and insert it into the page.
 - **JavaScript**<br>
 	The JavaScript that will be injected into the page
 	- **`automaRefData(keyword, path?)` function**<br>
-		Use this function to [reference data](/api-reference/reference-data.md). <br>
+		Use this function to [reference data](../workflow/expressions.md). <br>
 		For more detail open the [Javascript Block page](/blocks/javascript-code.html#automarefdata-keyword-path)
 	
 	- **`automaExecWorkflow(detail)` function**<br>
@@ -63,3 +63,5 @@ Create an element and insert it into the page.
 		```
 - **Preload script**<br>
 	Load scripts or styles before injecting the element.
+
+<!--@include: ../parts/blocks-interaction-note.md-->

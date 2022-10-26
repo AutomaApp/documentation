@@ -27,13 +27,13 @@ Handle downloaded file.
 	Wait for the file to be downloaded before continuing to the next block.
 
 - **Assign to variable** <br>
-	Whether assign the file path of the downloaded file into a [variable](/api-reference/variables.md) or not.
+	Whether assign the file path of the downloaded file into a [variable](../workflow/variables.md) or not.
 
 - **Variable name** <br>
 	Name of the variable to assign the file path.
 
 - **Insert to table** <br>
-	Whether insert the file path into the [table](/api-reference/table.md) or not.
+	Whether insert the file path into the [table](../workflow/table.md) or not.
 
 - **Select column** <br>
 	The column where the file path will be inserted.

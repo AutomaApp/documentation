@@ -7,7 +7,7 @@ title: Upload File Block
 Upload file into an `<input type="file">` element.
 
 - **Element selector** <br>
-	[Selector](/api-reference/blocks.html#element-selector) for the `<input type="file">` element.
+	[Selector](../workflow/element-selector.md) for the `<input type="file">` element.
 
 - **File path** <br>
 	The absolute path, the URL, or the base64 of the file to upload.<br>
@@ -28,3 +28,13 @@ In order for this block to work, you must allow Automa to access the files by en
 - Open `chrome://extensions`
 - Find Automa and click the "Detail" button
 - Scroll down and enable "Allow access to file URLs"
+
+## Find the Upload File Selector
+
+In most cases, the element for uploading the file is hidden means you can use the Element Picker to select the element. In most cases, the element for uploading the file is hidden means you can use the Element Picker to select the element. And because of that, you can use the Recording feature to find the upload file element.
+
+1. [Start the recording](../guide/quick-start.md#recording-actions)
+2. Upload a file and stop the recording
+3. Clean up the other blocks like the click element block that makes the website open a file picker window. Because it is not required when using the upload file block.
+
+<!--@include: ../parts/blocks-interaction-note.md-->

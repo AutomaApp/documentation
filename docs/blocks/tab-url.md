@@ -13,13 +13,13 @@ Get the URL of the tabs.
 	The key or a combination that you want to simulate.
 
 - **Assign to variable** <br>
-	Whether assign the URL into a [variable](/api-reference/variables.md) or not.
+	Whether assign the URL into a [variable](../workflow/variables.md) or not.
 
 - **Variable name** <br>
 	Name of the variable to assign the URL.
 
 - **Insert to table** <br>
-	Whether insert the URL into the [table](/api-reference/table.md) or not.
+	Whether insert the URL into the [table](../workflow/table.md) or not.
 
 - **Select column** <br>
 	The column where the URL will be inserted.

@@ -1,23 +1,15 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
-    "module": "ES2020",
-    "types": ["vite/client"],
-    "composite": true,
-    "declaration": true,
-    "declarationMap": false,
-    "lib": ["DOM", "ES2020"],
+    "module": "esnext",
+    "target": "esnext",
     "moduleResolution": "node",
-    "newLine": "lf",
-    "noEmitOnError": true,
-    "noImplicitAny": false,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "sourceMap": false,
+    "esModuleInterop": true,
     "strict": true,
-    "strictNullChecks": true,
-    "target": "ES2018"
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "lib": ["ESNext", "DOM"]
   },
-  "include": ["**/.vuepress/**/*"],
-  "exclude": ["node_modules", ".temp", "lib", "dist"]
+  "exclude": ["**/node_modules/**", "**/dist/**"]
 }

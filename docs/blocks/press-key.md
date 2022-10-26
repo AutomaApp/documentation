@@ -15,3 +15,5 @@ Simulate the pressed key or a combination on the page.
 :::tip Note
 This block only simulates pressing the keyboard key on the page of a website. This means it can't trigger browser shortcuts like opening a new tab or closing tab, or system shortcuts like copy and paste.
 :::
+
+<!--@include: ../parts/blocks-interaction-note.md-->

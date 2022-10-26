@@ -29,5 +29,8 @@ Switch to tab based on its index position. For example, there are 4 tabs in a br
 
 to switch to the Google tab you can input `0`, to the GitHub tab input `1`, and so on.
 
+### Tab Title
+Switch to tab based on the title of the tab.
+
 ## Active Tab
 Whether the tab should become the active tab in the window.

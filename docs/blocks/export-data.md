@@ -4,6 +4,13 @@ title: Export Data Block
 
 # Export Data Block
 
-Export [table](/api-reference/table.md) or [google sheets](/blocks/google-sheets.md) data as JSON, CSV, or plain text file.
+Export [table](../workflow//table.md), [google sheets](./google-sheets.md), or [variables](../workflow/variables.md) data as JSON, CSV, or plain text file.
 
-When you select the google sheets option, you must input the [`reference key`](/blocks/google-sheets.html#reference-key) of the google sheets block so Automa can know which google sheets data you want to export.
+## File name
+The name of the file
+
+## Reference key
+The [reference key](./google-sheets.html#reference-key) you input in the Google Sheets block.
+
+## Variable name
+The variable name that you want to export.

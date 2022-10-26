@@ -1,8 +1,8 @@
 ---
-title: Workflow Errors
+title: Workflow Common Errors
 ---
 
-# Workflow Errors
+# Workflow Common Errors
 Some common errors when running a workflow and how to solve it.
 
 ## Can't find an element with "{selector}" selector {#element-not-found}

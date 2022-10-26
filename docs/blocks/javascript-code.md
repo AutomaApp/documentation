@@ -13,13 +13,16 @@ This will execute the javascript code every time Automa creates a new tab or swi
 
 ![execute every new tab](https://res.cloudinary.com/chat-story/image/upload/v1651031286/automa/chrome_b0wdnqRYv1_vknvhm.png)
 
+## Execution Context
+Refer to: [Javascript Execution Context](../reference/javascript-execution-context.md)
+
 ## JavaScript Code
 There're several built-in functions that you can call within the code.
 
 ### `automaNextBlock(data, insert?)`
 To tell the workflow to continue to execute the next block.
 
-Use the `data` parameter to insert data into the table. This parameter can take an object or an array of objects data types. And the key of the object must be defined in the [table](/api-reference/table.md).
+Use the `data` parameter to insert data into the table. This parameter can take an object or an array of objects data types. And the key of the object must be defined in the [table](../workflow/table.md).
 
 **Examples**
 ```js
@@ -46,7 +49,9 @@ automaSetVariable('profile', { firstName: 'John', lastName: 'Doe' });
 ```
 
 ### `automaRefData(keyword, path)`
-Use this function to [reference data](/api-reference/reference-data.md).
+Use this function to access workflow data like the table, variables, etc.
+
+Read more: [Expressions](../workflow/expressions.md)
 
 **Examples**
 ```js
@@ -67,6 +72,28 @@ const data = automaRefData('loopData', 'loopId');
 
 // Get the value of the "text" variable
 const value = automaRefData('variables', 'text');
+```
+
+### `automaFetch(type, resource)`
+
+Make an HTTP Request in the extension background, using it to avoid CORS.
+
+- `type`: Response type of the request. Possible values `text` & `json`;
+- `resource`: The resource that you wish to fetch
+
+**Examples**
+```js
+automaFetch('json', { url: 'https://api.example.com'}).then((result) => {
+	console.log(result);
+})
+
+automaFetch('json', {
+	url: 'https://api.example.com',
+	method: 'POST',
+	body: JSON.stringify({
+		title: 'Hello world',
+	}),
+})
 ```
 
 ### `automaResetTimeout()`

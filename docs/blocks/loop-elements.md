@@ -10,7 +10,7 @@ Iterate through elements that match the selector. This block is the same as the 
 ID to identify the loop. Use this ID when [referencing data](#accessing-data) of the loop or when using the [loop breakpoint](/blocks/loop-breakpoint) block.
 
 - **Element Selector** <br />
-[Element selector](/api-reference/blocks.html#element-selector) of the elements to loop through.
+[Element selector](../workflow/element-selector.md) of the elements to loop through.
 
 - **Max data** <br />
 Set the limit of elements to loop.
@@ -23,3 +23,6 @@ Set the limit of elements to loop.
 	- **Scroll down to load more**
 
 [**Workflow Example**](https://automa.site/workflow/sIGixG_Cpb5wOaw05_2tZ)
+
+
+Also see: [Looping](../workflow/looping.md#using-the-loop-data-or-loop-elements-block)

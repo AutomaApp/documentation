@@ -6,4 +6,6 @@ title: Hover Element Block
 Hover over an element.
 
 - **Element selector** <br>
-	[Element selector](/api-reference/blocks.html#element-selector).
+	[Element selector](../workflow/element-selector.md).
+
+<!--@include: ../parts/blocks-interaction-note.md-->

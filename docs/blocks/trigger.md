@@ -19,7 +19,12 @@ Execute the workflow on a specific date and time.
 Execute the workflow on a specific day and time.
 
 ### On browser startup
-Execute the workflow when a profile that has this extension installed first starts up.
+Execute the workflow when the browser profile that has this extension installed starts up.
+
+### Cron job
+Use the cron expression to schedule the workflow execution.
+
+![Cron](https://user-images.githubusercontent.com/22908993/192127832-38b73b5f-1bd0-458c-8a1c-311d85e2446b.png)
 
 ### Context menu
 Execute a workflow via the context menu (right-clicking). When a workflow is executed via the context menu, there are several variables will be injected to it:
@@ -82,8 +87,4 @@ window.dispatchEvent(new CustomEvent('automa:execute-workflow', {
 ```
 
 ## Parameters
-The parameters of the workflow. These parameters will be inserted as variables when the workflow starts executing. For example, you have three parameters `URL`, `query`, and `id`. 
-
-<img src="https://res.cloudinary.com/chat-story/image/upload/v1660101358/automa/NVIDIA_Share_VegY3DQG3E_un2glj.png" alt="Parameters" />
-
-You can access those parameters using the mustache tag with `variables` as the keyword like <code v-pre>{{variables@URL}}</code> or <code v-pre>{{variables@id}}</code>
+Refer to: [Workflow Parameters](../workflow/parameters.md)

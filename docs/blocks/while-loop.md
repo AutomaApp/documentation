@@ -10,4 +10,4 @@ When it meets the condition, the while loop block will continue to the block tha
 
 ![while loop example](https://res.cloudinary.com/chat-story/image/upload/v1648544767/automa/nsAkHeuetG_xg5awo.png)
 
-Open the [condition builder](/api-reference/condition-builder.md) page to see how to build a condition.
+Open the [condition builder](../reference/condition-builder.md) page to see how to build a condition.

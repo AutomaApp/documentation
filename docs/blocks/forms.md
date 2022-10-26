@@ -7,19 +7,19 @@ title: Forms Block
 Get or fill the value of a form element (input, select, checkbox, and radio).
 
 - **Element selector** <br>
-	[Element selector](/api-reference/blocks.html#element-selector).
+	[Element selector](../workflow/element-selector.md).
 
 ## Get form value
 Get the value of the form element.
 
 - **Assign to variable** <br>
-	Whether assign the value into a [variable](/api-reference/variables.md) or not.
+	Whether assign the value into a [variable](../workflow/variables.md) or not.
 
 - **Variable name** <br>
 	Name of the variable to assign the value.
 
 - **Insert to table** <br>
-	Whether insert the value into the [table](/api-reference/table.md) or not.
+	Whether insert the value into the [table](../workflow/table.md) or not.
 
 - **Select column** <br>
 	The column where the value will be inserted.
@@ -41,7 +41,7 @@ Get the value of the form element.
 ### Select
 
 - **Value** <br>
-	The value for the \<select> element. To select a specific option for the select element, you can input it with the value of the option you want to select. You can find the option value by using the [Automa Element Selector](/getting-started/element-selector.md) or [Chrome DevTools](https://developer.chrome.com/docs/devtools/).
+	The value for the \<select> element. To select a specific option for the select element, you can input it with the value of the option you want to select. You can find the option value by using the [Automa Element Selector](../workflow/element-selector.md) or [Chrome DevTools](https://developer.chrome.com/docs/devtools/).
 
 	![Chrome DevTools](https://res.cloudinary.com/chat-story/image/upload/v1642419001/automa/chrome_JQ9AV5L07X_fmvf5u.png)
 
@@ -49,3 +49,5 @@ Get the value of the form element.
 
 - **Selected** <br>
 	Whether the checkbox or radio element is selected or not.
+
+<!--@include: ../parts/blocks-interaction-note.md-->

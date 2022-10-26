@@ -6,6 +6,8 @@ title: Handle Dialog Block
 
 Accepts or dismisses a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload).
 
+![alert](https://res.cloudinary.com/chat-story/image/upload/v1666250259/automa/chrome_h0O8snWxOY_xxdeyg.png)
+
 You need to use this block before the dialog occurs. For example, when a dialog is occurred after clicking an element.
 ![dialog](https://res.cloudinary.com/chat-story/image/upload/v1647594563/automa/chrome_rAyUAIdWI3_agnydv.png)
 
