@@ -87,6 +87,9 @@ If the value of the data you reference is a string and has a new line in it, you
 	"longText": {{!variables.article}}
 }
 ```
+::: info
+This is not required when using [JavaScript Expressions](../workflow/expressions.md#javascript-expressions).
+:::
 
 - **Other** <br />
 If the value of the data you reference is object, array, etc, you can directly write the mustache tag inside the body. For example,
@@ -94,5 +97,13 @@ If the value of the data you reference is object, array, etc, you can directly w
 {
 	"profile": {{variables.userProfile}}, // { name: 'John Doe', email: 'john@example.com' }
 	"stats": {{variables.stats}} // [10, 200, 87, 21]
+}
+```
+If you're [JavaScript Expressions](../workflow/expressions.md#javascript-expressions), you need to wrap the expression inside the [`$stringify`](../workflow/expressions.md#stringifyvalue) function.
+
+```json
+{
+	"profile": {{$stringify(variables.userProfile)}},
+	"stats": {{$stringify(variables.stats)}}
 }
 ```
