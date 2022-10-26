@@ -216,6 +216,47 @@ $modulo(4, 2) // 0
 $modulo(-4, 2) // -0
 ```
 
+### `$filter(data, syntax)`
+Filter/Query javascript object. Automa is using [JSONPath](https://github.com/dchester/jsonpath) library to do querying.
+
+- `data`: Javascript object to query
+- `syntax`: [JSONPath Syntax](https://github.com/dchester/jsonpath#jsonpath-syntax)
+
+**Examples**
+
+Querying `colors` variable with these as the value:
+```json
+[
+	{ color: "red", value: "#f00" },
+	{ color: "green", value: "#0f0" },
+	{ color: "blue", value: "#00f" },
+	{ color: "cyan", value: "#0ff" },
+	{ color: "magenta", value: "#f0f" },
+	{ color: "yellow", value: "#ff0" },
+	{ color: "black", value: "#000" }
+]
+```
+```js
+{{ $filter([variables.colors], "$..color") }}
+// ['red', 'green', 'blue', 'cyan', 'magenta', 'yellow', 'black']
+
+{{ $filter([variables.colors], "$..value") }}
+// ['#f00', '#0f0', '#00f', '#0ff', '#f0f', '#ff0', '#000']
+```
+
+Using [JS Expressions](#javascript-expressions)
+
+```js
+!!{{ $filter(variables.colors, "$..color") }}
+// ['red', 'green', 'blue', 'cyan', 'magenta', 'yellow', 'black']
+
+!!{{ $filter(variables.colors, "$..value") }}
+// ['#f00', '#0f0', '#00f', '#0ff', '#f0f', '#ff0', '#000']
+```
+
+### `$stringify(value)`
+Convert JavaScript value to a JSON string.
+
 ## Examples
 
 This section provides more examples of how to write expressions. And the data structure of the source data.
