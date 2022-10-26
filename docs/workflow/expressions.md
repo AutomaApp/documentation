@@ -3,6 +3,11 @@ title: Expressions
 ---
 
 # Expressions
+
+::: tip Note
+If you're using v1.21.x or below <code v-pre>{{ keyword@path }}</code> syntax is still supported in v1.22.x
+:::
+
 This feature allows you to set a dynamic value for a block based on data from:
 | Name | Description | Access item |
 | --- | --- | --- |
@@ -314,6 +319,10 @@ The variables is stored as an object with the variable name as the object key.
   output: `100`
 
 ## JavaScript Expressions
+
+::: tip Note
+Only supported in the chromium based browser
+:::
 
 Automa also supports javascript within the expression, but to write a javascript, you must add `!!` characters as the first value on a text field of a block. For example, from <code v-pre>The number is: {{variables.number}}</code> to <code v-pre>!!The number is: {{variables.number}}</code>.
 
