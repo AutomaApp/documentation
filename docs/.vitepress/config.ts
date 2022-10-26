@@ -350,7 +350,7 @@ const config = defineConfig({
       },
     ],
     editLink: {
-      pattern: 'https://github.com/automaapp/documentation/edit/main/:path',
+      pattern: 'https://github.com/automaapp/documentation/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
     logo: '/images/logo.png',
