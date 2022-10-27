@@ -344,6 +344,7 @@ const config = defineConfig({
         items: [
           { text: 'Storage', link: '/reference/storage' },
           { text: 'Packages', link: '/reference/packages' },
+          { text: 'Condition Builder', link: '/reference/condition-builder' },
           { text: 'Workflow Common Errors', link: '/reference/workflow-common-errors' },
           { text: 'JavaScript Execution Context', link: '/reference/javascript-execution-context' }
         ],
