@@ -68,6 +68,14 @@ When using the `multipart/form-data` as the header, the request body will be sen
 ]
 ```
 
+In the value field, you can write the absolute path of the file in your local computer or the URL of the file you want to upload. For example,
+```json
+[
+	["audio", "C:\\Downloads\\files\\music.mp3"],
+	["image", "https://example.com/image.png"]
+]
+```
+
 ## Writing Expression Inside the Body
 When writing [expressions](../workflow/expressions.md) inside the body to access data like [variables](../workflow/variables.md), [table](../workflow/table.md), etc, is a bit tricky because the end result of it must be a valid JSON.. And to prevent the "Content body is not valid JSON" error, follow these rules:
 
