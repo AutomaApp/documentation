@@ -1,5 +1,4 @@
-import { watch } from 'vue';
-import { Router, useRouter } from 'vitepress';
+import { Router } from 'vitepress';
 
 export const redirectRoutes = [
   { from: '/guide/host-workflow.html', to: '/workflow/sharing-workflow.html#host-workflow' },

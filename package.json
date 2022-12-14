@@ -5,11 +5,11 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "dotenv": "^16.0.0",
+    "dotenv": "^16.0.3",
     "sitemap": "^7.1.1",
-    "typescript": "^4.5.4",
-    "vitepress": "^1.0.0-alpha.22",
-    "vue": "^3.2.41"
+    "typescript": "^4.9.3",
+    "vitepress": "^1.0.0-alpha.29",
+    "vue": "^3.2.45"
   },
   "dependencies": {
     "v-remixicon": "^0.1.4"
