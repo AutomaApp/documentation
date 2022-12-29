@@ -28,4 +28,9 @@ Save assets (image, video, audio, or file) from an element or URL.
 	- `"prompt"` <br>
 		The browser will prompt the user, asking them to choose whether to uniquify or overwrite.
 
+- **Save items' download ids** <br />
+	Save the download ids of the downloaded assets into a variable or the workflow table. It will return an array of integers.
+	
+	You can pass this download id to the [Handle Download block](./handle-download.md) if you want to get the file path of the downloaded asset.
+
 <!--@include: ../parts/blocks-interaction-note.md-->
