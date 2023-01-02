@@ -58,33 +58,37 @@ To execute a workflow.
 })()
 ```
 
-## `$helper.storage`
+## `$helper.storage.variables`
 
-Access the storage of the extension. Storage in this context is the [storage feature](../reference/storage.md) in Automa Extension. But currently, only [storage variables](../reference/storage.md#variables) are supported. Automa is using [dexie.js](https://dexie.org/) to manage the variables.
+Access or manipulate the variables stored in the [storage](../reference/storage.md#variables).
 
 **Examples**
 ```js
 (async () => {
   // Get all variables
-  const variables = await $helper.storage.variables.toArray();
+  const variables = await $helper.storage.variables.get(null);
+  console.log(variables) // { name: 'John Doe', email: 'johndoe@example.com', username: 'john_doe' }
 
   // Get a specific variable
-  const urlVariable = await $helper.storage.variables.where({ name: 'url' }).first();
+  const variables = await $helper.storage.variables.get('name'); 
+  console.log(variables) // { name: 'John Doe' }
 
-  // Add a variable
-  await $helper.storage.variables.put({
-    name: 'Variable name',
-    value: 'variable value',
-  });
+  // Get multiple variables
+  const variables = await $helper.storage.variables.get(['name', 'email']);
+  console.log(variables) // { name: 'John Doe', email: 'johndoe@example.com' }
 
-  // Update a variable
-  const variable = await $helper.storage.variables.where({ name: 'url' }).first();
-  await $helper.storage.variables.update(variable.id, {
-    value: 'new variable value',
+  // Add or update variables
+  await $helper.storage.variables.set({
+    country: 'US',
+    name: 'Jonathan Doe',
+    email: 'jonathan_doe@example.com',
   });
 
   // Delete a variable 
-  $helper.storage.variables.where({ name: 'url' }).delete();
+  await $helper.storage.variables.delete('name');
+
+  // Delete multiple variables
+  await $helper.storage.variables.delete(['name', 'email']);
 
   // Delete all variables
   $helper.storage.variables.clear();

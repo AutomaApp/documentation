@@ -9,6 +9,9 @@ Handle downloaded file.
 - **Timeout** <br>
 	Set how long is the workflow waiting for the downloaded file to complete, defaults to 20000ms (20 seconds). Once it reaches the timeout, the workflow will continue to execute the block.
 
+- **Download id**
+	The id of download item to handle.
+
 - **File name** <br>
 	The filename of the downloaded file. If you don't want to rename the downloaded file leave the input blank.
 

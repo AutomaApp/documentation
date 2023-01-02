@@ -6,6 +6,10 @@ title: Automa Chrome Extension Builder Overview
 
 Automa Chrome Extension Builder (Automa CEB for short) allows you to generate a standalone chrome extension based on Automa workflows. You can share this extension with another user for them to install on their browser or publish the extension to the [Chrome Web Store](https://chrome.google.com/webstore/).
 
+:::tip Note
+Automa Chrome Extension Builder is still in **Beta**. If you find a bug or a missing feature, feel free to send a message on the [Automa Discord Server](https://discord.gg/C6khwwTE84).
+:::
+
 ## Quick Start
 A quick start on how to create your first extension using the Automa CEB, open the extensions page by clicking the ["My extension"](https://www.automa.site/extensions) button on the [automa website](https://www.automa.site). 
 
