@@ -23,7 +23,8 @@ const config = defineConfig({
   title: 'Automa Docs',
   description: 'Documentation for Automa Browser Extension',
   head: [
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/images/logo.png' }]
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/images/logo.png' }],
+    ['script', { src: 'https://analytics-three-steel.vercel.app/umami.js', async: '', defer: '', 'data-website-id': '1ca59597-6600-46e9-ae2d-94ec5115c335' }]
   ],
   transformHtml: (_, id, { pageData }) => {
     if (!/[\\/]404\.html$/.test(id))
@@ -373,6 +374,7 @@ const config = defineConfig({
           items: [
             { text: 'Global Variables', link: '/extension-builder/global-variables' },
             { text: 'Version Control', link: '/extension-builder/version-control' },
+            { text: 'Installing Extension', link: '/extension-builder/installing-extension' },
           ]
         }
       ]

@@ -2,6 +2,8 @@
 /public
 dist
 
+.vitepress/cache
+
 .temp
 .cache
 .env
