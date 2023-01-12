@@ -64,3 +64,5 @@ And you'll find the "Select an element" button when editing a block. When you cl
 ## Custom Selector Syntax
 Besides supporting the standard [CSS Selector](https://www.w3.org/TR/selectors-4/) and XPath expression, Automa supports a non-standard syntax:
 - `iframe-selector |> element-selector`: allows to select an element inside an [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element. For example, `iframe.result |> button.primary-btn`
+- `:contains(TEXT)`: select an element based on its text. For example, `p.description:contains("cat")`
+- `shadow-dom-selector >> element-selector`: select an element inside a [shadow DOM](https://web.dev/shadowdom-v1/). For example, `div.app-container >> h1.title`
