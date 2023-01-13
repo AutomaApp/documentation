@@ -2,7 +2,7 @@
 /public
 dist
 
-.vitepress/cache
+cache
 
 .temp
 .cache
