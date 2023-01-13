@@ -24,6 +24,10 @@ To tell the workflow to continue to execute the next block.
 
 Use the `data` parameter to insert data into the table. This parameter can take an object or an array of objects data types. And the key of the object must be defined in the [table](../workflow/table.md).
 
+The `insert` parameter is used to control whether to insert the data in the `data` parameter into the table, defaults to `true`. Alternatively, you can pass an object that contains two optional properties:
+- `insert`: whether insert data into the table.
+- `nextBlockId`: A string that specifies the ID of the next block to navigate to.
+
 **Examples**
 ```js
 automaNextBlock({ title: 'Something', count: 200 });
@@ -31,10 +35,11 @@ automaNextBlock({ title: 'Something', count: 200 });
 //or
 
 automaNextBlock([{ title: 'Foo', count: 300 }, { title: 'Bar', count: 200 }])
+
+// Continue execution to a specific block
+automaNextBlock({ title: 'Hello' }, { nextBlockId: '4dxcxa3' })
 ```
 ![table](https://res.cloudinary.com/chat-story/image/upload/v1642474574/automa/chrome_7ehs03LPjU_i0ivn2.png)
-
-`insert` parameter is used to tell the workflow whether to insert the data in the `data` parameter into the table or not. Defaults to `true`.
 
 ### `automaSetVariable(name, value)`
 Set the value of the workflow variables.
