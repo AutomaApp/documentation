@@ -187,6 +187,16 @@ $replace("hello world!", "world", "everyone") // hello everyone!
 $replace("hello world!", "hello", "hi") // hi world!
 ```
 
+### `$replaceAll(value, search, replace)`
+Used to replace all the matches string search from value to be replace string.
+
+**Examples**
+```js
+$replace("hello world!", "o", "0") // hell0 w0rld
+
+$replace("The temperature is 25 degrees today", " ", "") // Thetemperatureis25degreestoday
+```
+
 ### `$toLowerCase(value)`
 Is used to lowercase a value.
 
