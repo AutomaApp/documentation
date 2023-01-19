@@ -299,7 +299,15 @@ const config = defineConfig({
                 {
                   text: "Google Sheets Block",
                   link: "/blocks/google-sheets.md"
-                }
+                },
+                {
+                  text: "Google Sheets (GDrive) Block",
+                  link: "/blocks/google-sheets-drive.md"
+                },
+                {
+                  text: "Google Drive Block",
+                  link: "/blocks/google-drive.md"
+                },
               ]
             },
             {
@@ -352,6 +360,13 @@ const config = defineConfig({
             { text: 'JavaScript Execution Context', link: '/reference/javascript-execution-context' }
           ],
         },
+        {
+          text: 'Integrations',
+          collapsible: true,
+          items: [
+            { text: 'Google Drive', link: '/integrations/google-drive' },
+          ]
+        }
       ],
       '/extension-builder/': [
         { 
