@@ -78,6 +78,7 @@ const config = defineConfig({
             { text: 'Element Selector', link: '/workflow/element-selector' },
             { text: 'Expressions', link: '/workflow/expressions' },
             { text: 'Looping', link: '/workflow/looping' },
+            { text: 'Testing mode', link: '/workflow/testing-mode' },
           ]
         },
         {
