@@ -4,7 +4,7 @@ title: Export Data Block
 
 # Export Data Block
 
-Export [table](../workflow//table.md), [google sheets](./google-sheets.md), or [variables](../workflow/variables.md) data as JSON, CSV, or plain text file.
+Export [table](../workflow/table.md), [google sheets](./google-sheets.md), or [variables](../workflow/variables.md) data as JSON, CSV, or plain text file.
 
 ## File name
 The name of the file
