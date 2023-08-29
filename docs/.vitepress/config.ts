@@ -1,10 +1,5 @@
+import 'dotenv/config';
 import { defineConfig } from 'vitepress';
-import { createWriteStream } from 'node:fs';
-import { resolve } from 'node:path';
-import { SitemapStream } from 'sitemap';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const links: { url: string; lastmod: number | undefined }[] = [];
 
@@ -32,13 +27,10 @@ const config = defineConfig({
         url: pageData.relativePath.replace(/\.md$/, '.html'),
         lastmod: pageData.lastUpdated
       })
-  },  
-  buildEnd: ({ outDir }) => {
-    const sitemap = new SitemapStream({ hostname: 'https://docs.automa.site/' })
-    const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
-    sitemap.pipe(writeStream)
-    links.forEach((link) => sitemap.write(link))
-    sitemap.end()
+  },
+  sitemap: {
+    hostname: 'https://docs.automa.site/',
+    lastmodDateOnly: false
   },
   themeConfig: {
     nav: [
@@ -49,7 +41,6 @@ const config = defineConfig({
       apiKey: process.env.SEARCH_API_KEY,
       appId: process.env.SEARCH_APP_ID,
       indexName: process.env.SEARCH_INDEX_NAME,
-      buttonText: 'Search docs',
     },
     sidebar: { 
       '/': [
@@ -62,7 +53,7 @@ const config = defineConfig({
         },
         {
           text: 'Workflow',
-          collapsible: true,
+          collapsed: false,
           items: [
             { text: 'Overview', link: '/workflow/overview' },
             { text: 'Running a Workflow', link: '/workflow/running-a-workflow' },
@@ -83,7 +74,6 @@ const config = defineConfig({
         },
         {
           text: 'Blocks',
-          collapsible: true,
           collapsed: true,
           items: [
             {
@@ -352,7 +342,7 @@ const config = defineConfig({
         },
         {
           text: 'Reference',
-          collapsible: true,
+          collapsed: false,
           items: [
             { text: 'Storage', link: '/reference/storage' },
             { text: 'Packages', link: '/reference/packages' },
@@ -363,7 +353,7 @@ const config = defineConfig({
         },
         {
           text: 'Integrations',
-          collapsible: true,
+          collapsed: false,
           items: [
             { text: 'Google Drive', link: '/integrations/google-drive' },
           ]

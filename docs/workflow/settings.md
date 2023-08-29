@@ -48,3 +48,51 @@ It contains the following settings:
 
 - **Block delay**: Add delay before executing each of the blocks
 - **Tab load timeout**: Maximum time to load tab in milliseconds
+
+## 4. Workflow Events
+
+Workflow events allow you to perform actions when an event occurs within the workflow.
+
+### Available Events
+- **Finish (success)**: Fires when the workflow finishes executing with success status.
+- **Finish (failed)**: Fires when the workflow finishes executing with failed.
+
+### Available Actions
+- **HTTP Request**: Send an HTTP request
+- **Execute JS Code**: Execute JavaScript code
+
+### Available Data
+
+You can access data like the workflow logs, status, error message, etc. using the `workflow` keyword inside an expression or `automaRefData` function within the action.
+
+**Data Type**
+```ts
+interface Workflow {
+  status: "success" | "error";
+  logs:
+    | {
+        type: "error" | "success";
+        description: string;
+        name: string;
+        blockId: string;
+        timestamp: number;
+        activeTabUrl: string;
+        duration: number;
+        id: number;
+      }[]
+    | null;
+  errorMessage: string | null;
+}
+```
+
+**Examples**
+```js
+// Expression
+{{ workflow.logs }}
+
+// automaRefData
+console.log(automaRefData('workflow', 'logs'))
+console.log(automaRefData('workflow', 'status'))
+```
+
+![Workflow data](https://res.cloudinary.com/chat-story/image/upload/v1693204373/automa/Screenshot_2023-08-28_143223_swcorv.png)

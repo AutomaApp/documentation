@@ -23,3 +23,11 @@ Inside the value text field, you can either input the absolute path of the file 
 	- `https://example.com/words.txt`
 
 ![import file content](https://res.cloudinary.com/chat-story/image/upload/v1662970548/automa/insner_2_mrslmt.png)
+
+## Inserting Multiple Table Rows
+To insert multiple table rows into a column, separate each value with a double vertical bar (`||`). For example:
+
+```
+value 1 || value 2 || value 3
+```
+![multiple rows](https://res.cloudinary.com/chat-story/image/upload/v1693202468/automa/fieqmvqf5kb5seudggp4.png)
