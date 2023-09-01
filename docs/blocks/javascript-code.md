@@ -20,13 +20,21 @@ Refer to: [Javascript Execution Context](../reference/javascript-execution-conte
 There're several built-in functions that you can call within the code.
 
 ### `automaNextBlock(data, insert?)`
+```ts
+automaNextBlock(
+	data?: Object | Object[], 
+	insert?: boolean | { insert?: boolean; nextBlockId?: string; replaceTable?: boolean }
+): void;
+```
+
 To tell the workflow to continue to execute the next block.
 
 Use the `data` parameter to insert data into the table. This parameter can take an object or an array of objects data types. And the key of the object must be defined in the [table](../workflow/table.md).
 
 The `insert` parameter is used to control whether to insert the data in the `data` parameter into the table, defaults to `true`. Alternatively, you can pass an object that contains two optional properties:
 - `insert`: whether insert data into the table.
-- `nextBlockId`: A string that specifies the ID of the next block to navigate to.
+- `nextBlockId`: a string that specifies the ID of the next block to navigate to.
+- `replaceTable`: replace the workflow table values with those passed on the first parameter.
 
 **Examples**
 ```js
