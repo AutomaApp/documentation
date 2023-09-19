@@ -46,6 +46,10 @@ Handle the response of the request.
 	```
 	To get the `values` array, write `data.values` as the path. And to get the first value of the `values` array, write `data.values.0`.
 
+	::: info
+	Input `$response` if you want to get all the HTTP Response like `status`, `statusText`, `data`, etc.
+	:::
+
 - **Assign to variable** <br>
 	Whether assign the value into a [variable](../workflow/variables.md) or not.
 
