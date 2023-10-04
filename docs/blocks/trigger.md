@@ -86,5 +86,9 @@ window.dispatchEvent(new CustomEvent('automa:execute-workflow', {
 }));
 ```
 
+:::tip Note
+If the `automa:exeucte-workflow` event not working, you can replace it with `__automaExecuteWorkflow`
+:::
+
 ## Parameters
 Refer to: [Workflow Parameters](../workflow/parameters.md)
