@@ -91,9 +91,9 @@ If the `automa:exeucte-workflow` event not working, you can replace it with `__a
 :::
 
 ## Trigger Through URL
-From version v1.28.26 you will be able to execute Automa workflow through an URL, to do this you only need to create a new tab in your browser and input this URL `chrome-chrome-extension://infppggnoaenmfagbfknfkancpbljcca/execute.html#/workfloId`, replace the `workflowId` with the id of the workflow you want to execute.
+From version v1.28.26 you will be able to execute Automa workflow through an URL, to do this you only need to create a new tab in your browser and input this URL `chrome-extension://infppggnoaenmfagbfknfkancpbljcca/execute.html#/workflowId`, replace the `workflowId` with the id of the workflow you want to execute.
 
-You can also pass variables to the workflow by adding a query to that URL. For example, `chrome-chrome-extension://infppggnoaenmfagbfknfkancpbljcca/execute.html#/workfloId?variableA=value&variableB=10`
+You can also pass variables to the workflow by adding a query to that URL. For example, `chrome-extension://infppggnoaenmfagbfknfkancpbljcca/execute.html#/workflowId?variableA=value&variableB=10`
 
 ## Parameters
 Refer to: [Workflow Parameters](../workflow/parameters.md)
