@@ -35,7 +35,8 @@ const config = defineConfig({
   themeConfig: {
     nav: [
       { text: 'Docs for v1.21.x or below', link: 'https://automa-docs-old.vercel.app/' },
-      { text: 'Extension Builder', link: '/extension-builder/' }
+      { text: 'Extension Builder', link: '/extension-builder/' },
+      { text: 'Help Translate', link: '/help-translate' }
     ],
     algolia: {
       apiKey: process.env.SEARCH_API_KEY,
