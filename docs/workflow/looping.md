@@ -38,7 +38,7 @@ The <code v-pre>{{loopData.loopId}}</code> expression will return:
   "$index": 1
 }
 ```
-So if you want to access the index of the loop, you can use [expressions](./expressions.md) like <code v-pre>{{loopData.loopId.$index}}</code>; And to get the loop value, you don't need to write the `data` property like <code v-pre>{{loopId.loopId.data}}</code>; Automa will automatically assign it to the expressions. But if you use [JavaScript expressions](./expressions.md#javascript-expressions), you must include the `data` property <code v-pre>!!{{loopData.loopId.data}}</code>
+So if you want to access the index of the loop, you can use [expressions](./expressions.md) like <code v-pre>{{loopData.loopId.$index}}</code>; And to get the loop value, you don't need to write the `data` property like <code v-pre>{{loopData.loopId.data}}</code>; Automa will automatically assign it to the expressions. But if you use [JavaScript expressions](./expressions.md#javascript-expressions), you must include the `data` property <code v-pre>!!{{loopData.loopId.data}}</code>
 
 ## Using the Repeat Task Block
 
