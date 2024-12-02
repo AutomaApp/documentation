@@ -11,8 +11,8 @@ When running the workflow, it will start executing from the trigger block and th
 ## Export and import a workflow
 The workflow in Automa is saved in JSON format. And you can export this JSON file and import it into Automa. To export a workflow, click the ellipsis icon (<v-remixicon name="riMore2Line" size="18" />) and select the "Export" menu. 
 
-![Export workflow](https://res.cloudinary.com/chat-story/image/upload/v1666064030/automa/chrome_jtkwrZyAd4_zwp3qt.png)
+![Export workflow](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/118p6d-3k.png)
 
 And to import the workflow, open the Automa dashboard, click the arrow down icon, click the "Import workflow" menu, and select the JSON file.
 
-![Import workflow](https://res.cloudinary.com/chat-story/image/upload/v1666064030/automa/chrome_JbjCbwnmQ1_apo7kh.png)
+![Import workflow](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/118qey-nh.png)
