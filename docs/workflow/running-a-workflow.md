@@ -12,4 +12,4 @@ You can run a workflow by opening the Automa dashboard and clicking the play ico
 
 Or you can open Automa Shortcut by pressing <kbd>Ctrl/⌘+Shift+E</kbd> on a page and select the workflow.
 
-![Automa shortcut](https://res.cloudinary.com/chat-story/image/upload/v1666341308/automa/chrome_uLX3tDY65e_rlecxl.png)
+![Automa shortcut](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/11cuil-6p.png)
