@@ -25,7 +25,7 @@ Switch to the previous tab of the active tab
 ### Tab Index
 Switch to tab based on its index position. For example, there are 4 tabs in a browser window (Google, GitHub, Chess, and Microsoft), 
 
-![tabs](https://res.cloudinary.com/chat-story/image/upload/v1657083615/automa/tabs_ctqmdm.png)
+![tabs](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/184jtu-yv.png)
 
 to switch to the Google tab you can input `0`, to the GitHub tab input `1`, and so on.
 

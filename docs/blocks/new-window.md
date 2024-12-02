@@ -26,4 +26,4 @@ Set the new window as an incognito window. To use this option, you must enable t
 
 You can find this option by going to `chrome://extensions` => find Automa => scroll down
 
-![Allow in incognito](https://res.cloudinary.com/chat-story/image/upload/v1642331154/automa/chrome_OXTZ3YmUTg_x8cq9g.png)
+![Allow in incognito](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/185qzp-dx.png)

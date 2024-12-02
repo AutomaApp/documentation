@@ -18,7 +18,7 @@ document.body.appendChild(script);
 
 If you see the `Refused to execute inline script because it violates the following Content Security Policy directive...` error, it means third-party code is to be injected.
 
-![CSP Error](https://res.cloudinary.com/chat-story/image/upload/v1666334108/automa/chrome_hIZ8wpD5CC_dh5nfw.png)
+![CSP Error](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17kver-g7.png)
 
 ## Background
 

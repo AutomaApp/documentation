@@ -24,7 +24,7 @@ Execute the workflow when the browser profile that has this extension installed 
 ### Cron job
 Use the cron expression to schedule the workflow execution.
 
-![Cron](https://user-images.githubusercontent.com/22908993/192127832-38b73b5f-1bd0-458c-8a1c-311d85e2446b.png)
+![Cron](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17s5ar-lj.png)
 
 ### Context menu
 Execute a workflow via the context menu (right-clicking). When a workflow is executed via the context menu, there are several variables will be injected to it:
@@ -68,7 +68,7 @@ window.dispatchEvent(new CustomEvent('automa:execute-workflow', {
 ```
 In the `detail` property, you must define the `id` or the `publicId` of the workflow you want to execute. You can define the `publicId` of the worklfow in the workflow settings. 
 
-![Workflow public ID](https://res.cloudinary.com/chat-story/image/upload/v1660102318/automa/NVIDIA_Share_rWFjFA6ooQ_h3rtoq.png)
+![Workflow public ID](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17s5as-e0.png)
 
 And to add variables to that workflow, add `data` property inside the [CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent) property. 
 ```js

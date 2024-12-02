@@ -8,4 +8,4 @@ Groups other blocks together inside one container, this way you can make the wor
 
 The blocks inside the Blocks Group are executed sequentially based on the order of the block from top to bottom.
 
-![Group](https://res.cloudinary.com/chat-story/image/upload/v1642321333/automa/chrome_wH5Q79djOe_wlbudv.png)
+![Group](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17wso3-yt.png)

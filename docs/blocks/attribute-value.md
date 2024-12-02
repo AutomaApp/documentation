@@ -31,6 +31,6 @@ Get the value of the specified attribute from the element.
 
 To find the attribute name, you can use the [Automa Element Picker](../workflow/element-selector.md#generating-selector). You need to select an element first, and you'll find list of attributes the element has under it
 
-![Attributes](https://res.cloudinary.com/chat-story/image/upload/v1666253887/automa/chrome_yUjnbDYYP7_hm4bwq.png)
+![Attributes](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/18cqs4-za.png)
 
 <!--@include: ../parts/blocks-interaction-note.md-->

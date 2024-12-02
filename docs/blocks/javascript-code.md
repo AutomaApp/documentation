@@ -11,7 +11,7 @@ Javascript code execution timeout, default to 20000ms (20 seconds). If it reache
 ## Execute Every New Tab
 This will execute the javascript code every time Automa creates a new tab or switches a tab. When this option is enabled, the javascript code block no longer requires an active tab to work and built-in functions like `automaRefData`, `automaNextBlock`, etc; will not be available. For example
 
-![execute every new tab](https://res.cloudinary.com/chat-story/image/upload/v1651031286/automa/chrome_b0wdnqRYv1_vknvhm.png)
+![execute every new tab](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/18ft25-8p.png)
 
 ## Execution Context
 Refer to: [Javascript Execution Context](../reference/javascript-execution-context.md)
@@ -47,7 +47,7 @@ automaNextBlock([{ title: 'Foo', count: 300 }, { title: 'Bar', count: 200 }])
 // Continue execution to a specific block
 automaNextBlock({ title: 'Hello' }, { nextBlockId: '4dxcxa3' })
 ```
-![table](https://res.cloudinary.com/chat-story/image/upload/v1642474574/automa/chrome_7ehs03LPjU_i0ivn2.png)
+![table](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/18ft24-g3.png)
 
 ### `automaSetVariable(name, value)`
 Set the value of the workflow variables.
