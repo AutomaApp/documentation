@@ -17,10 +17,10 @@ To add a parameter to the workflow, you need to:
 
 You can rename the parameter, select the parameter type, or input the default value. 
 
-![Add parameter](https://res.cloudinary.com/chat-story/image/upload/v1666079866/automa/chrome_1VtcrxMGH7_d7puxa.png)
+![Add parameter](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16iwo6-ow.png)
 
 When you run the workflow, there will be a popup where you input the value for the parameter.
 
-![Input parameter](https://res.cloudinary.com/chat-story/image/upload/v1666080277/automa/chrome_7p2d3nvu9w_funwit.png)
+![Input parameter](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16iwo7-l6.png)
 
 These parameters will be inserted as [variables](./variables.md) in the workflow, and the variable name the same as the parameter name. For example, you can access the value of the `keyword` parameter like <code v-pre>{{ variables.keyword }}</code>

@@ -14,7 +14,7 @@ For the value you want to compare, you can write [expressions](../workflow/expre
 #### Value prefix
 This prefix is a convention used to indicate the data type of a value. It can be used to convert a value to the corresponding data type. For example, the "string::" prefix can be used to convert a value to a string type, and "number::" can be used to convert a value to a numeric type.
 
-![Prefix example](https://res.cloudinary.com/chat-story/image/upload/v1673597971/automa/NVIDIA_Share_eyqm3SIAKx_kiot08.png)
+![Prefix example](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17dnu8-jb.png)
 
 Available prefix:
 - `string::`: convert the value to a string.

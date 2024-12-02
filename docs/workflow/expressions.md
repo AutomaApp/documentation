@@ -40,13 +40,13 @@ You can use the following expression inside the [HTTP Request block](../blocks/w
 ```
 {{variables.socials}}
 ```
-![HTTP Request block body](https://res.cloudinary.com/chat-story/image/upload/v1666171308/automa/chrome_FbRbTGuOXy_j8frph.png)
+![HTTP Request block body](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16vk9t-o6.png)
 
 But what if you want to use the `url` property on the first element of the array as a value inside the [New Tab block](../blocks/new-tab.md) URL? For that, use the following expression:
 ```
 {{variables.socials.0.url}}
 ```
-![New tab block URL](https://res.cloudinary.com/chat-story/image/upload/v1666232856/automa/chrome_8d0k1lZqUn_lxnycp.png)
+![New tab block URL](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16vk9s-zz.png)
 
 `0` on that expression means the first element of the array. And if you want to get the second element of the array, replace it with `1`. `2` for the third element; `3` for the fourth element; and so on.
 
@@ -336,7 +336,7 @@ Only supported in the chromium based browser
 
 Automa also supports javascript within the expression, but to write a javascript, you must add `!!` characters as the first value on a text field of a block. For example, from <code v-pre>The number is: {{variables.number}}</code> to <code v-pre>!!The number is: {{variables.number}}</code>.
 
-![JS Expression](https://res.cloudinary.com/chat-story/image/upload/v1666237164/automa/TV_-_2_2_r3emea.png)
+![JS Expression](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16vjb0-5t.png)
 
 And you can use the built-in function the same as the javascript function.
 

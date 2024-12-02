@@ -35,6 +35,6 @@ To define the inputs and the outputs of the block, you only need to right-click 
 
 And you'll see the inputs and outputs of the package block when using it in a workflow.
 
-![Package block with IO](https://res.cloudinary.com/chat-story/image/upload/v1662342600/automa/chrome_emrfNdNVz0_jgecef.png)
+![Package block with IO](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17b5bh-2q.png)
 
 And when you connect a block to one of the package block inputs, Automa will start executing from the block you set as the input in the package.

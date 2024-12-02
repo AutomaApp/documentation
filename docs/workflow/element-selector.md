@@ -22,7 +22,7 @@ Mark the element that has been selected. Meaning that the element will not be se
 
 For example, when you have a workflow like this
 
-![Workflow example](https://res.cloudinary.com/chat-story/image/upload/v1642405439/automa/B2cPsIplxO_m06lfr.png)
+![Workflow example](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16sv6t-9g.png)
 
 and the [Get Text block](/blocks/get-text.md) using `.text` as the element selector, and the website [DOM tree](https://en.wikipedia.org/wiki/Document_Object_Model).
 
@@ -55,11 +55,11 @@ Automa Element Selector
 
 In the Automa Dashboard, click the <v-remixicon name="riFocus3Line" /> button on the sidebar, And Automa will inject an element picker into the current page. You can click or press the `Space` key to select an element. It will automatically generate a selector for the selected element. 
 
-![Element picker](https://res.cloudinary.com/chat-story/image/upload/v1666151274/automa/chrome_Kd5yzW80tf_sq2oxp.png)
+![Element picker](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16sv6u-n6.png)
 
 And you'll find the "Select an element" button when editing a block. When you click it, it will inject the element picker to the current page, select an element, and click the "Select element" button in the element picker.
 
-![Select an element button](https://res.cloudinary.com/chat-story/image/upload/v1666151714/automa/chrome_xQ16a4tU8v_etyuxh.png)
+![Select an element button](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16sv6u-4q.png)
 
 ## Custom Selector Syntax
 Besides supporting the standard [CSS Selector](https://www.w3.org/TR/selectors-4/) and XPath expression, Automa supports a non-standard syntax:

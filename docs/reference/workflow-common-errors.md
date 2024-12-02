@@ -8,7 +8,7 @@ Some common errors when running a workflow and how to solve it.
 ## Can't find an element with "{selector}" selector {#element-not-found}
 This error happened because the element selector doesn't match with any elements on the page. For this case, you can check whether the elements exist on the page using the Element Exist block or enable the "Wait for selector" option in the element selector options. 
 
-![Wait for selector option](https://res.cloudinary.com/chat-story/image/upload/v1663575029/automa/chrome_xzwsxBADvq_f5povx.png)
+![Wait for selector option](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17g8kk-gi.png)
 
 ## Can't find a tab with "{pattern}" patterns {#no-match-tab}
 The Match Patterns you input don't match with any URLs tab. See how to write match patterns on the [MDN page](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Match_patterns#examples).
@@ -23,7 +23,7 @@ This happened because the block you're trying to use requires an active tab to w
 
 To solve this, you can either use a [New Tab block](/blocks/new-tab.md) or an [Active Tab block](/blocks/active-tab.md) before the block you're trying to use.
 
-![no tab](https://res.cloudinary.com/chat-story/image/upload/v1663569336/automa/chrome_D5csgMXyoj_okm03f.png)
+![no tab](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17g8kk-x0.png)
 
 ## "{url}" is invalid URL {#invalid-active-tab}
 This error will occur when the value that you input is not a valid URL. A valid URL must start with `http` or `https` like "https://example.com".

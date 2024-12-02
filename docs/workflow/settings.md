@@ -6,7 +6,7 @@ title: Workflow Settings
 
 It's possible to set custom settings on each workflow from the **workflow > settings** menu.
 
-![workflow settings](https://res.cloudinary.com/chat-story/image/upload/v1666082112/automa/chrome_K7BmBkZ2gZ_o7k6fi.png)
+![workflow settings](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16kj8w-0k.png)
 
 The workflow settings have three sections.
 

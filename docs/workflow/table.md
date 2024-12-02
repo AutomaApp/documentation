@@ -14,12 +14,12 @@ Open a workflow, and click the table icon (<v-remixicon name="riTable2" />) on t
 
 There're four data types you can select `Text`, `Number`, [`Boolean`](https://en.wikipedia.org/wiki/Boolean_data_type), [`Array`](https://en.wikipedia.org/wiki/Array_data_type), and `Any`.
 
-![Workflow table](https://res.cloudinary.com/chat-story/image/upload/v1666068922/automa/chrome_e9ZIOvxldR_pbauzp.png)
+![Workflow table](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16dibh-p3.png)
 
 ## Insert Data
 You can insert data to the table by using blocks that are used for extracting data from a website, such as the [Get Text block](../blocks/get-text.md) and [Attribute Value block](../blocks/attribute-value.md). To insert data using that blocks, click the edit button, enable the "Insert to table" option, and select one of the columns.
 
-![Select column](https://res.cloudinary.com/chat-story/image/upload/v1666076448/automa/chrome_05KtZ48UEI_oyrlmp.png)
+![Select column](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16dibg-h2.png)
 
 Every time you insert data into the table, the data will get pushed to the end row of the column. For example, when you have filled a table with data like this.
 
