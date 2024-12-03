@@ -26,7 +26,7 @@ To find the block menu, hover your mouse over a block in the editor canvas, and 
 
 You also right-click at the block to find more menus.
 
-![Block menu](https://res.cloudinary.com/chat-story/image/upload/v1666161166/automa/block-menu_lq1vig.gif)
+![Block menu](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/10kcio-2k.gif)
 
 ### Settings
 The Block settings allow you to configure the block execution, error handling, and looks.
@@ -46,32 +46,32 @@ The Block settings allow you to configure the block execution, error handling, a
   - **Animated**: animate the connection
   - **Line color**: change the color of the connection
 
-![Block settings](https://res.cloudinary.com/chat-story/image/upload/v1666162997/automa/block-settings_ppatjo.gif)
+![Block settings](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/10l5v4-kd.gif)
 
 ## Selecting Blocks
 To select blocks, you can either press the `ctrl` key => click the block or `shift` key => drag the cursor.
 
-![Selecting blocks](https://res.cloudinary.com/chat-story/image/upload/v1666163436/automa/selecting-blocks_vecdy3.gif)
+![Selecting blocks](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/10lwcw-lg.gif)
 
 ## Connecting Blocks
 There are several ways to connect a block to another block:
 
 - **Manually**: dragging the block output into an input of a block.
 ::: details Example
-![connect block manually](https://res.cloudinary.com/chat-story/image/upload/v1662968420/automa/connect-block_advdve.gif)
+![connect block manually](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/10mskl-d5.gif)
 :::
 
 - **Drop a block into a block output**: drop the block to the output of a block. 
 ::: details Example
-![drop to output example](https://res.cloudinary.com/chat-story/image/upload/v1642573402/automa/connect-block-ouput_nn5nx7.gif)
+![drop to output example](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/10nh08-dj.gif)
 :::
 
 - **Clicking the block output and input** <br>
 ::: details Example
-![Clicking the block output and input example](https://res.cloudinary.com/chat-story/image/upload/v1662968420/automa/connect-block2_slxrpv.gif)
+![Clicking the block output and input example](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/10o2f3-nj.gif)
 :::
 
 - **Drop a block into another block** <br>
 ::: details Example
-![drop to another block example](https://res.cloudinary.com/chat-story/image/upload/v1656734189/automa/drop_in_a_block_zzrtaw.gif)
+![drop to another block example](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/10olmr-yk.gif)
 :::

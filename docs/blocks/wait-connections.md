@@ -22,8 +22,8 @@ When you have a block branched as in the above image, Automa will create a new "
 
 And when you merge the branch without enabling this option, every worker will execute the same block. And the blocks will execute multiple times.
 
-![specific flow disabled](https://res.cloudinary.com/chat-story/image/upload/v1651038898/automa/not-specific-flow_gsawj3.gif)
+![specific flow disabled](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/108gx9-5b.gif)
 
 To prevent this, enable this option and select a specific flow to continue.
 
-![specific flow enable](https://res.cloudinary.com/chat-story/image/upload/v1651038898/automa/specific-flow_hpfqsb.gif)
+![specific flow enable](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/1090fl-d4.gif)

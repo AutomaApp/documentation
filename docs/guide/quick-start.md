@@ -25,7 +25,7 @@ To stop the recording, open the Automa popup and click the ⏹️ button. To lea
 ### Start Recording From a Specific Block in Workflow
 If you already create a workflow and want to start recording from a specific block inside a workflow, you can right-click on an output of the block and click the "Record from here" menu.
 
-![Record](https://res.cloudinary.com/chat-story/image/upload/v1666315751/automa/start-recording_hpfg9u.gif) 
+![Record](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/zzlqq-rx.gif) 
 
 ## Manually
 
@@ -38,6 +38,6 @@ Inside the editor, you'll see a trigger block. This trigger block is where the w
 
 To add a block to the workflow, drag a block from the blocks list on the left side and drop it into the canvas. And to connect the trigger block with the block you added, drag the trigger block output and drop it into the block input. 
 
-![Adding block](https://res.cloudinary.com/chat-story/image/upload/v1666059993/automa/adding-block_pobloe.gif)
+![Adding block](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/zzlqp-a3.gif)
 
 Save the workflow and now you can run the workflow by clicking the play icon <v-remixicon name="riPlayLine" />

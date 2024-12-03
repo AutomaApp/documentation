@@ -12,4 +12,4 @@ To install the extension to one of those browsers:
 3. Drag and drop the extension zip into that page.
 
 ![Chrome Extensions Page](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/oez7n-mm.png)
-![Installing extension](https://res.cloudinary.com/chat-story/image/upload/v1672994471/automa/installing-extension_hkiiu9.gif)
+![Installing extension](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/10hx9e-dk.gif)

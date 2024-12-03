@@ -4,7 +4,7 @@ title: Loop Data Block
 
 # Loop Data Block
 
-![Loop example](https://res.cloudinary.com/chat-story/image/upload/v1642310619/automa/loop_bd2por.gif)
+![Loop example](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/1069pe-en.gif)
 
 You can use this block when you want to do looping through data.
 
