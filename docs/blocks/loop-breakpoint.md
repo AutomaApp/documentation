@@ -9,4 +9,4 @@ Set the breakpoint for the [loop data block](/blocks/loop-data.html#breakpoint).
 ## Stop Loop
 It will stop the loop that corresponds with the loop id you input and continue the execution to the next block.
 
-![Stop loop](https://res.cloudinary.com/chat-story/image/upload/v1666324174/automa/chrome_Uwmb1sgeiJ_sukqfu.png)
+![Stop loop](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/mhqfa-yj.png)

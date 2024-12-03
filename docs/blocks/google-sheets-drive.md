@@ -12,7 +12,7 @@ So, to view the documentation on how to get, update, or clear values in a Google
 
 To get, update, or clear values in a Google Sheet, you need to connect a spreadsheet by clicking the 'Connect' button next to the sheet selection. Then, select the spreadsheet file.
 
-![Connect spreadsheet](https://res.cloudinary.com/chat-story/image/upload/v1674112697/automa/Frame_3_2_h8miwx.png)
+![Connect spreadsheet](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/ml5uc-hh.png)
 
 ## Create a Spreadsheet
 You can use it to create a spreadsheet.

@@ -41,7 +41,7 @@ Map data of a variable or table.
 	```
 	and have a data map like this.
 
-	![data map](https://res.cloudinary.com/chat-story/image/upload/v1657086347/automa/Screenshot_2022-07-06_134530_pyuvbm.png)
+	![data map](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/mqzsy-cv.png)
 
 	The data will convert to
 	```json

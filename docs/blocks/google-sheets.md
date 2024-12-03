@@ -14,7 +14,7 @@ Before using this block, you need to give Automa access to the spreadsheet first
 
 When you share the spreadsheet with the public, Automa only has read access to it. <br> And if you have a plan to update the cell values of the spreadsheet, you need to share the spreadsheet with the Automa service account. To do that, open the spreadsheet you want to share, click the share button on the top right, and input `service@automa2.iam.gserviceaccount.com`.
 
-![Service account](https://res.cloudinary.com/chat-story/image/upload/v1642067522/automa/chrome_9iHTFjxWEn_lzavjy.png)
+![Service account](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/mj8jg-g1.png)
 
 ## Spreadsheet Id
 The Spreadsheet Id contains letters, numbers, hyphens, or underscores. And you can find it in the Google Sheets URL.
@@ -23,7 +23,7 @@ The Spreadsheet Id contains letters, numbers, hyphens, or underscores. And you c
 	https://docs.google.com/spreadsheets/d/<mark>10FGdgjWhkFeJ8m-M5WC0zDIMnSqRFuctuZ1CkOr38mY</mark>/edit
 </code>
 
-![Spreadsheet Id](https://res.cloudinary.com/chat-story/image/upload/v1641768594/automa/chrome_OuX2wQzOe4_lyd8tv.png)
+![Spreadsheet Id](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/mj8jh-f2.png)
 
 ## Range
 The range of the values of the cells that you want to get or update, you can define the cells range by using the [A1 Notation](https://developers.google.com/sheets/api/guides/concepts#expandable-1) like `Sheet1!A1:B2` or [R1C1 notation](https://developers.google.com/sheets/api/guides/concepts#expandable-2) like `Sheet1!R1C1:R2C2`.

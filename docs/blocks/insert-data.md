@@ -22,7 +22,7 @@ Inside the value text field, you can either input the absolute path of the file 
 	- `https://example.com/files/document.pdf`
 	- `https://example.com/words.txt`
 
-![import file content](https://res.cloudinary.com/chat-story/image/upload/v1662970548/automa/insner_2_mrslmt.png)
+![import file content](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/mn1j8-au.png)
 
 ## Inserting Multiple Table Rows
 To insert multiple table rows into a column, separate each value with a double vertical bar (`||`). For example:
@@ -30,4 +30,4 @@ To insert multiple table rows into a column, separate each value with a double v
 ```
 value 1 || value 2 || value 3
 ```
-![multiple rows](https://res.cloudinary.com/chat-story/image/upload/v1693202468/automa/fieqmvqf5kb5seudggp4.png)
+![multiple rows](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/mpoez-84.png)

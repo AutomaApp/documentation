@@ -95,4 +95,4 @@ console.log(automaRefData('workflow', 'logs'))
 console.log(automaRefData('workflow', 'status'))
 ```
 
-![Workflow data](https://res.cloudinary.com/chat-story/image/upload/v1693204373/automa/Screenshot_2023-08-28_143223_swcorv.png)
+![Workflow data](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/ohxkf-et.png)
