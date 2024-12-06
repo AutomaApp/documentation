@@ -1,5 +1,5 @@
-import 'dotenv/config';
-import { defineConfig } from 'vitepress';
+import "dotenv/config";
+import { defineConfig } from "vitepress";
 
 const links: { url: string; lastmod: number | undefined }[] = [];
 
@@ -14,67 +14,81 @@ declare global {
 }
 
 const config = defineConfig({
-  lang: 'en-US',
-  title: 'Automa Docs',
-  description: 'Documentation for Automa Browser Extension',
+  lang: "en-US",
+  title: "Automa Docs",
+  description: "Documentation for Automa Browser Extension",
   head: [
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/images/logo.png' }],
-    ['script', { src: 'https://analytics-three-steel.vercel.app/umami.js', async: '', defer: '', 'data-website-id': '1ca59597-6600-46e9-ae2d-94ec5115c335' }]
+    ["link", { rel: "icon", type: "image/x-icon", href: "/images/logo.png" }],
+    [
+      "script",
+      {
+        src: "https://umami-v2-fawn.vercel.app/script.js",
+        async: "",
+        defer: "",
+        "data-website-id": "fd818e1e-e9aa-42b3-83a3-e233b5765aaa",
+      },
+    ],
   ],
   transformHtml: (_, id, { pageData }) => {
     if (!/[\\/]404\.html$/.test(id))
       links.push({
-        url: pageData.relativePath.replace(/\.md$/, '.html'),
-        lastmod: pageData.lastUpdated
-      })
+        url: pageData.relativePath.replace(/\.md$/, ".html"),
+        lastmod: pageData.lastUpdated,
+      });
   },
   sitemap: {
-    hostname: 'https://docs.automa.site/',
-    lastmodDateOnly: false
+    hostname: "https://docs.automa.site/",
+    lastmodDateOnly: false,
   },
   themeConfig: {
     nav: [
-      { text: 'Docs for v1.21.x or below', link: 'https://automa-docs-old.vercel.app/' },
-      { text: 'Extension Builder', link: '/extension-builder/' },
-      { text: 'Help Translate', link: '/help-translate' }
+      {
+        text: "Docs for v1.21.x or below",
+        link: "https://automa-docs-old.vercel.app/",
+      },
+      { text: "Extension Builder", link: "/extension-builder/" },
+      { text: "Help Translate", link: "/help-translate" },
     ],
     algolia: {
       apiKey: process.env.SEARCH_API_KEY,
       appId: process.env.SEARCH_APP_ID,
       indexName: process.env.SEARCH_INDEX_NAME,
     },
-    sidebar: { 
-      '/': [
+    sidebar: {
+      "/": [
         {
-          text: 'Getting Started',
+          text: "Getting Started",
           items: [
-            { text: 'Introduction', link: '/' },
-            { text: 'Quick Start', link: '/guide/quick-start' }
-          ]
+            { text: "Introduction", link: "/" },
+            { text: "Quick Start", link: "/guide/quick-start" },
+          ],
         },
         {
-          text: 'Workflow',
+          text: "Workflow",
           collapsed: false,
           items: [
-            { text: 'Overview', link: '/workflow/overview' },
-            { text: 'Running a Workflow', link: '/workflow/running-a-workflow' },
-            { text: 'Blocks', link: '/workflow/blocks' },
-            { text: 'Sharing a Workflow', link: '/workflow/sharing-workflow' },
-            { text: 'Global Data', link: '/workflow/global-data' },
-            { text: 'Table', link: '/workflow/table' },
-            { text: 'Variables', link: '/workflow/variables' },
-            { text: 'Table or Variable', link: '/workflow/table-or-variable' },
-            { text: 'Parameters', link: '/workflow/parameters' },
-            { text: 'Settings', link: '/workflow/settings' },
-            { text: 'Debug Mode', link: '/workflow/debug-mode' },
-            { text: 'Element Selector', link: '/workflow/element-selector' },
-            { text: 'Expressions', link: '/workflow/expressions' },
-            { text: 'Looping', link: '/workflow/looping' },
-            { text: 'Testing mode', link: '/workflow/testing-mode' },
-          ]
+            { text: "Overview", link: "/workflow/overview" },
+            {
+              text: "Running a Workflow",
+              link: "/workflow/running-a-workflow",
+            },
+            { text: "Blocks", link: "/workflow/blocks" },
+            { text: "Sharing a Workflow", link: "/workflow/sharing-workflow" },
+            { text: "Global Data", link: "/workflow/global-data" },
+            { text: "Table", link: "/workflow/table" },
+            { text: "Variables", link: "/workflow/variables" },
+            { text: "Table or Variable", link: "/workflow/table-or-variable" },
+            { text: "Parameters", link: "/workflow/parameters" },
+            { text: "Settings", link: "/workflow/settings" },
+            { text: "Debug Mode", link: "/workflow/debug-mode" },
+            { text: "Element Selector", link: "/workflow/element-selector" },
+            { text: "Expressions", link: "/workflow/expressions" },
+            { text: "Looping", link: "/workflow/looping" },
+            { text: "Testing mode", link: "/workflow/testing-mode" },
+          ],
         },
         {
-          text: 'Blocks',
+          text: "Blocks",
           collapsed: true,
           items: [
             {
@@ -82,323 +96,340 @@ const config = defineConfig({
               items: [
                 {
                   text: "Trigger Block",
-                  link: "/blocks/trigger.md"
+                  link: "/blocks/trigger.md",
                 },
                 {
                   text: "Execute Workflow Block",
-                  link: "/blocks/execute-workflow.md"
+                  link: "/blocks/execute-workflow.md",
                 },
                 {
                   text: "Delay Block",
-                  link: "/blocks/delay.md"
+                  link: "/blocks/delay.md",
                 },
                 {
                   text: "Export Data Block",
-                  link: "/blocks/export-data.md"
+                  link: "/blocks/export-data.md",
                 },
                 {
                   text: "HTTP Request Block",
-                  link: "/blocks/webhook.md"
+                  link: "/blocks/webhook.md",
                 },
                 {
                   text: "Blocks Group Block",
-                  link: "/blocks/blocks-group.md"
+                  link: "/blocks/blocks-group.md",
                 },
                 {
                   text: "Clipboard Block",
-                  link: "/blocks/clipboard.md"
+                  link: "/blocks/clipboard.md",
                 },
                 {
                   text: "Wait Connections Block",
-                  link: "/blocks/wait-connections.md"
+                  link: "/blocks/wait-connections.md",
                 },
                 {
                   text: "Notification Block",
-                  link: "/blocks/notification.md"
+                  link: "/blocks/notification.md",
                 },
                 {
                   text: "Workflow State Block",
-                  link: "/blocks/workflow-state.md"
+                  link: "/blocks/workflow-state.md",
                 },
                 {
                   text: "Parameter Prompt Block",
-                  link: "/blocks/parameter-prompt.md"
-                }
-              ]
+                  link: "/blocks/parameter-prompt.md",
+                },
+              ],
             },
             {
               text: "Browser",
               items: [
                 {
                   text: "Active Tab Block",
-                  link: "/blocks/active-tab.md"
+                  link: "/blocks/active-tab.md",
                 },
                 {
                   text: "New Tab Block",
-                  link: "/blocks/new-tab.md"
+                  link: "/blocks/new-tab.md",
                 },
                 {
                   text: "Switch Tab Block",
-                  link: "/blocks/switch-tab.md"
+                  link: "/blocks/switch-tab.md",
                 },
                 {
                   text: "New Window Block",
-                  link: "/blocks/new-window.md"
+                  link: "/blocks/new-window.md",
                 },
                 {
                   text: "Proxy Block",
-                  link: "/blocks/proxy.md"
+                  link: "/blocks/proxy.md",
                 },
                 {
                   text: "Go Back Block",
-                  link: "/blocks/go-back.md"
+                  link: "/blocks/go-back.md",
                 },
                 {
                   text: "Go Forward Block",
-                  link: "/blocks/go-forward.md"
+                  link: "/blocks/go-forward.md",
                 },
                 {
                   text: "Close Tab/window Block",
-                  link: "/blocks/close-tab.md"
+                  link: "/blocks/close-tab.md",
                 },
                 {
                   text: "Take Screenshot Block",
-                  link: "/blocks/take-screenshot.md"
+                  link: "/blocks/take-screenshot.md",
                 },
                 {
                   text: "Browser Event Block",
-                  link: "/blocks/browser-event.md"
+                  link: "/blocks/browser-event.md",
                 },
                 {
                   text: "Handle Dialog Block",
-                  link: "/blocks/handle-dialog.md"
+                  link: "/blocks/handle-dialog.md",
                 },
                 {
                   text: "Handle Download Block",
-                  link: "/blocks/handle-download.md"
+                  link: "/blocks/handle-download.md",
                 },
                 {
                   text: "Reload Tab Block",
-                  link: "/blocks/reload-tab.md"
+                  link: "/blocks/reload-tab.md",
                 },
                 {
                   text: "Get Tab Url Block",
-                  link: "/blocks/tab-url.md"
+                  link: "/blocks/tab-url.md",
                 },
                 {
                   text: "Cookie Block",
-                  link: "/blocks/cookie.md"
-                }
-              ]
+                  link: "/blocks/cookie.md",
+                },
+              ],
             },
             {
               text: "Web Interaction",
               items: [
                 {
                   text: "Click Element Block",
-                  link: "/blocks/event-click.md"
+                  link: "/blocks/event-click.md",
                 },
                 {
                   text: "Get Text Block",
-                  link: "/blocks/get-text.md"
+                  link: "/blocks/get-text.md",
                 },
                 {
                   text: "Scroll Element Block",
-                  link: "/blocks/element-scroll.md"
+                  link: "/blocks/element-scroll.md",
                 },
                 {
                   text: "Link Block",
-                  link: "/blocks/link.md"
+                  link: "/blocks/link.md",
                 },
                 {
                   text: "Attribute Value Block",
-                  link: "/blocks/attribute-value.md"
+                  link: "/blocks/attribute-value.md",
                 },
                 {
                   text: "Forms Block",
-                  link: "/blocks/forms.md"
+                  link: "/blocks/forms.md",
                 },
                 {
                   text: "Javascript Code Block",
-                  link: "/blocks/javascript-code.md"
+                  link: "/blocks/javascript-code.md",
                 },
                 {
                   text: "Trigger Event Block",
-                  link: "/blocks/trigger-event.md"
+                  link: "/blocks/trigger-event.md",
                 },
                 {
                   text: "Switch Frame Block",
-                  link: "/blocks/switch-to.md"
+                  link: "/blocks/switch-to.md",
                 },
                 {
                   text: "Upload File Block",
-                  link: "/blocks/upload-file.md"
+                  link: "/blocks/upload-file.md",
                 },
                 {
                   text: "Hover Element Block",
-                  link: "/blocks/hover-element.md"
+                  link: "/blocks/hover-element.md",
                 },
                 {
                   text: "Save Assets Block",
-                  link: "/blocks/save-assets.md"
+                  link: "/blocks/save-assets.md",
                 },
                 {
                   text: "Press Key Block",
-                  link: "/blocks/press-key.md"
+                  link: "/blocks/press-key.md",
                 },
                 {
                   text: "Create Element Block",
-                  link: "/blocks/create-element.md"
-                }
-              ]
+                  link: "/blocks/create-element.md",
+                },
+              ],
             },
             {
               text: "Control Flow",
               items: [
                 {
                   text: "Repeat Task Block",
-                  link: "/blocks/repeat-task.md"
+                  link: "/blocks/repeat-task.md",
                 },
                 {
                   text: "Conditions Block",
-                  link: "/blocks/conditions.md"
+                  link: "/blocks/conditions.md",
                 },
                 {
                   text: "Element Exists Block",
-                  link: "/blocks/element-exists.md"
+                  link: "/blocks/element-exists.md",
                 },
                 {
                   text: "While Loop Block",
-                  link: "/blocks/while-loop.md"
+                  link: "/blocks/while-loop.md",
                 },
                 {
                   text: "Loop Data Block",
-                  link: "/blocks/loop-data.md"
+                  link: "/blocks/loop-data.md",
                 },
                 {
                   text: "Loop Elements Block",
-                  link: "/blocks/loop-elements.md"
+                  link: "/blocks/loop-elements.md",
                 },
                 {
                   text: "Loop Breakpoint Block",
-                  link: "/blocks/loop-breakpoint.md"
-                }
-              ]
+                  link: "/blocks/loop-breakpoint.md",
+                },
+              ],
             },
             {
               text: "Online Services",
               items: [
                 {
                   text: "Google Sheets Block",
-                  link: "/blocks/google-sheets.md"
+                  link: "/blocks/google-sheets.md",
                 },
                 {
                   text: "Google Sheets (GDrive) Block",
-                  link: "/blocks/google-sheets-drive.md"
+                  link: "/blocks/google-sheets-drive.md",
                 },
                 {
                   text: "Google Drive Block",
-                  link: "/blocks/google-drive.md"
+                  link: "/blocks/google-drive.md",
                 },
-              ]
+              ],
             },
             {
               text: "Data",
               items: [
                 {
                   text: "Insert Data Block",
-                  link: "/blocks/insert-data.md"
+                  link: "/blocks/insert-data.md",
                 },
                 {
                   text: "Delete Data Block",
-                  link: "/blocks/delete-data.md"
+                  link: "/blocks/delete-data.md",
                 },
                 {
                   text: "Get Log Data Block",
-                  link: "/blocks/log-data.md"
+                  link: "/blocks/log-data.md",
                 },
                 {
                   text: "Slice Variable Block",
-                  link: "/blocks/slice-variable.md"
+                  link: "/blocks/slice-variable.md",
                 },
                 {
                   text: "Increase Variable Block",
-                  link: "/blocks/increase-variable.md"
+                  link: "/blocks/increase-variable.md",
                 },
                 {
                   text: "Regex Variable Block",
-                  link: "/blocks/regex-variable.md"
+                  link: "/blocks/regex-variable.md",
                 },
                 {
                   text: "Data Mapping Block",
-                  link: "/blocks/data-mapping.md"
+                  link: "/blocks/data-mapping.md",
                 },
                 {
                   text: "Sort Data Block",
-                  link: "/blocks/sort-data.md"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          text: 'Reference',
-          collapsed: false,
-          items: [
-            { text: 'Storage', link: '/reference/storage' },
-            { text: 'Packages', link: '/reference/packages' },
-            { text: 'Condition Builder', link: '/reference/condition-builder' },
-            { text: 'Workflow Common Errors', link: '/reference/workflow-common-errors' },
-            { text: 'JavaScript Execution Context', link: '/reference/javascript-execution-context' }
+                  link: "/blocks/sort-data.md",
+                },
+              ],
+            },
           ],
         },
         {
-          text: 'Integrations',
+          text: "Reference",
           collapsed: false,
           items: [
-            { text: 'Google Drive', link: '/integrations/google-drive' },
-          ]
-        }
+            { text: "Storage", link: "/reference/storage" },
+            { text: "Packages", link: "/reference/packages" },
+            { text: "Condition Builder", link: "/reference/condition-builder" },
+            {
+              text: "Workflow Common Errors",
+              link: "/reference/workflow-common-errors",
+            },
+            {
+              text: "JavaScript Execution Context",
+              link: "/reference/javascript-execution-context",
+            },
+          ],
+        },
+        {
+          text: "Integrations",
+          collapsed: false,
+          items: [{ text: "Google Drive", link: "/integrations/google-drive" }],
+        },
       ],
-      '/extension-builder/': [
-        { 
-          text: 'Getting Started', 
-          items: [
-            { text: 'Overview & Quick Start', link: '/extension-builder/' }
-          ], 
-        },
+      "/extension-builder/": [
         {
-          text: 'Extension',
+          text: "Getting Started",
           items: [
-            { text: 'Dashboard', link: '/extension-builder/dashboard' },
-            { text: 'Workflows', link: '/extension-builder/workflows' },
-            { text: 'Customize', link: '/extension-builder/customize' },
-            { text: 'Crash Logs', link: '/extension-builder/crash-logs' },
+            { text: "Overview & Quick Start", link: "/extension-builder/" },
           ],
         },
         {
-          text: 'Building Extension',
+          text: "Extension",
           items: [
-            { text: 'Global Variables', link: '/extension-builder/global-variables' },
-            { text: 'Version Control', link: '/extension-builder/version-control' },
-            { text: 'Installing Extension', link: '/extension-builder/installing-extension' },
-          ]
-        }
-      ]
+            { text: "Dashboard", link: "/extension-builder/dashboard" },
+            { text: "Workflows", link: "/extension-builder/workflows" },
+            { text: "Customize", link: "/extension-builder/customize" },
+            { text: "Crash Logs", link: "/extension-builder/crash-logs" },
+          ],
+        },
+        {
+          text: "Building Extension",
+          items: [
+            {
+              text: "Global Variables",
+              link: "/extension-builder/global-variables",
+            },
+            {
+              text: "Version Control",
+              link: "/extension-builder/version-control",
+            },
+            {
+              text: "Installing Extension",
+              link: "/extension-builder/installing-extension",
+            },
+          ],
+        },
+      ],
     },
     editLink: {
-      pattern: 'https://github.com/automaapp/documentation/edit/main/docs/:path',
-      text: 'Edit this page on GitHub'
+      pattern:
+        "https://github.com/automaapp/documentation/edit/main/docs/:path",
+      text: "Edit this page on GitHub",
     },
-    logo: '/images/logo.png',
-    lastUpdatedText: 'Updated Date',
+    logo: "/images/logo.png",
+    lastUpdatedText: "Updated Date",
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/automaapp/automa' },
-      { icon: 'discord', link: 'https://discord.gg/C6khwwTE84' },
-      { icon: 'youtube', link: 'https://www.youtube.com/channel/UCL3qU64hW0fsIj2vOayOQUQ' },
-      { icon: 'twitter', link: 'https://twitter.com/AutomaApp' },
+      { icon: "github", link: "https://github.com/automaapp/automa" },
+      { icon: "discord", link: "https://discord.gg/C6khwwTE84" },
+      {
+        icon: "youtube",
+        link: "https://www.youtube.com/channel/UCL3qU64hW0fsIj2vOayOQUQ",
+      },
+      { icon: "twitter", link: "https://twitter.com/AutomaApp" },
     ],
   },
 });
 
-export default config
+export default config;
