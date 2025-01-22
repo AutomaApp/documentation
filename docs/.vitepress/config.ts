@@ -36,6 +36,351 @@ const config = defineConfig({
         lastmod: pageData.lastUpdated,
       });
   },
+  locales: {
+    root: {
+      label: "English",
+      link: "/",
+      lang: "en",
+    },
+    zh: {
+      label: "简体中文",
+      link: "/zh/",
+      lang: "zh",
+      themeConfig: {
+        nav: [
+          { text: "扩展生成器", link: "/extension-builder/" },
+          { text: "参与贡献", link: "/help-translate" },
+        ],
+        sidebar: {
+          "/zh/": [
+            {
+              text: "快速入门",
+              items: [
+                { text: "介绍", link: "/zh/" },
+                { text: "快速开始", link: "/zh/guide/quick-start" },
+              ],
+            },
+            {
+              text: "工作流",
+              collapsed: false,
+              items: [
+                { text: "概述", link: "/zh/workflow/overview" },
+                {
+                  text: "运行工作流",
+                  link: "/zh/workflow/running-a-workflow",
+                },
+                { text: "模块", link: "/zh/workflow/blocks" },
+                { text: "分享工作流", link: "/zh/workflow/sharing-workflow" },
+                { text: "全局数据", link: "/zh/workflow/global-data" },
+                { text: "表格", link: "/zh/workflow/table" },
+                { text: "变量", link: "/zh/workflow/variables" },
+                { text: "表格或变量", link: "/zh/workflow/table-or-variable" },
+                { text: "参数", link: "/zh/workflow/parameters" },
+                { text: "设置", link: "/zh/workflow/settings" },
+                { text: "调试模式", link: "/zh/workflow/debug-mode" },
+                { text: "元素选择器", link: "/zh/workflow/element-selector" },
+                { text: "表达式", link: "/zh/workflow/expressions" },
+                { text: "循环", link: "/zh/workflow/looping" },
+                { text: "测试模式", link: "/zh/workflow/testing-mode" },
+              ],
+            },
+            {
+              text: "模块",
+              collapsed: true,
+              items: [
+                {
+                  text: "通用",
+                  items: [
+                    {
+                      text: "触发模块",
+                      link: "/zh/blocks/trigger.md",
+                    },
+                    {
+                      text: "执行工作流模块",
+                      link: "/zh/blocks/execute-workflow.md",
+                    },
+                    {
+                      text: "延迟模块",
+                      link: "/zh/blocks/delay.md",
+                    },
+                    {
+                      text: "导出数据模块",
+                      link: "/zh/blocks/export-data.md",
+                    },
+                    {
+                      text: "HTTP 请求模块",
+                      link: "/zh/blocks/webhook.md",
+                    },
+                    {
+                      text: "模块组模块",
+                      link: "/zh/blocks/blocks-group.md",
+                    },
+                    {
+                      text: "剪贴板模块",
+                      link: "/zh/blocks/clipboard.md",
+                    },
+                    {
+                      text: "等待连接模块",
+                      link: "/zh/blocks/wait-connections.md",
+                    },
+                    {
+                      text: "通知模块",
+                      link: "/zh/blocks/notification.md",
+                    },
+                    {
+                      text: "工作流状态模块",
+                      link: "/zh/blocks/workflow-state.md",
+                    },
+                    {
+                      text: "参数提示模块",
+                      link: "/zh/blocks/parameter-prompt.md",
+                    },
+                  ],
+                },
+                {
+                  text: "浏览器",
+                  items: [
+                    {
+                      text: "活动标签模块",
+                      link: "/zh/blocks/active-tab.md",
+                    },
+                    {
+                      text: "新标签模块",
+                      link: "/zh/blocks/new-tab.md",
+                    },
+                    {
+                      text: "切换标签模块",
+                      link: "/zh/blocks/switch-tab.md",
+                    },
+                    {
+                      text: "新窗口模块",
+                      link: "/zh/blocks/new-window.md",
+                    },
+                    {
+                      text: "代理模块",
+                      link: "/zh/blocks/proxy.md",
+                    },
+                    {
+                      text: "后退模块",
+                      link: "/zh/blocks/go-back.md",
+                    },
+                    {
+                      text: "前进模块",
+                      link: "/zh/blocks/go-forward.md",
+                    },
+                    {
+                      text: "关闭标签/窗口模块",
+                      link: "/zh/blocks/close-tab.md",
+                    },
+                    {
+                      text: "截图模块",
+                      link: "/zh/blocks/take-screenshot.md",
+                    },
+                    {
+                      text: "浏览器事件模块",
+                      link: "/zh/blocks/browser-event.md",
+                    },
+                    {
+                      text: "处理对话框模块",
+                      link: "/zh/blocks/handle-dialog.md",
+                    },
+                    {
+                      text: "处理下载模块",
+                      link: "/zh/blocks/handle-download.md",
+                    },
+                    {
+                      text: "重新加载标签模块",
+                      link: "/zh/blocks/reload-tab.md",
+                    },
+                    {
+                      text: "获取标签 URL 模块",
+                      link: "/zh/blocks/tab-url.md",
+                    },
+                    {
+                      text: "Cookie 模块",
+                      link: "/zh/blocks/cookie.md",
+                    },
+                  ],
+                },
+                {
+                  text: "网页交互",
+                  items: [
+                    {
+                      text: "点击元素模块",
+                      link: "/blocks/event-click.md",
+                    },
+                    {
+                      text: "获取文本模块",
+                      link: "/blocks/get-text.md",
+                    },
+                    {
+                      text: "滚动元素模块",
+                      link: "/blocks/element-scroll.md",
+                    },
+                    {
+                      text: "链接模块",
+                      link: "/blocks/link.md",
+                    },
+                    {
+                      text: "属性值模块",
+                      link: "/blocks/attribute-value.md",
+                    },
+                    {
+                      text: "表单模块",
+                      link: "/blocks/forms.md",
+                    },
+                    {
+                      text: "JavaScript 代码模块",
+                      link: "/blocks/javascript-code.md",
+                    },
+                    {
+                      text: "触发事件模块",
+                      link: "/blocks/trigger-event.md",
+                    },
+                    {
+                      text: "切换框架模块",
+                      link: "/blocks/switch-to.md",
+                    },
+                    {
+                      text: "上传文件模块",
+                      link: "/blocks/upload-file.md",
+                    },
+                    {
+                      text: "悬停元素模块",
+                      link: "/blocks/hover-element.md",
+                    },
+                    {
+                      text: "保存资源模块",
+                      link: "/blocks/save-assets.md",
+                    },
+                    {
+                      text: "按键模块",
+                      link: "/blocks/press-key.md",
+                    },
+                    {
+                      text: "创建元素模块",
+                      link: "/blocks/create-element.md",
+                    },
+                  ],
+                },
+                {
+                  text: "控制流",
+                  items: [
+                    {
+                      text: "重复任务模块",
+                      link: "/blocks/repeat-task.md",
+                    },
+                    {
+                      text: "条件模块",
+                      link: "/blocks/conditions.md",
+                    },
+                    {
+                      text: "元素存在模块",
+                      link: "/blocks/element-exists.md",
+                    },
+                    {
+                      text: "循环模块",
+                      link: "/blocks/while-loop.md",
+                    },
+                    {
+                      text: "循环数据模块",
+                      link: "/blocks/loop-data.md",
+                    },
+                    {
+                      text: "循环元素模块",
+                      link: "/blocks/loop-elements.md",
+                    },
+                    {
+                      text: "循环断点模块",
+                      link: "/blocks/loop-breakpoint.md",
+                    },
+                  ],
+                },
+                {
+                  text: "在线服务",
+                  items: [
+                    {
+                      text: "Google Sheets 模块",
+                      link: "/blocks/google-sheets.md",
+                    },
+                    {
+                      text: "Google Sheets (GDrive) 模块",
+                      link: "/blocks/google-sheets-drive.md",
+                    },
+                    {
+                      text: "Google Drive 模块",
+                      link: "/blocks/google-drive.md",
+                    },
+                  ],
+                },
+                {
+                  text: "数据",
+                  items: [
+                    {
+                      text: "插入数据模块",
+                      link: "/blocks/insert-data.md",
+                    },
+                    {
+                      text: "删除数据模块",
+                      link: "/blocks/delete-data.md",
+                    },
+                    {
+                      text: "获取日志数据模块",
+                      link: "/blocks/log-data.md",
+                    },
+                    {
+                      text: "切片变量模块",
+                      link: "/blocks/slice-variable.md",
+                    },
+                    {
+                      text: "增加变量模块",
+                      link: "/blocks/increase-variable.md",
+                    },
+                    {
+                      text: "正则变量模块",
+                      link: "/blocks/regex-variable.md",
+                    },
+                    {
+                      text: "数据映射模块",
+                      link: "/blocks/data-mapping.md",
+                    },
+                    {
+                      text: "排序数据模块",
+                      link: "/blocks/sort-data.md",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              text: "参考",
+              collapsed: false,
+              items: [
+                { text: "存储", link: "/zh/reference/storage" },
+                { text: "包", link: "/zh/reference/packages" },
+                { text: "条件与判断", link: "/zh/reference/condition-builder" },
+                {
+                  text: "工作流常见错误",
+                  link: "/zh/reference/workflow-common-errors",
+                },
+                {
+                  text: "JavaScript 执行上下文",
+                  link: "/zh/reference/javascript-execution-context",
+                },
+              ],
+            },
+            {
+              text: "集成",
+              collapsed: false,
+              items: [
+                { text: "Google Drive", link: "/zh/integrations/google-drive" },
+              ],
+            },
+          ],
+        },
+      },
+    },
+  },
   sitemap: {
     hostname: "https://docs.automa.site/",
     lastmodDateOnly: false,
