@@ -29,12 +29,362 @@ const config = defineConfig({
       },
     ],
   ],
+  lastUpdated: true,
   transformHtml: (_, id, { pageData }) => {
     if (!/[\\/]404\.html$/.test(id))
       links.push({
         url: pageData.relativePath.replace(/\.md$/, ".html"),
         lastmod: pageData.lastUpdated,
       });
+  },
+  locales: {
+    root: {
+      label: "English",
+      link: "/",
+      lang: "en",
+    },
+    zh: {
+      label: "简体中文",
+      link: "/zh/",
+      lang: "zh",
+      themeConfig: {
+        outline: {
+          label: "页面导航",
+        },
+        lastUpdatedText: "最后更新于",
+        nav: [
+          { text: "扩展生成器", link: "/extension-builder/" },
+          { text: "参与贡献", link: "/help-translate" },
+        ],
+        sidebar: {
+          "/zh/": [
+            {
+              text: "快速入门",
+              items: [
+                { text: "介绍", link: "/zh/" },
+                { text: "快速开始", link: "/zh/guide/quick-start" },
+              ],
+            },
+            {
+              text: "工作流",
+              collapsed: false,
+              items: [
+                { text: "概述", link: "/zh/workflow/overview" },
+                {
+                  text: "运行工作流",
+                  link: "/zh/workflow/running-a-workflow",
+                },
+                { text: "模块", link: "/zh/workflow/blocks" },
+                { text: "分享工作流", link: "/zh/workflow/sharing-workflow" },
+                { text: "全局数据", link: "/zh/workflow/global-data" },
+                { text: "表格", link: "/zh/workflow/table" },
+                { text: "变量", link: "/zh/workflow/variables" },
+                { text: "表格或变量", link: "/zh/workflow/table-or-variable" },
+                { text: "参数", link: "/zh/workflow/parameters" },
+                { text: "设置", link: "/zh/workflow/settings" },
+                { text: "调试模式", link: "/zh/workflow/debug-mode" },
+                { text: "元素选择器", link: "/zh/workflow/element-selector" },
+                { text: "表达式", link: "/zh/workflow/expressions" },
+                { text: "循环", link: "/zh/workflow/looping" },
+                { text: "测试模式", link: "/zh/workflow/testing-mode" },
+              ],
+            },
+            {
+              text: "模块",
+              collapsed: true,
+              items: [
+                {
+                  text: "通用",
+                  items: [
+                    {
+                      text: "触发模块",
+                      link: "/zh/blocks/trigger.md",
+                    },
+                    {
+                      text: "执行工作流模块",
+                      link: "/zh/blocks/execute-workflow.md",
+                    },
+                    {
+                      text: "延迟模块",
+                      link: "/zh/blocks/delay.md",
+                    },
+                    {
+                      text: "导出数据模块",
+                      link: "/zh/blocks/export-data.md",
+                    },
+                    {
+                      text: "HTTP 请求模块",
+                      link: "/zh/blocks/webhook.md",
+                    },
+                    {
+                      text: "模块组模块",
+                      link: "/zh/blocks/blocks-group.md",
+                    },
+                    {
+                      text: "剪贴板模块",
+                      link: "/zh/blocks/clipboard.md",
+                    },
+                    {
+                      text: "等待连接模块",
+                      link: "/zh/blocks/wait-connections.md",
+                    },
+                    {
+                      text: "通知模块",
+                      link: "/zh/blocks/notification.md",
+                    },
+                    {
+                      text: "工作流状态模块",
+                      link: "/zh/blocks/workflow-state.md",
+                    },
+                    {
+                      text: "参数提示模块",
+                      link: "/zh/blocks/parameter-prompt.md",
+                    },
+                  ],
+                },
+                {
+                  text: "浏览器",
+                  items: [
+                    {
+                      text: "活动标签",
+                      link: "/zh/blocks/active-tab.md",
+                    },
+                    {
+                      text: "新标签",
+                      link: "/zh/blocks/new-tab.md",
+                    },
+                    {
+                      text: "切换标签",
+                      link: "/zh/blocks/switch-tab.md",
+                    },
+                    {
+                      text: "新窗口",
+                      link: "/zh/blocks/new-window.md",
+                    },
+                    {
+                      text: "代理",
+                      link: "/zh/blocks/proxy.md",
+                    },
+                    {
+                      text: "后退",
+                      link: "/zh/blocks/go-back.md",
+                    },
+                    {
+                      text: "前进",
+                      link: "/zh/blocks/go-forward.md",
+                    },
+                    {
+                      text: "关闭标签/窗口",
+                      link: "/zh/blocks/close-tab.md",
+                    },
+                    {
+                      text: "截图",
+                      link: "/zh/blocks/take-screenshot.md",
+                    },
+                    {
+                      text: "浏览器事件",
+                      link: "/zh/blocks/browser-event.md",
+                    },
+                    {
+                      text: "处理对话框",
+                      link: "/zh/blocks/handle-dialog.md",
+                    },
+                    {
+                      text: "处理下载",
+                      link: "/zh/blocks/handle-download.md",
+                    },
+                    {
+                      text: "重新加载标签",
+                      link: "/zh/blocks/reload-tab.md",
+                    },
+                    {
+                      text: "获取标签 URL ",
+                      link: "/zh/blocks/tab-url.md",
+                    },
+                    {
+                      text: "Cookie ",
+                      link: "/zh/blocks/cookie.md",
+                    },
+                  ],
+                },
+                {
+                  text: "网页交互",
+                  items: [
+                    {
+                      text: "点击元素",
+                      link: "/zh/blocks/event-click.md",
+                    },
+                    {
+                      text: "获取文本",
+                      link: "/zh/blocks/get-text.md",
+                    },
+                    {
+                      text: "滚动元素",
+                      link: "/zh/blocks/element-scroll.md",
+                    },
+                    {
+                      text: "链接",
+                      link: "/zh/blocks/link.md",
+                    },
+                    {
+                      text: "属性值",
+                      link: "/zh/blocks/attribute-value.md",
+                    },
+                    {
+                      text: "表单",
+                      link: "/zh/blocks/forms.md",
+                    },
+                    {
+                      text: "JavaScript 代码",
+                      link: "/zh/blocks/javascript-code.md",
+                    },
+                    {
+                      text: "触发事件",
+                      link: "/zh/blocks/trigger-event.md",
+                    },
+                    {
+                      text: "切换框架",
+                      link: "/zh/blocks/switch-to.md",
+                    },
+                    {
+                      text: "上传文件",
+                      link: "/zh/blocks/upload-file.md",
+                    },
+                    {
+                      text: "悬停元素",
+                      link: "/zh/blocks/hover-element.md",
+                    },
+                    {
+                      text: "保存资源",
+                      link: "/zh/blocks/save-assets.md",
+                    },
+                    {
+                      text: "按键",
+                      link: "/zh/blocks/press-key.md",
+                    },
+                    {
+                      text: "创建元素",
+                      link: "/zh/blocks/create-element.md",
+                    },
+                  ],
+                },
+                {
+                  text: "控制流",
+                  items: [
+                    {
+                      text: "重复任务",
+                      link: "/zh/blocks/repeat-task.md",
+                    },
+                    {
+                      text: "条件",
+                      link: "/zh/blocks/conditions.md",
+                    },
+                    {
+                      text: "元素存在",
+                      link: "/zh/blocks/element-exists.md",
+                    },
+                    {
+                      text: "循环",
+                      link: "/zh/blocks/while-loop.md",
+                    },
+                    {
+                      text: "循环数据",
+                      link: "/zh/blocks/loop-data.md",
+                    },
+                    {
+                      text: "循环元素",
+                      link: "/zh/blocks/loop-elements.md",
+                    },
+                    {
+                      text: "循环断点",
+                      link: "/zh/blocks/loop-breakpoint.md",
+                    },
+                  ],
+                },
+                {
+                  text: "在线服务",
+                  items: [
+                    {
+                      text: "Google Sheets ",
+                      link: "/zh/blocks/google-sheets.md",
+                    },
+                    {
+                      text: "Google Sheets (GDrive) ",
+                      link: "/zh/blocks/google-sheets-drive.md",
+                    },
+                    {
+                      text: "Google Drive ",
+                      link: "/zh/blocks/google-drive.md",
+                    },
+                  ],
+                },
+                {
+                  text: "数据",
+                  items: [
+                    {
+                      text: "插入数据",
+                      link: "/zh/blocks/insert-data.md",
+                    },
+                    {
+                      text: "删除数据",
+                      link: "/zh/blocks/delete-data.md",
+                    },
+                    {
+                      text: "获取日志数据",
+                      link: "/zh/blocks/log-data.md",
+                    },
+                    {
+                      text: "切片变量",
+                      link: "/zh/blocks/slice-variable.md",
+                    },
+                    {
+                      text: "增加变量",
+                      link: "/zh/blocks/increase-variable.md",
+                    },
+                    {
+                      text: "正则变量",
+                      link: "/zh/blocks/regex-variable.md",
+                    },
+                    {
+                      text: "数据映射",
+                      link: "/zh/blocks/data-mapping.md",
+                    },
+                    {
+                      text: "排序数据",
+                      link: "/zh/blocks/sort-data.md",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              text: "参考",
+              collapsed: false,
+              items: [
+                { text: "存储", link: "/zh/reference/storage" },
+                { text: "包", link: "/zh/reference/packages" },
+                { text: "条件与判断", link: "/zh/reference/condition-builder" },
+                {
+                  text: "工作流常见错误",
+                  link: "/zh/reference/workflow-common-errors",
+                },
+                {
+                  text: "JavaScript 执行上下文",
+                  link: "/zh/reference/javascript-execution-context",
+                },
+              ],
+            },
+            {
+              text: "集成",
+              collapsed: false,
+              items: [
+                { text: "Google Drive", link: "/zh/integrations/google-drive" },
+              ],
+            },
+          ],
+        },
+      },
+    },
   },
   sitemap: {
     hostname: "https://docs.automa.site/",
