@@ -29,6 +29,7 @@ const config = defineConfig({
       },
     ],
   ],
+  lastUpdated: true,
   transformHtml: (_, id, { pageData }) => {
     if (!/[\\/]404\.html$/.test(id))
       links.push({
@@ -47,6 +48,10 @@ const config = defineConfig({
       link: "/zh/",
       lang: "zh",
       themeConfig: {
+        outline: {
+          label: "页面导航",
+        },
+        lastUpdatedText: "最后更新于",
         nav: [
           { text: "扩展生成器", link: "/extension-builder/" },
           { text: "参与贡献", link: "/help-translate" },
@@ -141,63 +146,63 @@ const config = defineConfig({
                   text: "浏览器",
                   items: [
                     {
-                      text: "活动标签模块",
+                      text: "活动标签",
                       link: "/zh/blocks/active-tab.md",
                     },
                     {
-                      text: "新标签模块",
+                      text: "新标签",
                       link: "/zh/blocks/new-tab.md",
                     },
                     {
-                      text: "切换标签模块",
+                      text: "切换标签",
                       link: "/zh/blocks/switch-tab.md",
                     },
                     {
-                      text: "新窗口模块",
+                      text: "新窗口",
                       link: "/zh/blocks/new-window.md",
                     },
                     {
-                      text: "代理模块",
+                      text: "代理",
                       link: "/zh/blocks/proxy.md",
                     },
                     {
-                      text: "后退模块",
+                      text: "后退",
                       link: "/zh/blocks/go-back.md",
                     },
                     {
-                      text: "前进模块",
+                      text: "前进",
                       link: "/zh/blocks/go-forward.md",
                     },
                     {
-                      text: "关闭标签/窗口模块",
+                      text: "关闭标签/窗口",
                       link: "/zh/blocks/close-tab.md",
                     },
                     {
-                      text: "截图模块",
+                      text: "截图",
                       link: "/zh/blocks/take-screenshot.md",
                     },
                     {
-                      text: "浏览器事件模块",
+                      text: "浏览器事件",
                       link: "/zh/blocks/browser-event.md",
                     },
                     {
-                      text: "处理对话框模块",
+                      text: "处理对话框",
                       link: "/zh/blocks/handle-dialog.md",
                     },
                     {
-                      text: "处理下载模块",
+                      text: "处理下载",
                       link: "/zh/blocks/handle-download.md",
                     },
                     {
-                      text: "重新加载标签模块",
+                      text: "重新加载标签",
                       link: "/zh/blocks/reload-tab.md",
                     },
                     {
-                      text: "获取标签 URL 模块",
+                      text: "获取标签 URL ",
                       link: "/zh/blocks/tab-url.md",
                     },
                     {
-                      text: "Cookie 模块",
+                      text: "Cookie ",
                       link: "/zh/blocks/cookie.md",
                     },
                   ],
@@ -206,60 +211,60 @@ const config = defineConfig({
                   text: "网页交互",
                   items: [
                     {
-                      text: "点击元素模块",
-                      link: "/blocks/event-click.md",
+                      text: "点击元素",
+                      link: "/zh/blocks/event-click.md",
                     },
                     {
-                      text: "获取文本模块",
-                      link: "/blocks/get-text.md",
+                      text: "获取文本",
+                      link: "/zh/blocks/get-text.md",
                     },
                     {
-                      text: "滚动元素模块",
-                      link: "/blocks/element-scroll.md",
+                      text: "滚动元素",
+                      link: "/zh/blocks/element-scroll.md",
                     },
                     {
-                      text: "链接模块",
-                      link: "/blocks/link.md",
+                      text: "链接",
+                      link: "/zh/blocks/link.md",
                     },
                     {
-                      text: "属性值模块",
-                      link: "/blocks/attribute-value.md",
+                      text: "属性值",
+                      link: "/zh/blocks/attribute-value.md",
                     },
                     {
-                      text: "表单模块",
-                      link: "/blocks/forms.md",
+                      text: "表单",
+                      link: "/zh/blocks/forms.md",
                     },
                     {
-                      text: "JavaScript 代码模块",
-                      link: "/blocks/javascript-code.md",
+                      text: "JavaScript 代码",
+                      link: "/zh/blocks/javascript-code.md",
                     },
                     {
-                      text: "触发事件模块",
-                      link: "/blocks/trigger-event.md",
+                      text: "触发事件",
+                      link: "/zh/blocks/trigger-event.md",
                     },
                     {
-                      text: "切换框架模块",
-                      link: "/blocks/switch-to.md",
+                      text: "切换框架",
+                      link: "/zh/blocks/switch-to.md",
                     },
                     {
-                      text: "上传文件模块",
-                      link: "/blocks/upload-file.md",
+                      text: "上传文件",
+                      link: "/zh/blocks/upload-file.md",
                     },
                     {
-                      text: "悬停元素模块",
-                      link: "/blocks/hover-element.md",
+                      text: "悬停元素",
+                      link: "/zh/blocks/hover-element.md",
                     },
                     {
-                      text: "保存资源模块",
-                      link: "/blocks/save-assets.md",
+                      text: "保存资源",
+                      link: "/zh/blocks/save-assets.md",
                     },
                     {
-                      text: "按键模块",
-                      link: "/blocks/press-key.md",
+                      text: "按键",
+                      link: "/zh/blocks/press-key.md",
                     },
                     {
-                      text: "创建元素模块",
-                      link: "/blocks/create-element.md",
+                      text: "创建元素",
+                      link: "/zh/blocks/create-element.md",
                     },
                   ],
                 },
@@ -267,32 +272,32 @@ const config = defineConfig({
                   text: "控制流",
                   items: [
                     {
-                      text: "重复任务模块",
-                      link: "/blocks/repeat-task.md",
+                      text: "重复任务",
+                      link: "/zh/blocks/repeat-task.md",
                     },
                     {
-                      text: "条件模块",
-                      link: "/blocks/conditions.md",
+                      text: "条件",
+                      link: "/zh/blocks/conditions.md",
                     },
                     {
-                      text: "元素存在模块",
-                      link: "/blocks/element-exists.md",
+                      text: "元素存在",
+                      link: "/zh/blocks/element-exists.md",
                     },
                     {
-                      text: "循环模块",
-                      link: "/blocks/while-loop.md",
+                      text: "循环",
+                      link: "/zh/blocks/while-loop.md",
                     },
                     {
-                      text: "循环数据模块",
-                      link: "/blocks/loop-data.md",
+                      text: "循环数据",
+                      link: "/zh/blocks/loop-data.md",
                     },
                     {
-                      text: "循环元素模块",
-                      link: "/blocks/loop-elements.md",
+                      text: "循环元素",
+                      link: "/zh/blocks/loop-elements.md",
                     },
                     {
-                      text: "循环断点模块",
-                      link: "/blocks/loop-breakpoint.md",
+                      text: "循环断点",
+                      link: "/zh/blocks/loop-breakpoint.md",
                     },
                   ],
                 },
@@ -300,16 +305,16 @@ const config = defineConfig({
                   text: "在线服务",
                   items: [
                     {
-                      text: "Google Sheets 模块",
-                      link: "/blocks/google-sheets.md",
+                      text: "Google Sheets ",
+                      link: "/zh/blocks/google-sheets.md",
                     },
                     {
-                      text: "Google Sheets (GDrive) 模块",
-                      link: "/blocks/google-sheets-drive.md",
+                      text: "Google Sheets (GDrive) ",
+                      link: "/zh/blocks/google-sheets-drive.md",
                     },
                     {
-                      text: "Google Drive 模块",
-                      link: "/blocks/google-drive.md",
+                      text: "Google Drive ",
+                      link: "/zh/blocks/google-drive.md",
                     },
                   ],
                 },
@@ -317,36 +322,36 @@ const config = defineConfig({
                   text: "数据",
                   items: [
                     {
-                      text: "插入数据模块",
-                      link: "/blocks/insert-data.md",
+                      text: "插入数据",
+                      link: "/zh/blocks/insert-data.md",
                     },
                     {
-                      text: "删除数据模块",
-                      link: "/blocks/delete-data.md",
+                      text: "删除数据",
+                      link: "/zh/blocks/delete-data.md",
                     },
                     {
-                      text: "获取日志数据模块",
-                      link: "/blocks/log-data.md",
+                      text: "获取日志数据",
+                      link: "/zh/blocks/log-data.md",
                     },
                     {
-                      text: "切片变量模块",
-                      link: "/blocks/slice-variable.md",
+                      text: "切片变量",
+                      link: "/zh/blocks/slice-variable.md",
                     },
                     {
-                      text: "增加变量模块",
-                      link: "/blocks/increase-variable.md",
+                      text: "增加变量",
+                      link: "/zh/blocks/increase-variable.md",
                     },
                     {
-                      text: "正则变量模块",
-                      link: "/blocks/regex-variable.md",
+                      text: "正则变量",
+                      link: "/zh/blocks/regex-variable.md",
                     },
                     {
-                      text: "数据映射模块",
-                      link: "/blocks/data-mapping.md",
+                      text: "数据映射",
+                      link: "/zh/blocks/data-mapping.md",
                     },
                     {
-                      text: "排序数据模块",
-                      link: "/blocks/sort-data.md",
+                      text: "排序数据",
+                      link: "/zh/blocks/sort-data.md",
                     },
                   ],
                 },

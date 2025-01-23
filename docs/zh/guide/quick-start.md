@@ -39,4 +39,4 @@ title: 快速入门
 
 ![添加块](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/zzlqp-a3.gif)
 
-保存工作流后，您可以通过点击播放图标 <v-remixicon name="riPlayLine" /> 来运行工作流。
+保存工作流后，您可以通过点击图标 <v-remixicon name="riPlayLine" /> 来运行工作流。
