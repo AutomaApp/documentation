@@ -1,25 +1,19 @@
-name: "Deploy"
-
+name: Deploy to Vercel
 on:
   push:
-    branches:
-    - main
+    branches: [main]
 
 jobs:
-  vercel: 
+  deploy:
     runs-on: ubuntu-latest
-    name: "Deploy Automa Website"
-    
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      
+      # 使用官方的 Vercel Action 替代 CLI 命令
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v20
         with:
-          node-version: '16'
-          registry-url: https://registry.npmjs.org/
-
-      - name: "Deploy to Vercel"
-        run: npx vercel --token ${VERCEL_TOKEN} --prod
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          working-directory: ./
