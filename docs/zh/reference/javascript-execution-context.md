@@ -22,4 +22,4 @@ document.body.appendChild(script);
 
 在这个环境中，您的 JavaScript 代码会在一个沙箱中执行。如果您的代码与 DOM 无关，建议选择这个执行上下文。并且，它不需要活动标签页来运行。
 
-如果您想进行调试，比如使用 `console.log` 方法，您可以在 Automa 仪表板上打开 Chrome 开发者工具来查看输出。
+如果您想进行调试，比如使用 `console.log` 方法，您可以在 Automa 总览页上打开 Chrome 开发者工具来查看输出。

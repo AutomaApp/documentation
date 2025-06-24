@@ -24,4 +24,4 @@ Automa 目前仅支持 Google Chrome 和 Firefox。要安装它，请点击下�
 </div>
 
 ## 教程
-有关 Automa 教程，请访问 [教程部分](https://www.automa.site/tutorials).
+有关 Automa 视频教程，请访问 [链接🔗](https://www.automa.site/tutorials).

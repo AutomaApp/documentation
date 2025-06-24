@@ -13,7 +13,7 @@ This integration currently only works if you're using **Google Account** to logi
 :::
 
 To integrate Google Drive into Automa:
-1. Open the [integrations page](https://automa.site/me/integrations)
+1. Open the [integrations page](https://extension.automa.site/me/integrations)
 2. Click the "Connect" button on the Google Drive card
 3. Select the account that you use to login into Automa
 4. If you have Automa Extension Dashboard opened, you need to relaunch it to take effect

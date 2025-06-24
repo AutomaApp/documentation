@@ -13,7 +13,7 @@ title: Google Drive 集成
 :::
 
 要将 Google Drive 集成到 Automa 中：
-1. 打开 [集成页面](https://automa.site/me/integrations)
+1. 打开 [集成页面](https://extension.automa.site/me/integrations)
 2. 点击 Google Drive 卡片上的"连接"按钮
 3. 选择您用于登录 Automa 的账户
-4. 如果您已打开 Automa 扩展仪表板，您需要重新启动它以使更改生效
+4. 如果您已打开 Automa 扩展总览页，您需要重新启动它以使更改生效

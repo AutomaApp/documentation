@@ -312,13 +312,13 @@ The table is stored as an array of objects with the table column as the object k
 The variables is stored as an object with the variable name as the object key.
 ```json
 {
-  "url": "https://automa.site",
+  "url": "https://extension.automa.site",
   "numbers": [100, 500, 300, 200, 400]
 }
 ```
 - Get value of the `url` variable. <br>
   expression: <code v-pre>{{ variables.url }}</code> <br>
-  output: `https://automa.site`
+  output: `https://extension.automa.site`
 
 - Get value of the `numbers` variable. <br>
   expression: <code v-pre>{{ variables.numbers }}</code> <br>

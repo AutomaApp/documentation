@@ -311,13 +311,13 @@ $modulo(-4, 2) // -0
 变量存储为对象，变量名作为对象键。
 ```json
 {
-  "url": "https://automa.site",
+  "url": "https://extension.automa.site",
   "numbers": [100, 500, 300, 200, 400]
 }
 ```
 - 获取 `url` 变量的值。 <br>
   表达式: <code v-pre>{{ variables.url }}</code> <br>
-  输出: `https://automa.site`
+  输出: `https://extension.automa.site`
 
 - 获取 `numbers` 变量的值。 <br>
   表达式: <code v-pre>{{ variables.numbers }}</code> <br>

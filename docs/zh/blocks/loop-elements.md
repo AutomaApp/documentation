@@ -22,6 +22,6 @@ title: 循环元素块
 	- **点击链接以加载更多**
 	- **向下滚动以加载更多**
 
-[**工作流示例**](https://automa.site/workflow/sIGixG_Cpb5wOaw05_2tZ)
+[**工作流示例**](https://extension.automa.site/workflow/sIGixG_Cpb5wOaw05_2tZ)
 
 另见: [循环](../workflow/looping.md#using-the-loop-data-or-loop-elements-block)

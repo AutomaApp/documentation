@@ -54,7 +54,7 @@ title: 元素选择器
 如果您不知道如何编写自己的选择器，可以使用 Automa 元素选择器或模块上的“选择”按钮。
 
 ### Automa 元素选择器
-在 Automa 仪表板中，点击侧边栏上的 <v-remixicon name="riFocus3Line" /> 按钮，Automa 将在当前页面注入一个元素选择器。您可以点击或按 `Space` 键选择一个元素。它将自动为所选元素生成一个选择器。
+在 Automa 总览页中，点击侧边栏上的 <v-remixicon name="riFocus3Line" /> 按钮，Automa 将在当前页面注入一个元素选择器。您可以点击或按 `Space` 键选择一个元素。它将自动为所选元素生成一个选择器。
 
 ![元素选择器](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16sv6u-n6.png)
 
