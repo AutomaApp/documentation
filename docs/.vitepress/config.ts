@@ -449,6 +449,10 @@ const config = defineConfig({
                   link: "/blocks/trigger.md",
                 },
                 {
+                  text: "AI Workflow",
+                  link: "/blocks/ai-workflow.md",
+                },
+                {
                   text: "Execute Workflow Block",
                   link: "/blocks/execute-workflow.md",
                 },
