@@ -5,6 +5,9 @@
     "docs:serve": "vitepress serve docs"
   },
   "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
   "devDependencies": {
     "@types/node": "^20.5.7",
     "dotenv": "^16.3.1",
