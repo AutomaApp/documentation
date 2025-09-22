@@ -7,7 +7,7 @@ title: 分享工作流
 
 ## 分享到市场
 
-当你将工作流分享至市场时，Automa 会在 [Automa 市场](https://www.automa.site/marketplace) 上展示该工作流，所有用户都可以安装该工作流。你可以通过点击“分享工作流”按钮，然后点击发布按钮来分享工作流。
+当你将工作流分享至市场时，Automa 会在 [Automa 市场](https://extension.automa.site/marketplace) 上展示该工作流，所有用户都可以安装该工作流。你可以通过点击“分享工作流”按钮，然后点击发布按钮来分享工作流。
 发布后，Automa 会创建工作流的本地版本和共享版本。
 
 ![共享工作流](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/12ev72-18.png)
@@ -25,7 +25,7 @@ title: 分享工作流
 ![获取本地工作流](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/12ev72-zq.png)
 
 ## Host 工作流
-分享工作流的另一种方式是将工作流设置为 Host。这样，工作流不会在 [Automa 市场](https://www.automa.site/marketplace) 中展示，而是返回 **Host ID**，其他 Automa 用户可以使用该 ID 添加工作流。
+分享工作流的另一种方式是将工作流设置为 Host。这样，工作流不会在 [Automa 市场](https://extension.automa.site/marketplace) 中展示，而是返回 **Host ID**，其他 Automa 用户可以使用该 ID 添加工作流。
 
 ![主机工作流](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/12ev72-ao.png)
 

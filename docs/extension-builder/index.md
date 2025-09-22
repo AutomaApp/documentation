@@ -11,7 +11,7 @@ Automa Chrome Extension Builder is still in **Beta**. If you find a bug or a mis
 :::
 
 ## Quick Start
-A quick start on how to create your first extension using the Automa CEB, open the extensions page by clicking the ["My extension"](https://www.automa.site/extensions) button on the [automa website](https://www.automa.site). 
+A quick start on how to create your first extension using the Automa CEB, open the extensions page by clicking the ["My extension"](https://extension.automa.site/extensions) button on the [automa website](https://www.automa.site). 
 
 Click the "New extension" button to add a new extension, and input the extension name and description.
 

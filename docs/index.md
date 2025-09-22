@@ -24,4 +24,4 @@ Automa currently only supports Google Chrome And Firefox. And to install it, cli
 </div>
 
 ## Tutorials
-For the Automa tutorials, you can go to the [Tutorials section](https://www.automa.site/tutorials).
+For the Automa tutorials, you can go to the [Tutorials section](https://extension.automa.site/tutorials).
