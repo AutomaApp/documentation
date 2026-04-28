@@ -21,7 +21,7 @@ export const en: NavbarConfig = [
   },
   {
     text: 'Home',
-    link: 'https://www.automa.site/',
+    link: 'https://www.goautoma.com/',
   },
   {
     text: 'Marketplace',
